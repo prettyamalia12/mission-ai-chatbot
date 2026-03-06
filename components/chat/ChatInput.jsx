@@ -1,11 +1,12 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Send } from 'lucide-react'
+import { Send, Paperclip } from 'lucide-react'
 
-export function ChatInput({ onSend, disabled }) {
+export function ChatInput({ onSend, onImageUpload, onTextUpload, disabled }) {
   const [value, setValue] = useState('')
   const textareaRef = useRef(null)
+  const fileInputRef = useRef(null)
 
   useEffect(() => {
     if (textareaRef.current) {
@@ -28,6 +29,20 @@ export function ChatInput({ onSend, disabled }) {
     }
   }
 
+  const handleFileChange = (e) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    if (file.type.startsWith('image/')) {
+      const url = URL.createObjectURL(file)
+      onImageUpload?.(url, file.name)
+    } else {
+      const reader = new FileReader()
+      reader.onload = (ev) => onTextUpload?.(ev.target.result, file.name)
+      reader.readAsText(file)
+    }
+    e.target.value = ''
+  }
+
   return (
     <div className="border border-emerald-200 bg-emerald-50/30 rounded-2xl p-3 focus-within:border-emerald-400 transition-colors">
       <textarea
@@ -41,7 +56,23 @@ export function ChatInput({ onSend, disabled }) {
         className="w-full bg-transparent text-sm text-gray-700 placeholder-gray-400 resize-none outline-none leading-relaxed"
         style={{ minHeight: '24px', maxHeight: '120px' }}
       />
-      <div className="flex items-center justify-end mt-1">
+      <div className="flex items-center justify-between mt-1">
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          disabled={disabled}
+          title="Attach image or T&C document (.txt)"
+          className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-emerald-500 hover:bg-emerald-50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          <Paperclip size={16} />
+        </button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/*,.txt,.pdf,.doc,.docx"
+          className="hidden"
+          onChange={handleFileChange}
+        />
         <button
           onClick={handleSend}
           disabled={!value.trim() || disabled}

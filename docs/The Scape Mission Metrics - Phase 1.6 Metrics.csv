@@ -1,0 +1,25 @@
+No,metric,entityId,name,propagateToSubEntity,platform,eventName,propertyNames,metrics filter,propertyValues,incrementalProperty,Environment,Status,Testing Status,Testing Results Link,Comment
+1,defeat-monster-dominion-lancers-the-scape-v3,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-dominion-lancers-the-scape-v3,true,segment,Game Match Resulted,"monster_killed_dominion_lancer, match_result",equals,"amount, Win",monster_killed_dominion_lancer,PROD,Added,,,
+,defeat-monster-dominion-scouts-the-scape-v3,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-dominion-scouts-the-scape-v3,true,segment,Game Match Resulted,"monster_killed_dominion_scout, match_result",equals,"amount, Win",monster_killed_dominion_scout,PROD,Added,,,
+,complete-gobbler-nest-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-gobbler-nest-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result",equals,"true,GOBBLER_NEST, Win",,PROD,Added,,,
+2,defeat-monster-ghajar-abductors-the-scape-v2,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-ghajar-abductors-the-scape-v2,true,segment,Game Match Resulted,"monster_killed_ghajar_abductor, match_result",equals,"amount, Win",monster_killed_ghajar_abductor,PROD,Added,,,
+,defeat-monster-scape-harpy-the-scape-v2,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-scape-harpy-the-scape-v2,true,segment,Game Match Resulted,"monster_killed_scape_harpy, match_result",equals,"amount, Win",monster_killed_scape_harpy,PROD,Added,,,
+,complete-blob-pit-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-blob-pit-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result",equals,"true,BLOB_PIT,Win",,PROD,Added,,,
+3,defeat-monster-harpy-skyclaws-the-scape-v2,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-harpy-skyclaws-the-scape-v2,true,segment,Game Match Resulted,"monster_killed_harpy_skyclaw, match_result",equals,"amount, Win",monster_killed_harpy_skyclaw,PROD,Added,,,
+,defeat-monster-ghajar-explorers-the-scape-v3,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-ghajar-explorers-the-scape-v3,true,segment,Game Match Resulted,"monster_killed_GHAJAR, match_result",equals,"amount, Win",monster_killed_GHAJAR,PROD,Added,,,
+,complete-ghajar-farm-rift ,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-ghajar-farm-rift ,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result",equals,"true,GHAJAR_FARM, Win",,PROD,Added,,,NEED RESET
+4,defeat-monster-gobbler-abominations-the-scape-v2,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-gobbler-abominations-the-scape-v2,true,segment,Game Match Resulted,"monster_killed_gobbler_abomination, match_result",equals,"amount, Win",monster_killed_gobbler_abomination,PROD,Added,,,
+,defeat-monster-ghajar-abductors-the-scape-v3,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-ghajar-abductors-the-scape-v3,true,segment,Game Match Resulted,"monster_killed_ghajar_abductor, match_result",equals,"amount, Win",monster_killed_ghajar_abductor,PROD,Added,,,
+,complete-shard-cavern-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-shard-cavern-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result",equals,"true, SHARD_CAVERN, Win",,PROD,Added,,,NEED RESET
+5,defeat-monster-naidu-acolytes-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-naidu-acolytes-the-scape,true,segment,Game Match Resulted,"monster_killed_naidu_acolyte, match_result",equals,"amount, Win",monster_killed_naidu_acolyte,PROD,Added,,,NEW
+,defeat-monster-naidu-puppeteer-the-scape-v3,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-naidu-puppeteer-the-scape-v3,true,segment,Game Match Resulted,"monster_killed_naidu_puppeteer, match_result",equals,"amount, Win",monster_killed_naidu_puppeteer,PROD,Added,,,
+,complete-naidu-trial-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-naidu-trial-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result",equals,"true,NAIDU_TRIAL,Win",,PROD,Added,,,NEED RESET
+6,spending-missions-the-scape,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,spending-missions-the-scape,true,segment,fdp_payment_completed,merchant_name,not equals,"
+Adventure LN Hub",order_amount,STG,Added,,,
+,,,,,,,merchant_name,not equals,Freedom,,,,,,
+,,,,,,,order_amount,any,amount,,,,,,
+,spending-missions-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,spending-missions-the-scape,true,segment,Fdp Payment Completed,merchant_name,not equals,The Scape,order_amount,PROD,Added,,,
+,,,,,,,merchant_name,not equals,Freedom,,,,,,
+,,,,,,,merchant_name,not equals,Freedom Planets,,,,,,
+,,,,,,,currency,equals,THB,,,,,,
+,,,,,,,order_amount,any,amount,,,,,,

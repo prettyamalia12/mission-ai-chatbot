@@ -1,0 +1,4 @@
+,metric,entityId,name,propagateToSubEntity,platform,eventName,propertyNames,propertyValues,incrementalProperty,Environment,Status,Testing Status,Testing Results Link
+1,community-joined-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,community-joined-the-scape,true,segment,Community Joined,community_id,711,,PROD,Not Added,,
+2,referral-first-mission-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,referral-first-mission-the-scape,true,segment,Referral Claim Completed,"community_id, mission_id","711, q-27e453a8-3043-448c-ab68-16df32d3cf0a",,PROD,Not Added,,
+3,referral-recruit-allies-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,referral-recruit-allies-the-scape,true,segment,Referral Claim Completed,"community_id, mission_id","711,q-d89e168b-7383-4498-9a2c-92562aafe9df",,PROD,Not Added,,

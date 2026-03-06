@@ -3,10 +3,10 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { AvaAvatar } from './AvaAvatar'
 import { TypingIndicator } from './TypingIndicator'
-import { QuickPicks } from './QuickPicks'
 import { ChatInput } from './ChatInput'
 import { MissionPreview } from '@/components/preview/MissionPreview'
 import { useRouter } from 'next/navigation'
+import { saveDraft, getDraftById } from '@/lib/draft-store'
 
 // Message types: 'user' | 'ava' | 'typing' | 'action_buttons'
 function UserBubble({ content }) {
@@ -66,19 +66,35 @@ function ActionButtons({ onSaveDraft, onPublish }) {
   )
 }
 
-export function CreateMission() {
+const AVA_GREETING = "Hi! I'm AVA, your Mission Creation Assistant. I'll help you design a mission that engages your community.\n\nFirst, choose a mission type:\n\n- **Simple Mission** — One requirement, one reward. _(e.g. Invite 1 friend → get 50 tokens)_\n- **Milestone Mission** — One goal with multiple reward levels. _(e.g. Invite 3 → Level 1 reward, Invite 6 → Level 2 reward)_\n- **Multi-Step Mission** — A series of steps users complete in order. _(e.g. Visit page → Answer quiz → Make a purchase)_\n\nWhich type fits your goal, or describe your mission idea and I'll suggest one!"
+
+export function CreateMission({ draftId }) {
   const router = useRouter()
-  const [apiMessages, setApiMessages] = useState([]) // messages for Claude API
-  const [displayMessages, setDisplayMessages] = useState([]) // messages shown in UI
+  const [apiMessages, setApiMessages] = useState([{ role: 'assistant', content: AVA_GREETING }])
+  const [displayMessages, setDisplayMessages] = useState([{ type: 'ava', content: AVA_GREETING }])
   const [mission, setMission] = useState(null)
   const [completionPct, setCompletionPct] = useState(0)
   const [isTyping, setIsTyping] = useState(false)
   const [typingLabel, setTypingLabel] = useState('')
   const [isGeneratingImage, setIsGeneratingImage] = useState(false)
-  const [showPreview, setShowPreview] = useState(false)
+  const [showPreview, setShowPreview] = useState(true)
   const [showConfirm, setShowConfirm] = useState(false)
   const messagesEndRef = useRef(null)
-  const hasStarted = displayMessages.length > 0 || isTyping
+
+  // Load draft if draftId is provided
+  useEffect(() => {
+    if (!draftId) return
+    const draft = getDraftById(draftId)
+    if (!draft) return
+    setMission(draft)
+    setCompletionPct(draft.completion_percentage || 0)
+    const resumeMsg = `Welcome back! I've loaded your draft **${draft.title || 'Untitled Draft'}**. The preview panel shows your current progress. What would you like to work on next?`
+    setDisplayMessages([{ type: 'ava', content: AVA_GREETING }, { type: 'ava', content: resumeMsg }])
+    setApiMessages([
+      { role: 'assistant', content: AVA_GREETING },
+      { role: 'assistant', content: resumeMsg },
+    ])
+  }, [draftId])
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -114,13 +130,16 @@ export function CreateMission() {
       const decoder = new TextDecoder()
       let avaText = ''
       let toolUpdate = null
+      let buffer = ''
 
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
 
-        const chunk = decoder.decode(value)
-        const lines = chunk.split('\n')
+        buffer += decoder.decode(value, { stream: true })
+        const lines = buffer.split('\n')
+        // Keep the last (potentially incomplete) line in the buffer
+        buffer = lines.pop() ?? ''
 
         for (const line of lines) {
           if (!line.startsWith('data: ')) continue
@@ -139,6 +158,8 @@ export function CreateMission() {
           } else if (event.type === 'tool_call' && event.tool === 'update_mission_preview') {
             toolUpdate = event.input
             setShowPreview(true)
+          } else if (event.type === 'tool_call' && event.tool === 'generate_cover_image') {
+            toolUpdate = { _generateImage: true, _imagePrompt: event.input?.prompt }
           } else if (event.type === 'error') {
             throw new Error(event.message || 'API error')
           }
@@ -147,32 +168,61 @@ export function CreateMission() {
 
       setIsTyping(false)
 
-      // Apply tool update
-      if (toolUpdate) {
+      // Check if this is an image generation tool call
+      const isImageGen = toolUpdate?._generateImage === true
+      const imagePrompt = toolUpdate?._imagePrompt
+
+      // Apply mission tool update (only if not the image gen sentinel)
+      if (toolUpdate && !isImageGen) {
         setMission(prev => ({ ...prev, ...toolUpdate }))
         setCompletionPct(toolUpdate.completion_percentage || 0)
       }
 
-      // Check if ava mentioned image generation
+      // Show AVA text response
+      const finalText = avaText.trim()
       const lowerText = avaText.toLowerCase()
-      if (lowerText.includes('creating cover image') || lowerText.includes('generating') || lowerText.includes('create one')) {
-        // Add ava text first
-        if (avaText.trim()) {
-          const assistantMsg = { role: 'assistant', content: avaText.trim() }
-          setApiMessages(prev => [...prev, assistantMsg])
-          addDisplay({ type: 'ava', content: avaText.trim() })
-        }
 
-        // Generate image
+      if (finalText) {
+        const assistantMsg = { role: 'assistant', content: finalText }
+        setApiMessages(prev => [...prev, assistantMsg])
+        addDisplay({ type: 'ava', content: finalText })
+      } else if (toolUpdate && !isImageGen) {
+        const isDoneEarly = (toolUpdate?.completion_percentage >= 100) ||
+          lowerText.includes('ready to go') || lowerText.includes('preview and publish')
+        const fallback = isDoneEarly
+          ? "Your mission is ready! Click **Preview and Publish** to launch it."
+          : "Got it, I've updated the mission preview."
+        const assistantMsg = { role: 'assistant', content: fallback }
+        setApiMessages(prev => [...prev, assistantMsg])
+        addDisplay({ type: 'ava', content: fallback })
+      } else if (!isImageGen) {
+        addDisplay({ type: 'ava', content: "⚠️ No response received from the server. Please try again." })
+      }
+
+      // Fallback: trigger image gen if user asked for it but AVA didn't call the tool
+      const userAskedForImage = /\b(generate|create|make)\b.{0,30}\b(image|cover|campaign image)\b/i.test(text) ||
+        /\b(image|cover)\b.{0,20}\b(generate|create|yes|ok|sure)\b/i.test(text) ||
+        text.toLowerCase().includes('campaign image') ||
+        text.toLowerCase().includes('cover image')
+
+      if (userAskedForImage && !isImageGen) {
+        toolUpdate = { _generateImage: true, _imagePrompt: mission?.title || null }
+      }
+
+      const isImageGenFinal = toolUpdate?._generateImage === true
+      const imagePromptFinal = toolUpdate?._imagePrompt
+
+      // Trigger image generation if AVA called the generate_cover_image tool (or fallback)
+      if (isImageGenFinal) {
         setIsGeneratingImage(true)
         setIsTyping(true)
         setTypingLabel('Creating cover image')
         try {
-          const imgPrompt = mission?.title || 'community mission campaign'
+          const prompt = imagePromptFinal || mission?.title || 'community mission campaign'
           const imgRes = await fetch('/api/generate-image', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ prompt: imgPrompt }),
+            body: JSON.stringify({ prompt }),
           })
           const { url } = await imgRes.json()
           if (url) {
@@ -180,39 +230,43 @@ export function CreateMission() {
             addDisplay({ type: 'ava_image', content: url })
           }
         } catch {
-          // image gen failed silently
+          addDisplay({ type: 'ava', content: "⚠️ Couldn't generate a cover image right now. Please try again." })
         }
         setIsTyping(false)
         setIsGeneratingImage(false)
         return
       }
 
-      const finalText = avaText.trim()
       const isDone = (toolUpdate?.completion_percentage >= 100) ||
         lowerText.includes('ready to go') || lowerText.includes('preview and publish')
-
-      if (finalText) {
-        const assistantMsg = { role: 'assistant', content: finalText }
-        setApiMessages(prev => [...prev, assistantMsg])
-        addDisplay({ type: 'ava', content: finalText })
-      } else if (toolUpdate) {
-        // Claude called the tool but sent no text — show a placeholder so chat isn't silent
-        const fallback = isDone
-          ? "Your mission is ready! Click **Preview and Publish** to launch it."
-          : "Got it, I've updated the mission preview."
-        const assistantMsg = { role: 'assistant', content: fallback }
-        setApiMessages(prev => [...prev, assistantMsg])
-        addDisplay({ type: 'ava', content: fallback })
-      }
 
       if (isDone) {
         addDisplay({ type: 'action_buttons' })
       }
     } catch (err) {
       setIsTyping(false)
-      addDisplay({ type: 'ava', content: `Error: ${err.message}` })
+      addDisplay({ type: 'ava', content: `⚠️ Error: ${err.message}` })
     }
   }, [apiMessages, addDisplay, mission])
+
+  const handleSaveDraft = useCallback(() => {
+    const saved = saveDraft(mission || {})
+    if (saved && !mission?.id) {
+      setMission(prev => ({ ...(prev || {}), id: saved.id }))
+    }
+    addDisplay({ type: 'ava', content: 'Draft saved! You can find it in the Mission list.' })
+  }, [mission, addDisplay])
+
+  const handleImageUpload = useCallback((url, filename) => {
+    setMission(prev => ({ ...prev, cover_image_url: url }))
+    addDisplay({ type: 'ava_image', content: url })
+    addDisplay({ type: 'ava', content: `Cover image set to **${filename}**. You can generate an AI image instead if you'd like.` })
+  }, [addDisplay])
+
+  const handleTCUpload = useCallback((content, filename) => {
+    setMission(prev => ({ ...prev, terms_and_conditions: content }))
+    addDisplay({ type: 'ava', content: `T&C uploaded from **${filename}**. It's now shown in the preview panel.` })
+  }, [addDisplay])
 
   const handlePublish = () => setShowConfirm(true)
   const handleConfirm = () => {
@@ -224,25 +278,18 @@ export function CreateMission() {
     <div className="flex h-full">
       {/* Chat panel */}
       <div className={`flex flex-col ${showPreview ? 'w-[55%]' : 'w-full'} transition-all duration-300`}>
+        {/* Chat header */}
+        <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100 shrink-0">
+          <span className="text-sm font-semibold text-gray-700">Mission Creation</span>
+          <button
+            onClick={handleSaveDraft}
+            className="text-xs font-medium px-3 py-1.5 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors"
+          >
+            Save Draft
+          </button>
+        </div>
         <div className="flex-1 overflow-y-auto p-6 space-y-5">
-          {!hasStarted && (
-            /* Landing state */
-            <div className="flex flex-col items-center justify-center pt-12 pb-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-white text-2xl font-bold">✦</span>
-              </div>
-              <div className="text-sm text-gray-500 mb-1">Hi! Ready to build your mission?</div>
-              <div className="text-lg font-semibold text-gray-800 text-center">
-                Describe the task your audience should complete or choose one below.
-              </div>
-              <div className="w-full max-w-lg mt-6">
-                <ChatInput onSend={handleSend} disabled={isTyping} />
-                <QuickPicks onSelect={handleSend} />
-              </div>
-            </div>
-          )}
-
-          {hasStarted && displayMessages.map((msg, i) => {
+          {displayMessages.map((msg, i) => {
             if (msg.type === 'user') return <UserBubble key={i} content={msg.content} />
             if (msg.type === 'ava') return <AvaBubble key={i} content={msg.content} />
             if (msg.type === 'ava_image') return (
@@ -264,12 +311,9 @@ export function CreateMission() {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Input (shown after conversation starts) */}
-        {hasStarted && (
-          <div className="p-4 border-t border-gray-100">
-            <ChatInput onSend={handleSend} disabled={isTyping} />
-          </div>
-        )}
+        <div className="p-4 border-t border-gray-100">
+          <ChatInput onSend={handleSend} onImageUpload={handleImageUpload} onTextUpload={handleTCUpload} disabled={isTyping} />
+        </div>
       </div>
 
       {/* Preview panel */}

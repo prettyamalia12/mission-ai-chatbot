@@ -1,0 +1,1295 @@
+community_id,community_name,is_location_set,is_published,is_cover_changed,has_post
+35,Freedom,1,1,1,1
+37,"Freedom Cafe",1,1,1,1
+38,"Freedom Restaurant",0,1,1,1
+39,"Raja Ferry",0,1,1,1
+40,"EPIC Entertainment",0,1,1,1
+41,Xpheres,0,1,1,1
+42,"BKK CF",0,1,1,1
+43,"Mustache Bangkok",0,1,1,1
+44,"Test Private Comunity",0,1,1,0
+45,Community,0,1,1,1
+46,CommunityCommunityCommunityCommunityCommunityCommunityCommunityCommunityCommunityCommunityCommunityC,0,1,1,0
+47,Community1,0,1,1,0
+48,Name,0,1,1,0
+49,Name11,0,1,1,0
+50,Name1,0,1,1,0
+51,"Test Create Commu",0,1,1,0
+52,"Test Create Commu1",0,1,1,0
+53,"Test Create Commu2",0,1,1,0
+54,Tung,0,1,1,0
+55,Arizona,0,1,1,0
+56,"QA test",0,1,1,0
+57,Community2,0,1,1,0
+58,Community3,0,1,1,0
+59,Community4,0,1,1,0
+60,Community5,0,1,1,0
+61,Community6,0,1,1,0
+62,Community7,0,1,1,0
+63,Community8,0,1,1,0
+64,Community9,1,1,1,0
+65,Community10,1,1,1,0
+66,Community11,0,1,1,0
+67,Community12,0,1,1,0
+68,Community13,1,1,1,0
+69,Community14,0,1,1,0
+70,Community15,0,1,1,0
+71,Community16,0,1,1,0
+72,Community17,0,1,1,0
+73,Community18,0,1,1,0
+74,Community19,0,1,1,0
+75,Name2,0,1,1,0
+76,Name3,0,1,1,0
+77,Name4,0,1,1,0
+78,Name5,0,1,1,0
+79,Name6,1,1,1,0
+80,Name7,0,1,1,0
+81,Name8,0,1,1,0
+82,Name9,0,1,1,0
+83,Name10,0,1,1,0
+84,Testing1,0,1,1,0
+85,Test01_nk,0,1,1,0
+86,CDE,0,1,1,0
+87,ABCD,0,1,1,0
+88,Community123,0,1,1,0
+89,"Tanika Test Community",0,1,1,0
+90,ALma,0,1,1,0
+91,"Test by mhg",0,1,1,1
+92,Alo,0,1,1,0
+93,Lifu,0,1,1,0
+94,Test02_nk,0,1,1,0
+95,Test03_nk,0,1,1,0
+96,"New 2",0,1,1,0
+97,Lu,0,1,1,0
+98,AliBaba,0,1,1,0
+99,Tanika123,0,1,1,0
+100,Test04_nk,0,1,1,0
+101,Tanika1,0,1,1,0
+102,Tanika2,1,1,1,0
+103,Tanika3,0,1,1,0
+104,RezaOrg,0,1,1,0
+105,MMMM,0,1,1,0
+106,AliExpress,0,1,1,0
+107,Name123123123,0,1,1,0
+108,"Tung 3",0,1,1,0
+109,"Last But Not Least",0,1,1,0
+111,Community1299,0,1,1,0
+112,"Tanika Mall",0,1,1,0
+113,"Tanika Mall2",0,1,1,0
+114,"Tanika Mall3",0,1,1,0
+115,"Tanikal Mall",0,1,1,0
+116,"Tanika Mall4",0,1,1,0
+119,"No logo Mall",0,1,1,0
+120,"Tan Mall",1,1,1,0
+121,"Dirt Mall",0,1,1,0
+122,"DirtDT Mall",0,1,1,0
+123,"drtdrt Mall",0,1,1,0
+124,"yyyy Mall",0,1,1,0
+125,"Token plan 34",0,1,1,0
+126,"Token plan 35",0,1,1,0
+127,"Token plan 36",0,1,1,0
+128,"ou Mall",0,1,1,0
+129,Test1,0,1,1,0
+130,"Freedom World_test",0,1,1,0
+131,"mhg test 3",0,1,1,0
+132,mhg_test_1234,0,1,1,0
+133,dddd,0,1,1,0
+134,mhg_test_12345,0,1,1,0
+135,dfaad,0,1,1,0
+136,Test2,0,1,1,0
+137,Test3,0,1,1,0
+138,Test11_nk,0,1,1,0
+139,Test4,0,1,1,0
+140,Test5,0,1,1,0
+141,Test6,0,1,1,0
+142,Nameyyyy,0,1,1,0
+143,Namekkkk,0,1,1,1
+144,ewqwe,0,1,1,0
+145,213213,0,1,1,0
+146,sadsad,0,1,1,0
+147,aaaaa,0,1,1,0
+148,Test7,0,1,1,0
+149,Test8,0,1,1,0
+150,Sample2,0,1,1,1
+151,AAWW,0,1,1,0
+152,3242424,0,1,1,0
+153,1111,0,1,1,0
+154,"TUng Test 5",0,1,1,0
+155,"Test Community 5_1",0,1,1,0
+156,CDC,0,1,1,0
+157,"Test 35",0,1,1,0
+158,Test35,0,1,1,0
+159,TOTOB,1,1,1,1
+160,TOTOC,1,1,1,1
+161,TOTOD,0,1,1,0
+162,QATest1,0,1,1,0
+163,CCDDDD,0,1,1,0
+164,Test02_nk322,0,1,1,0
+165,Simon,0,1,1,0
+166,tt1,0,1,1,0
+167,CSAWW,0,1,1,0
+168,"Tung Test 3",0,1,1,0
+169,ASD,0,1,1,0
+170,GGG,0,1,1,0
+171,"Test 01",0,1,1,0
+172,"Tung 9",0,1,1,0
+173,OIOISASJWUYWUYWUW,0,1,1,0
+174,123qwewe,0,1,1,0
+175,Community12aaaa,0,1,1,0
+176,"Tung 10",0,1,1,0
+177,"Tung 8",0,1,1,0
+178,"Tung 11",0,1,1,0
+179,"Tung 12",0,1,1,0
+180,"Tung Test 13",0,1,1,0
+181,ewqeqwe,0,1,1,0
+182,"Tung 14",0,1,1,0
+183,"Tung 16",0,1,1,0
+184,"TOTO TEST COMP",0,1,1,0
+185,"Tung 18",0,1,1,0
+186,"Tung 17",0,1,1,0
+187,"Tung Test 19",0,1,1,0
+188,QATEST2,0,1,1,0
+189,QATEST3,0,1,1,0
+190,"Tung 20",0,1,1,0
+191,FREE,0,1,1,0
+192,Sale,0,1,1,0
+193,"Tung 21",0,1,1,0
+194,Test,0,1,1,0
+195,"rattha commu",0,1,1,1
+196,"Test 123",0,1,1,0
+197,"Tung 22",0,1,1,0
+198,"Tung 23",0,1,1,0
+199,Amazon,0,1,1,0
+200,Amazon2,0,1,1,1
+201,Amazon3,0,1,1,0
+202,Lazy,0,1,1,0
+203,Lazy2,0,1,1,0
+204,"Tung 24",0,1,1,0
+205,"Tung 25",0,1,1,0
+206,"Token plan 32",0,1,1,0
+207,TOTOAABB,0,1,1,0
+208,"Tung Test 1206 01",0,1,1,0
+209,Test1ProCreNo,0,1,1,0
+210,Test11,0,1,1,0
+211,UserNoCommunityG2ProClickOnFW,0,1,1,0
+212,"UserNoCommunityG2ProClickOnTopRight Menu Click on CreateNewCommunity",0,1,1,0
+213,POQQ,0,1,1,0
+214,"UserNoCommunityG2SubClickOnTopRight Menu",0,1,1,0
+215,Oz,0,1,1,0
+216,"Test Account",0,1,1,0
+217,Test022_nk,0,1,1,0
+218,Hello,0,1,1,0
+219,Test0101_nk,0,1,1,0
+220,test02_kkk,0,1,1,0
+221,"Test Rollback",0,1,1,0
+222,"Test Roll Back 2",0,1,1,0
+223,"Test Comm A",0,1,1,0
+224,"Test Comm B",0,1,1,0
+225,"Test Comm C",0,1,1,0
+226,"Test Comm D",0,1,1,0
+227,"Test Comm E",0,1,1,0
+228,COMM1,0,1,1,1
+229,TOPP,0,1,1,0
+230,"Test Comm F",1,1,1,0
+231,"Test Comm G",0,1,1,0
+232,UYT,0,1,1,0
+233,"Test Comm H",0,1,1,0
+234,"Test Comm I",0,1,1,0
+235,"Test Comm J",0,1,1,0
+236,"Test Comm K",1,1,1,0
+237,"Test Comm L",0,1,1,0
+238,"Test Comm M",0,1,1,0
+239,"Test Comm N",0,1,1,0
+240,AOOP,0,1,1,0
+241,OIUQWE,0,1,1,0
+242,PPOS,0,1,1,0
+243,CXZ,0,1,1,0
+244,LOGO,0,1,1,0
+245,"Test Dup A",0,1,1,0
+246,"Test Dup B",0,1,1,0
+247,"Tanika Test",0,1,1,0
+248,"Tanika test entry point",0,1,1,0
+249,"Tanika test entry point 2",0,1,1,0
+250,"test dup c",0,1,1,0
+251,"Tanika test23",0,1,1,0
+252,"test dupp 4",0,1,1,0
+253,asdaxz,0,1,1,0
+254,"Test Dup D",0,1,1,0
+255,"Test Dup E",0,1,1,1
+256,"Tung Test 2606",0,1,1,0
+257,"Hesam 1",0,1,1,0
+258,"TOTOB LOGO",0,1,1,0
+259,"Token plan's 47",0,1,1,0
+260,"Token plan's 48",0,1,1,0
+261,"Test 230713 01",0,1,1,0
+262,Test20230714,0,1,1,0
+263,"Test Ver A",0,1,1,0
+264,Test20230718,0,1,1,0
+265,Test2023071801,0,1,1,0
+266,Test2023071802,0,1,1,0
+267,"Test 20230718 001",0,1,1,0
+268,"Community's 41",0,1,1,1
+269,"Community's 42",0,1,1,0
+270,TestCommu20230721,0,1,1,1
+271,"Community's 43",0,1,1,0
+272,"Community's 44",0,1,1,0
+273,"Community's 45",0,1,1,0
+274,Test15nk,0,1,1,0
+275,"Community's 46",0,1,1,0
+276,"Test Commu 240723",0,1,1,0
+277,"New Token Check Default Color",0,1,1,0
+278,"Test Community 230724 01",0,1,1,0
+279,"Community's 47",0,1,1,0
+280,"Test Commu 230725 01",0,1,1,0
+281,"Community's 48",0,1,1,0
+282,"Community's 49",0,1,1,0
+283,helloworld,0,1,1,0
+284,"test by mhg2",0,1,1,0
+285,"Community's 50",0,1,1,0
+286,"Community's 51",0,1,1,0
+287,"Community's 52",0,1,1,0
+288,"Test Commu 230725 03",0,1,1,0
+289,"Test Commu 230726 01",0,1,1,0
+290,"Community's 53",0,1,1,0
+291,"Community's 54",0,1,1,1
+292,"Community's 57",0,1,1,0
+293,"Tung Test Commu 230727",0,1,1,0
+295,"Community's 58",0,1,1,1
+296,"Community's 59",0,1,1,0
+297,Kawin71,0,1,1,0
+298,"Community's 60",0,1,1,0
+299,"TEST SUB",0,1,1,0
+300,"Test Commu 20230731 01",0,1,1,1
+301,"Community's 61",0,1,1,0
+302,"Anek FreeWifi Company",0,1,1,0
+303,"Community's 62",0,1,1,0
+304,"Community's 63",0,1,1,1
+305,Looknam0201,0,1,1,0
+306,"Community's 64",0,1,1,0
+307,"Community tetette",0,1,1,0
+308,"Test Create Commu 1",0,1,1,0
+309,"text text",0,1,1,0
+310,"text 1",0,1,1,0
+311,"text 2",0,1,1,0
+312,"text 3",1,1,1,0
+313,"text 4",0,1,1,0
+314,"text 5",0,1,1,0
+315,"Community's 65",0,1,1,1
+316,"Test 230802 01",0,1,1,0
+317,"Test 230802 02",0,1,1,0
+318,Looknam1122,0,1,1,0
+319,"Community's 66",0,1,1,0
+320,"Test 230802 03",1,1,1,0
+321,"Community's 67",0,1,1,0
+322,"Token plan's 59",0,1,1,0
+323,"Token plan's 60",0,1,1,0
+324,"Community's 68",0,1,1,0
+325,"Community's 69",0,1,1,0
+326,"Lada Test",0,1,1,0
+327,"Test Community 280803",0,1,1,0
+328,"Test Community 230803 01",0,1,1,0
+329,"text 6",0,1,1,0
+330,testtest1234,0,1,1,0
+331,"Freedom Fashion A Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion Freedom Fashion",0,1,1,1
+332,"Community's 70",0,1,1,1
+333,Testtesttest,0,1,1,0
+334,Test34,0,1,1,0
+335,Emily001tt,1,1,1,0
+336,"Test Community 230804 02",0,1,1,0
+337,TTAAA,0,1,1,0
+338,"Community's 71",0,1,1,0
+339,"Test Community 230804 04",0,1,1,0
+340,"Community's 72",0,1,1,1
+341,"Test Community 20230807 01",0,1,1,0
+342,"Community's 73",0,1,1,0
+343,"Communitys 74",0,1,1,1
+344,PPOP,0,1,1,0
+345,"Shop Community",0,1,1,0
+347,"Tung Acoustic Concert",1,1,1,0
+348,"Reza 3",0,1,1,1
+349,"Community's 75",0,1,1,0
+350,"Community's 76",0,1,1,0
+351,"Test TT",0,1,1,0
+352,CCC,0,1,1,0
+353,Test35NK,0,1,1,0
+355,"Community's XXX",0,1,1,0
+356,"Community's zzz",0,1,1,0
+357,"Community's tttt",0,1,1,0
+358,RezaOrg22,0,1,1,0
+359,"Dog world",0,1,1,0
+360,"New commuuu",0,1,1,0
+361,"new commuu1",0,1,1,0
+362,"New commuu2",0,1,1,0
+363,"Name commmuuu",0,1,1,0
+364,Pimsiri,0,1,1,0
+365,Pimlooknam,0,1,1,0
+366,"Community's 78",0,1,1,0
+367,"Community's 79",0,1,1,1
+368,"Community 1",0,1,1,0
+369,"Community 2",0,1,1,0
+370,"Community 3",0,1,1,0
+371,"Community 4",0,1,1,0
+372,"Community 5",0,1,1,0
+373,"Community 6",0,1,1,0
+374,"Community's 80",0,1,1,0
+375,"Community's 81",0,1,1,0
+376,"Community's 82",0,1,1,1
+377,TESTJOY,0,1,1,0
+378,TESTJOY2,0,1,1,0
+379,TESTJOY3,0,1,1,0
+380,"'Staging' Mystic Valley",1,1,1,1
+381,TestJOY23,0,1,1,0
+382,JTESTK,0,1,1,0
+384,test4444,0,1,1,0
+385,Homie,0,1,1,0
+386,"Community's 83",0,1,1,1
+387,"Community's 84",0,1,1,0
+388,"Tung Punk Concert",0,1,1,0
+389,"Tung Hiphop Concert",0,1,1,0
+390,"Tung Rap Concert",0,1,1,0
+391,"Community's 85",0,1,1,0
+392,"Community's 86",0,1,1,1
+393,"Community's 87",0,1,1,1
+394,"Community's 88",0,1,1,0
+395,"Community's 89",0,1,1,0
+396,"Community's 90",0,1,1,0
+397,Community20,0,1,1,0
+398,"Community's 91",0,1,1,0
+399,"Community's 92",0,1,1,0
+400,"Community's 93",0,1,1,0
+401,Testautoactivate2,0,1,1,0
+402,test9999,0,1,1,0
+403,test888,0,1,1,0
+404,"Tung EDm Concert",0,1,1,0
+405,"Lada Test Test",0,1,1,0
+407,"Community's 94",0,1,1,0
+408,"Community's 95",0,1,1,0
+409,"Community's 96",0,1,1,0
+410,"mhg test 4",0,1,1,0
+412,"Community's 97",0,1,1,0
+413,"No token",0,1,1,0
+414,"Community's 98",0,1,1,0
+417,"Private 1",0,1,1,0
+418,"Not Private",1,1,1,0
+419,"Test 1",0,1,1,0
+420,Community21,0,1,1,0
+421,Community22,0,1,1,0
+422,Community23,0,1,1,0
+423,Community24,0,1,1,0
+424,Community25,0,1,1,0
+425,"Tung KPop Concert",0,1,1,1
+426,"Community's 99",0,1,1,0
+427,"'Staging' FreedomPayy",1,1,1,0
+428,"Test 99",0,1,1,0
+429,TestTTTT,0,1,1,0
+430,"STG FDCF",0,1,1,0
+431,"STG BTZ",0,1,1,0
+432,"STG FDR",1,1,1,0
+433,"Community's 100",0,1,1,0
+434,"Community's 101",0,1,1,1
+435,"Community's 102",0,1,1,1
+436,"Community's 103",1,1,1,0
+437,"Community's 104",0,1,1,0
+438,"Community's 105",0,1,1,1
+439,"Community's 106",0,1,1,0
+440,"Community's 107",0,1,1,1
+441,"Community's 108",0,1,1,1
+442,"Community's 109",0,1,1,0
+443,"Referral Testing",0,1,1,0
+444,"new commu comjai",0,1,1,0
+445,"new commi",0,1,1,0
+446,"new comi2",1,1,1,0
+447,"new comi3",0,1,1,0
+448,"new comi4",0,1,1,0
+449,"new comi5",0,1,1,0
+450,"new comi6",0,1,1,0
+451,"new comi7",0,1,1,0
+452,"new comi8",0,1,1,0
+453,ReferralTesting2,0,1,1,0
+454,Reza1,0,1,1,0
+455,testbusiness,0,1,1,0
+456,"new new coooomuuuu",0,1,1,0
+457,"new new",0,1,1,0
+458,"Test 231123 01",0,1,1,0
+459,"Test 231123 02",0,1,1,0
+460,"Test 231123 03",0,1,1,0
+461,"Community's 110",0,1,1,0
+462,reza4,0,1,1,0
+463,"Community's 111",0,1,1,0
+464,reza5,0,1,1,0
+465,reza6,0,1,1,0
+466,Reza7,0,1,1,0
+467,Reza8,0,1,1,0
+468,Reza9,0,1,1,0
+469,Reza10,0,1,1,0
+470,Reza11,0,1,1,0
+471,Reza13,0,1,1,0
+472,Reza14,1,1,1,0
+473,reza15,0,1,1,0
+474,reza16,0,1,1,0
+475,reza17,0,1,1,0
+476,Reza18,0,1,1,0
+477,reza19,0,1,1,0
+478,reza20,0,1,1,0
+479,reza21,0,1,1,0
+480,Reza22,0,1,1,0
+481,reza23,0,1,1,0
+482,reza24,0,1,1,0
+483,reza25,0,1,1,0
+484,reza26,0,1,1,0
+485,"Community's 112",0,1,1,0
+486,"Community's 113",0,1,1,0
+487,"Community's 114",0,1,1,0
+488,testtoken,0,1,1,0
+489,Rezarrr,0,1,1,0
+490,reza29,0,1,1,0
+491,reza30,0,1,1,0
+492,reza31,0,1,1,0
+493,reza32,0,1,1,0
+494,reza33,0,1,1,0
+495,reza34,0,1,1,0
+496,reza35,0,1,1,0
+497,reza36,0,1,1,0
+498,"Community's 115",0,1,1,1
+499,"Community's 116",0,1,1,1
+500,"Community's 117",0,1,1,0
+501,"test after base url change",0,1,1,0
+502,"Staging Raja Ferry",0,1,1,0
+503,"Name 1",0,1,1,0
+504,"Pat Test",0,1,1,0
+505,"Freedom Fashion X",0,1,1,1
+506,"Freedom Fashion T",0,1,1,0
+507,"Pug lovers",1,1,1,1
+508,"Kawin 132",0,1,1,0
+509,"Community's 118",0,1,1,0
+510,"Community's 119",0,1,1,0
+511,"Community's 120",0,1,1,1
+512,Tgest,0,1,1,0
+513,"Community's 121",0,1,1,1
+514,"Community's 122",0,1,1,0
+515,"Community's 123",0,1,1,1
+516,"Community's 124",0,1,1,0
+517,"Community's 125",0,1,1,0
+518,"Community's 126",0,1,1,0
+519,"Community's 127",0,1,1,0
+520,"Community's 128",0,1,1,0
+521,test131,0,1,1,0
+522,"Ploy test commu",0,1,1,1
+523,"Ploy test community",0,1,1,0
+524,"Community's 1",0,1,1,0
+525,Frame02,0,1,1,1
+526,"J test1",0,1,1,0
+527,"tt NFT activity",0,1,1,1
+528,"STG QAA",0,1,1,1
+529,"STG QAAA",0,1,1,0
+530,"STG QAAAA",0,1,1,0
+531,"FDW Perf Testing",0,0,1,1
+532,"The Continental",0,1,1,1
+533,"Community's 129",0,1,1,0
+534,"Community's 130",0,1,1,1
+535,"navigate dashboard",0,1,1,0
+536,"navigate dashboard2",0,1,1,0
+537,"navigate dashboard3",0,1,1,0
+538,"navigate dashboard4",0,1,1,0
+539,"Community's 131",0,1,1,0
+540,"Community's 132",0,1,1,1
+541,ภาษาไทย,0,1,1,1
+542,"JJ Test1",0,1,1,0
+543,"JJ Test2",0,1,1,0
+544,"JJ Test3",0,1,1,0
+545,"STG QAAAAA",0,1,1,0
+546,"JJ Test4",0,1,1,0
+547,"Community's 133",0,1,1,0
+548,"JJ Test5",0,1,1,0
+549,"JJ Test 6",0,1,1,0
+550,"Moo's Test Community 2",0,1,1,0
+551,"Community's & - à â",0,1,1,0
+552,"Community's 134",0,1,1,0
+553,"Community's 135",0,1,1,0
+554,"test commu",0,1,1,1
+555,"Community's 136",0,1,1,0
+556,"Community's 137",0,1,1,0
+557,"Community's 138",0,1,1,1
+558,"Community's 139",0,1,1,1
+559,"Community's 140",0,1,1,0
+560,"Community's 141",0,1,1,0
+561,"Beach Clean Team",0,1,1,0
+562,"new comi9",0,1,1,0
+563,"Test initial mint of AA wallet",0,1,1,1
+564,"Moo test 3",0,1,1,0
+565,"No token 1",0,1,1,0
+566,"Community's 142",0,1,1,0
+567,"BEACH CLEAN TEAM 2",0,1,1,0
+568,"BEACH CLEAN TEAM 3",0,1,1,0
+569,"BEACH CLEAN TEAM 4",0,1,1,0
+570,"BEACH CLEAN TEAM 5",0,1,1,0
+571,"BEACH CLEAN TEAM 6",0,1,1,0
+572,"BEACH CLEAN TEAM 7",0,1,1,0
+573,"BEACH CLEAN TEAM 8",0,1,1,0
+574,"BEACH CLEAN TEAM 9",0,1,1,0
+575,"CLEAN BEACH TEAM 10",0,1,1,0
+576,"CLEAN BEACH TEAM 11",0,1,1,0
+577,"BEACH CLEAN TEAM 12",0,1,1,0
+578,"New commu 1",1,1,1,0
+579,"CLEAN BEACH TEAM 13",1,1,1,0
+580,"BEACH CLEAN TEAM 14",1,1,1,0
+581,"BEACh CLEAN 15",0,1,1,0
+582,"BEACH CLEAN TEAM 16",0,1,1,0
+583,"INVITE TEST 1",0,1,1,0
+584,"INVITE TEST 2",0,1,1,0
+585,"INVITE TEST 3",0,1,1,0
+586,"INVITE TEST 4",0,1,1,0
+587,"INVITE TEST 5",0,1,1,0
+588,"INVITE TEST 6",0,1,1,0
+589,"Community's 143",0,1,1,0
+590,"Gognumb Industry",0,1,1,0
+591,"Chai Testing",0,1,1,0
+592,"Community's 144",0,1,1,0
+593,"Test Amity Integration",0,1,1,0
+594,"Test Amity Integration 1",0,1,1,0
+595,"Test Amity Integration 3",0,1,1,1
+596,"Community's 145",0,1,1,0
+597,"Community's 146",0,1,1,0
+598,"Test Amity Integration 4",0,1,1,0
+599,"Community's 147",0,1,1,0
+600,"Community's 148",0,1,1,0
+601,Bonus,0,1,1,0
+602,"Community's 149",0,1,1,1
+603,"Amity integration 6",1,1,1,0
+604,Logojkj,0,1,1,0
+605,KasraTest,0,1,1,0
+606,"Community's 150",0,1,1,1
+607,Bobo,0,1,1,0
+608,Bobo2,0,1,1,0
+609,"Bored Town Staging",1,1,1,0
+610,"STG NongNew",0,1,1,1
+611,Bobo3,0,1,1,0
+612,"AN Test Payment Ramp",0,1,1,0
+613,"AN test payment ramp 2",0,1,1,0
+614,"AN test payment ramp 3",0,1,1,0
+615,"Bojji Commu",0,1,1,0
+616,Bobo4,0,1,1,0
+617,Bobo5,0,1,1,0
+618,Bobo6,0,1,1,0
+619,Bobo7,0,1,1,0
+620,Bobo8,0,1,1,0
+621,"Bobo9 - Private",1,1,1,0
+622,Bobo10,0,1,1,0
+623,Bobo11,0,1,1,0
+624,Bobo12,0,1,1,0
+625,Bobo13,0,1,1,0
+626,Bobo14,0,1,1,0
+627,"Bobo KYC - TH",0,1,1,0
+628,"Bobo KYC - ARGENTINA",1,1,1,0
+629,asfgasf,0,1,1,0
+630,asgaga,0,1,1,0
+631,test2512,0,1,1,0
+632,asgdadgasg,0,1,1,0
+633,asgag,0,1,1,0
+634,"Test Win",0,1,1,0
+635,"Test Win 2",0,1,1,0
+636,"Test Win 3",0,1,1,0
+637,"Test win 4",0,1,1,0
+638,"pop test 1",0,1,1,0
+639,"pop test 2",0,1,1,0
+640,"pop test3",0,1,1,0
+641,Bobo15,0,1,1,0
+642,"Test win 5",0,1,1,0
+643,"Staging without Signature",0,1,1,0
+644,Bobo16,0,1,1,0
+645,Bobo17,0,1,1,0
+646,Bobo18,0,1,1,0
+647,Kawin73Wallet,0,1,1,0
+648,"win test",0,1,1,0
+649,Bobo20,0,1,1,0
+650,Bobo21,0,1,1,0
+651,Bobo22,0,1,1,0
+652,tt,0,1,1,0
+653,"Community's 151",0,1,1,0
+654,"Community's 152",0,1,1,0
+655,"Community's 153",0,1,1,0
+656,"Bojji Commu 2",1,1,1,0
+657,"Bobo KYC - Australia",0,1,1,0
+658,"Bobo KYC - KOREA",0,1,1,0
+659,"Bobo KYC - KOREA2",0,1,1,0
+660,"Bobo KYC - KOREA3",0,1,1,0
+661,Test01025,0,1,1,0
+662,"Bobo KYC - KOREA4",1,1,1,0
+663,Bobo24,0,1,1,0
+664,"Bobo KYC - ARGENTINA2",0,1,1,0
+665,"TT WALLET",0,1,1,0
+666,"YIZ Entertainment",0,1,1,0
+667,"Tom Yum Thai",0,1,1,0
+668,"Seen Space",1,1,1,0
+669,"Bobo KYC - ARGENTINA3",1,1,1,0
+670,TomYumThai,0,1,1,1
+671,"TomYumThai Staging",0,1,1,0
+672,"YIZ Entertainment Staging",1,1,1,0
+674,"QA test post v2",0,1,1,0
+675,"Community's 154",0,1,1,1
+676,"Bobo 23",0,1,1,0
+677,"Bobo 24",0,1,1,0
+678,"Bobo 25",0,1,1,0
+679,"Bobo 30",0,1,1,0
+680,"Community's 155",1,1,1,0
+681,"Gognumb TOTOB IwvsInwZa",0,1,0,0
+682,"Gognumb TOTOB IwvsInwZa 2",0,1,0,0
+683,"Bobo 31",1,1,1,0
+684,"Bobo 32",0,1,1,0
+685,"Bobo 33",0,1,1,0
+686,"Bobo 34",0,1,1,0
+687,Community29,0,1,1,0
+688,Community30,0,1,1,0
+689,Community31,0,1,1,0
+690,"Test Gognumb COmmu",0,1,0,0
+691,Kawin92,0,1,1,0
+692,Community32,0,1,1,0
+693,Community33,0,1,1,0
+694,Community34,0,1,1,0
+695,Community35,0,1,1,0
+696,"Test Logo 1",0,1,1,0
+697,"s15 community",0,1,1,1
+698,"s15-2 community",0,1,1,1
+699,"community features",0,1,1,0
+700,"Community's 156",0,1,1,0
+701,"Community's 157",1,1,1,0
+702,"Covest Labs",1,1,1,0
+703,Test2241,0,1,1,0
+704,Test123662,0,1,1,0
+705,mycommiunity,0,1,1,1
+706,136g1qw,0,1,1,0
+707,"new commu no phone number",0,1,1,0
+708,"Community's 158",0,1,1,0
+709,"Community's 159",0,1,1,0
+710,mycommiunity2,0,1,1,0
+711,"Test CreateAA",0,1,0,0
+712,"Test CreateAAc",0,1,0,0
+713,mycm3,0,1,0,0
+714,mycm4,0,1,0,0
+715,newcommunity2,0,1,0,0
+716,NedaCommunity,0,1,0,0
+717,mycm7,0,1,0,0
+718,mycommiunity6666,0,1,0,0
+719,mycm6,1,1,0,0
+720,mynewcommunity3,0,1,0,1
+721,mynewcommunity4,0,1,1,1
+722,"Win test 2",0,1,0,0
+723,Test11531,0,1,0,0
+724,aetat,1,1,0,0
+725,aaaaaaadsdasd,0,1,0,1
+726,asdasdasd,0,1,0,0
+727,"'Staging' Test USDT",0,1,0,0
+728,"Gog Test Community",0,1,0,0
+729,"QA private",0,1,0,0
+730,"Test Man Tribe",0,1,0,0
+731,"Trendy Boys Club",0,1,0,0
+732,"Test Man Tribe 2",0,1,0,0
+733,"Rockman Tournament Hub",0,1,0,0
+734,"Joyful Connection Crew",0,1,0,0
+735,"Fit Bros Alliance",1,1,0,0
+736,"Dog Care Crew",1,1,0,0
+737,"Digital World",1,1,0,0
+738,test-contact-phone-num,0,1,0,0
+739,test-contact-phone,0,1,0,0
+740,"Test Create 2806",0,1,0,0
+741,"Test Create 2806 02",0,1,0,0
+742,test-contact-phone2,0,1,0,0
+743,"Test 280603",0,1,0,0
+744,"Test 280604",0,1,0,0
+745,"New mumu",0,1,0,0
+746,"New mumu1",0,1,0,0
+747,"New mumu2",0,1,0,0
+748,"New mumu3",0,1,0,0
+749,Test-Arash,0,1,0,0
+750,myCommunity,0,1,0,0
+751,mynewcm,1,1,0,0
+752,"Pet Pals Hub",1,1,0,0
+753,mynewcmmm,0,1,0,0
+754,"Bojji Commu 3",0,1,0,0
+755,"Test Payment",0,1,0,0
+756,"Bobo test125",0,1,0,0
+757,TYest135,1,1,0,0
+758,eayay,0,1,0,0
+759,"Cyber Pup Tech Hub",0,1,0,0
+760,aetadtat,0,1,0,0
+761,asrdasrd,0,1,0,0
+762,astyaty,0,1,0,0
+763,"Herbal Bliss Tribe",0,1,0,0
+764,"Incognito Insight Circle",1,1,0,0
+765,"Flat Earth Unite",0,1,0,0
+766,"Picazzo Passion Community",0,1,0,0
+767,"SETUP WALLET",0,1,0,0
+768,"SETUP Wallet2",0,1,0,0
+769,"Eve's Commu",1,1,0,0
+770,"Turbo Turtle Tribe",0,1,0,0
+771,"Bojji Commu 4",0,1,0,0
+772,"Bojji Commu 5",0,1,0,0
+773,"Eve test commu",0,1,0,0
+774,Booooo123,0,1,0,0
+775,"Freedom Fantasy Football",1,1,0,1
+776,"Tung Trading",1,1,1,0
+777,"Discover Thailand",1,1,1,1
+778,Test0001252,0,1,0,0
+779,3161twfqw,0,1,0,0
+780,sadtsqt,0,1,0,0
+781,asfsaf,0,1,0,0
+782,"Pat Test Staging",0,1,0,0
+783,"Patty Test 12345",0,1,0,0
+784,Test3261,0,1,0,0
+785,Test0100,0,1,0,0
+786,Test0101,0,1,0,0
+787,Test0102,1,1,0,0
+788,"Tech Creativity Tribe",0,1,0,0
+789,"Tech Connect Squad",1,1,0,0
+790,mycommiunity6,0,1,0,0
+791,"Visionary Fashion Collective",1,1,1,1
+792,"Gaming Pro League",0,1,0,1
+793,"QA reached limit",0,1,0,1
+794,"Gaming Test Lab",1,1,0,0
+795,"QA private v2",0,1,0,1
+796,"Fur Family Fun",0,1,0,0
+797,"Level Up KYC Warriors",0,1,0,0
+798,"Fairway Friends",1,1,0,0
+799,"Wake Wave Wizards",1,1,0,0
+800,"Guitar Crafters Collective",1,1,0,0
+801,"Fat Cat Gamer Collective",0,1,0,0
+802,"Virtual Craft Crew",0,1,0,0
+803,"Money Mastery Group",1,1,0,0
+804,"Escape Experts United",0,1,0,1
+805,"Gamer Artistry Alliance",1,1,1,1
+806,"Creative Fusion Network",0,1,0,0
+807,"LN testing11",0,1,0,0
+808,"Win test 3",0,1,0,0
+809,"Win test 4",1,1,0,0
+810,"Fitness Fusion",1,1,0,0
+811,"Mocha Travel Collective",0,1,0,0
+812,"Test Fun Zone",0,1,0,0
+813,"Trendy Testers Live",0,1,0,0
+814,"Guest Experience Collective",0,1,0,0
+815,"Finance Fusion Group",1,1,0,0
+816,"Tech Trend Tribe",1,1,0,0
+817,"Wanderlust Artisans",0,1,0,0
+818,"Staging CBI",0,1,0,0
+819,"Pumpkin Passion People",1,1,0,0
+820,"Thai Travel Hub",0,1,0,0
+821,"Gather Together Tribe",1,1,0,0
+822,"Win test 5",0,1,0,0
+823,"Gaming Test",0,1,0,0
+824,"Quantum Minds Hub",0,1,0,0
+825,"Ape Academy Alliance",0,1,0,1
+826,"Bark & Bond Society",0,1,0,0
+827,"Skill Growth Society",1,1,0,1
+828,DNTLN,0,1,0,0
+829,"TechFit Alliance 2",1,1,0,1
+830,"Paws n' Connections",1,1,0,0
+831,"Bonding Beyond Borders",0,1,0,0
+832,"Shabu Foodie Fiesta",0,1,1,0
+833,"TestStyle Inspiration Squad",0,1,0,0
+834,"Runway Success Collective",0,1,0,0
+835,"Gamer Alliance",1,1,0,1
+836,"Film Fanatics Club",0,1,0,0
+837,"Testers Unite Now",0,1,0,0
+838,"SPIP Tech Tribe",0,1,0,0
+839,"Domestic Bliss Brigade",0,1,0,0
+840,"eSports Nexus",0,1,0,0
+841,"Anek Test FDM/FDS",0,1,0,0
+842,asfsaf13513twf,0,1,0,0
+843,"Glam Gurus United",0,1,0,0
+844,"Glowing Skin Circle",0,1,0,0
+845,"ArtTech Connect",0,1,0,0
+846,"Fantasy Quest Clan",1,1,0,0
+847,"Academy Alliance Group",0,1,0,0
+848,x13r13r,0,1,0,0
+849,"Thrilling x13r1r Collective",1,1,0,0
+850,3vy434q,1,1,0,0
+851,"Planet Protectors Club",0,1,0,0
+852,"Pixel Pets Society",0,1,0,0
+853,"Creative Water Tribe",0,1,0,0
+854,"Gamers United",0,1,0,0
+855,53vyqqy,0,1,0,0
+856,"Anek Pet Test1",0,1,0,0
+857,"Bojji Test Tournament",0,1,0,0
+858,"Active Event Test",0,1,0,0
+859,"BojjiBuzz Society",0,1,0,0
+860,"BojjiBliss Collective",1,1,0,0
+861,"Bojji Fun Zone",0,1,0,0
+862,AAA,0,1,0,0
+863,"Creative Tech Fusion",0,1,0,0
+864,"Anek ทดสอบภาษาไทย1",0,1,0,0
+865,31g31gv,0,1,0,0
+866,"Cinemania Hub",0,1,0,1
+867,"Digital Marketing Hub",0,1,1,0
+868,"QA Innovation Hub",1,1,0,0
+869,"Glow Getter Group",1,1,0,1
+870,"Adventure LN Hub",0,1,1,1
+871,"Nature Trail Tribe",1,1,0,0
+872,"Shiba Fun Forge",1,1,0,0
+873,"Pure Matcha Fusion",0,1,0,1
+874,"Run Wild Clan",0,1,0,0
+875,"Dive Adventure Tribe",0,1,0,0
+876,"Testers Unite Events",1,1,0,0
+877,"Moon Dance Party",0,1,0,0
+878,"Moon Pub Tribe",0,1,0,0
+879,"Baan Unrak Foundation",0,1,0,0
+880,"Sea Breeze Yogis",0,1,0,0
+881,"Fur Fun Fest",0,0,0,0
+882,"Pawsitive Life Circle",0,1,0,0
+883,"TubeFest Collective",0,1,0,0
+884,"Tattooed Style Co.",0,1,0,0
+885,"Tomodachii Style Tribe",0,1,0,0
+886,"Melody Makers Club",0,1,0,0
+887,"Creativity Spark Event",0,1,0,0
+888,"FDW Automation testing",0,1,0,1
+889,"test space & symbol",0,1,0,0
+890,"Janitor Pet Care Crew",0,1,0,0
+891,"test2 space & symbol",0,1,0,0
+892,"test3 space & symbol",0,1,0,0
+893,"test4 space & symbol",0,1,0,0
+894,42h2h52j,0,1,0,0
+895,popcafe,0,1,0,0
+896,"Remote Tech Mastery",0,1,0,0
+897,"Rock Jamz Unity",0,1,0,0
+898,"Moo Deng Caring Hearts",0,1,1,0
+899,Ppt,0,1,0,0
+900,"Film Fan Connection",0,1,0,0
+901,"Wanderlust Gatherings",0,1,0,0
+902,"Test Arena Challenge",0,1,0,0
+903,"Pop Food",0,1,0,0
+904,"Sports Challenge Clan",0,1,0,0
+905,HealthDrive,0,1,0,0
+906,"Family Bliss Hub",0,1,0,0
+907,"Destination Dreamers Group",0,1,0,0
+908,"Test Ramp",0,1,0,0
+909,"Guitar Style Collective",0,1,0,0
+910,"Fit Fun Zone",0,1,0,0
+911,"Plant Variety Community",0,1,0,1
+912,"Nature Ninjas",0,1,0,0
+913,"Finance Fusion Society",0,1,0,0
+914,"Gear Up Gamers",0,1,0,0
+915,"Movie Magic Community",0,1,0,1
+916,"Fashion Fusion Forum",0,1,0,1
+917,"Creative Boundaries Collective",0,1,0,0
+918,"Infinite Horizons Clan",0,1,0,0
+919,"SingStyle Hub",0,1,0,0
+920,"Nightlife Game Crew",0,1,0,0
+921,"Yummy Moment Makers",0,1,0,0
+922,"Me my Own 3",0,1,0,0
+923,"Discover Thailand Web3 Edition",0,1,0,0
+924,"Ceylon Team",0,1,0,0
+925,BitazzaTH_Staging,0,1,0,0
+926,"Alpha Tester",0,1,0,0
+927,"Creative Fusion Hub",0,1,0,0
+928,SaTurn,0,1,0,1
+929,"Skin Dream Team",0,1,0,0
+930,"Chic Bag Circle",0,1,0,0
+931,"Success Hive Network",0,1,0,0
+932,"Pop Fashion Design Hub",0,1,0,0
+933,"Precision Test Forum",0,1,0,0
+934,"Moto Thrive Hub",0,1,0,0
+935,"Code Innovation Hub",0,1,0,0
+936,"Staging Freedom Pay 2",0,1,0,0
+937,"TastyTales Network",0,1,0,0
+938,"Fashion Boost Empower",0,1,0,0
+939,"Collaborate & Create",0,1,0,0
+940,"Cinema Love Club",0,0,0,0
+941,"edited Film Magic Society",0,1,1,1
+942,"ICE HOUSE by Bangkok Ice Baths",1,1,1,1
+943,J-MAT,0,1,1,1
+944,"Sabai Run Club Bangkok",1,1,1,1
+945,"Tech Tomorrow Tribe",0,1,0,1
+946,FUSE,0,1,0,0
+947,"Domination League Hub",0,1,0,0
+948,"TeST 012",0,1,0,0
+949,"TeST 0123",0,1,0,0
+950,"TeST 01234",0,1,0,0
+951,"Topgolf Thailand",0,1,0,0
+952,"Tech Team Alliance",0,1,0,0
+953,"Eco-friendly Living",0,1,0,1
+954,"Cybersecurity Forum",0,1,0,0
+955,"Pet Lovers Network",0,1,0,1
+956,"Green Thumb Society",0,1,0,0
+957,"Young Professionals",0,1,0,0
+958,"Tech Innovators Hub",0,1,0,0
+959,"Global Foodies",0,1,0,0
+960,"Eco Innovators",0,1,0,0
+961,"History Buffs",0,1,0,0
+962,"Virtual Concert Goers",0,1,0,0
+963,"Global Affairs Discussion",0,1,0,0
+964,"Beginner Investors",0,1,0,0
+965,"Mystery Book Club",0,1,0,0
+966,"STEM Education Network",0,1,0,0
+967,"Cultural Heritage",0,1,0,0
+968,"Public Speaking Forum",0,1,0,0
+969,"Retirement Planning",0,1,0,0
+970,"Fitness Freaks",0,1,0,0
+971,"Wildlife Conservation",0,1,0,0
+972,"Travel Hacking",0,1,0,0
+973,"Future Mobility",0,1,0,0
+974,"Indie Films Hub",0,1,0,0
+975,"Women in Tech",0,1,0,0
+976,"Language Exchange",0,1,0,0
+977,"Reality TV Fans",0,1,0,0
+978,"Clean Oceans Initiative",0,1,0,0
+979,"Organic Farming",0,1,0,0
+980,"Start-Up Connect",0,1,0,0
+981,"Mental Health Support",0,1,0,0
+982,"Amateur Astronomy",0,1,0,0
+983,"Gadget Enthusiasts",0,1,0,0
+984,"Scrapbooking Circle",0,1,0,0
+985,"Historical Fiction Lovers",0,1,0,0
+986,"Freelancers Hub",0,1,0,0
+987,"Pottery & Ceramics",0,1,0,0
+988,"Vintage Collectibles",0,1,0,0
+989,"Chess Enthusiasts",0,1,0,0
+990,"Cinephile Collective",0,1,0,0
+991,"Urban Explorers",0,1,0,0
+992,"Real Estate Advice",1,1,0,0
+993,"Smart Home Enthusiasts",0,1,0,0
+994,"Space Tech Watch",0,1,0,0
+995,"Biohacking Basics",0,1,0,0
+996,"Documentary Club",0,1,0,0
+997,"Anime Addicts",0,1,0,1
+998,"Drama Series Devotees",0,1,0,0
+999,"Yoga and Meditation",0,1,0,0
+1000,"Urban Cyclists",0,1,0,0
+1001,"Sustainable Fashionistas",0,1,0,0
+1002,"Model Trains Collectors",0,1,0,0
+1003,"Homebrewing Beer",1,1,0,0
+1004,"Digital Art Creators",0,1,0,0
+1005,"Machine Learning for Beginners",0,1,0,0
+1006,"Philosophy Debates",0,1,0,0
+1007,"Math Puzzles and Brain Teasers",0,1,0,0
+1008,"Cryptocurrency Trends",0,1,0,0
+1009,"Young Entrepreneurs",0,1,0,0
+1010,"Wealth Building Basics",0,1,0,0
+1011,"City Planners",0,1,0,0
+1012,"Renewable Energy Innovations",0,1,0,0
+1013,"Plastic-Free Advocates",0,1,0,0
+1014,"Film Photography Enthusiasts",0,1,0,0
+1015,"Book Exchange Club",0,1,0,0
+1016,"World Music Appreciators",0,1,0,1
+1017,"Data Science Network",0,1,0,1
+1018,"Digital Nomads",0,1,0,1
+1019,"Nonprofit Leaders Forum",0,1,0,0
+1020,"Bird Watching",0,1,0,1
+1021,"Fantasy Sports Leagues",0,1,0,0
+1022,"Virtual Reality Gaming",0,1,0,0
+1023,"AI Ethics",0,1,0,0
+1024,Nanotechnology,0,1,0,0
+1025,"Film Critics Circle",0,1,0,0
+1026,"Digital Art Trends",0,1,0,0
+1027,"Vegan Lifestyle",0,1,0,0
+1028,"Mindfulness & Meditation",0,1,0,0
+1029,"Digital Photography",0,1,0,0
+1030,"Craft Beer Brewing",0,1,0,0
+1031,"Coding Bootcamps",0,1,0,0
+1032,"Ancient Civilizations",0,1,0,0
+1033,"Stock Market Analysis",0,1,0,0
+1034,"Budget Travel Hacks",0,1,0,0
+1035,"Green Architecture",0,1,0,0
+1036,"Ocean Conservation",0,1,0,0
+1037,"Poetry Society",0,1,0,0
+1038,"Local History",0,1,0,0
+1039,"Career Change Strategies",0,1,0,0
+1040,"Startup Incubators",0,1,0,0
+1041,"Astrology Enthusiasts",0,1,0,0
+1042,"Gourmet Cooking",0,1,0,0
+1043,"Tether Stablecoins",0,1,0,0
+1044,"Vivi test community",0,1,0,0
+1045,"Vivi stg community",0,1,0,0
+1046,ONYX,0,1,0,0
+1047,"Bangkok Community Help Foundation",0,1,0,0
+1048,"LKR Testing 1",0,1,0,0
+1049,"Skills Exchange Hub",0,1,0,0
+1050,"Marketing eCommerce Hub",0,1,0,0
+1051,"Tech Tribe Network",0,1,0,0
+1052,"Staging Gadget Land",0,1,0,0
+1053,"Robot Innovation Hub",0,1,0,0
+1054,"Blockchain Pioneer Alliance",0,1,0,0
+1055,"TEST Nightlife Explorers",0,1,0,0
+1056,"Freedom Card",0,1,0,1
+1057,"Swing Masters Club",0,1,0,0
+1058,"Smash Squad",0,1,0,0
+1059,"Cherean Thailand",0,1,0,0
+1060,"Tech Trend Titans",0,1,0,0
+1061,"Brew Wellness Club",0,1,0,0
+1062,"Brew Run Club",0,1,1,1
+1063,"Pretty Pet Tips",0,1,0,0
+1064,Cherean,0,1,0,0
+1065,"Trendy Treasure Seekers",0,1,0,0
+1066,"Rock Style Trends",0,1,0,0
+1067,"Home Harmony Hub",0,1,0,0
+1068,"Collab Gaming Tech",0,1,0,0
+1069,"Key Nightlife Vibes",0,1,0,0
+1070,"Accounting Power Circle",1,1,0,0
+1071,"Invest Wise Community",1,1,0,0
+1072,"Healthy Together",0,1,1,0
+1073,"Foodie Fusion Forum",0,1,0,0
+1074,"Ant Cave",0,1,1,1
+1075,"LKR Com",0,1,0,0
+1076,"Outdoor activity commu",0,1,0,0
+1077,"TalkLingo Lounge",1,1,0,0
+1078,"Siriraj Blood Donation Center",0,1,0,1
+1079,"Flow House Bangkok",0,1,1,1
+1080,Punspace,0,1,1,1
+1081,"Crypto Coff",0,1,1,1
+1082,"Phuket Coffee Lab",0,1,1,1
+1083,"Circle Cafe",0,1,1,1
+1084,"Casa Lapin",0,1,0,1
+1085,"XAUusd Traders CAFE",1,1,0,1
+1086,"SOC School of Ceramics by Pottery Clay",0,1,0,1
+1087,"Escape Bangkok",0,1,0,1
+1088,"Sumsub x Freedom Console",0,1,0,0
+1089,SumsubFreedomConsole,0,1,0,0
+1090,"test metaverse profile",0,1,0,1
+1091,"tts only",0,1,0,1
+1092,ksana,0,1,0,1
+1093,"TeST TOTO 38",0,1,0,0
+1094,"Only me here",1,1,0,1
+1095,CityFresh,0,1,0,1
+1096,"Yunomori Onsen & Spa",0,1,0,1
+1097,"Seven Suns",0,1,0,1
+1098,"Bella Goose Thailand",0,1,0,1
+1099,MrBeast,0,1,1,1
+1100,DogyDogdog,0,1,0,0
+1101,DogyDogdog2462,1,1,0,0
+1102,"I can fly Aerial Studio",0,1,0,1
+1103,"Yellow Lane",1,1,0,0
+1104,AstaEats,0,1,0,0
+1105,Strongkiddo,0,1,0,1
+1106,"Live Music Haven 🎶✨",0,1,0,0
+1107,"Style Collective Hub",0,1,0,0
+1108,"Bojji Style Hub",0,1,0,0
+1109,"IDR Test Commu",0,1,0,0
+1110,"Holey Mothership",0,1,1,1
+1111,"BOONROD GOLF TOTAL",0,1,0,0
+1112,"BOON ROD GOLF TOTAL",0,1,0,1
+1113,"Test KYC Connect",0,1,0,0
+1114,"Empowerment Hub",0,1,0,0
+1115,"QA convert campaign A",0,1,0,0
+1116,"QA convert campaign B",0,1,0,0
+1117,"HANDYMAN AUTO",0,1,1,1
+1118,"Palette Art Space",0,1,1,1
+1119,"TrendFit Collective",0,1,0,0
+1120,"Level Up Feast Club",0,1,0,0
+1121,"Freedom Planets",0,1,0,0
+1122,"Community Test Improvement",0,1,0,0
+1123,"Shane Clinic Community",0,1,1,1
+1124,"Dine & Share Circle",0,1,0,0
+1125,"Strategy Masters Network",0,1,0,0
+1126,"Vibrant Transit Hub",0,1,0,0
+1127,"CreativeConnect YT Circle",0,1,0,0
+1128,"Harmony Home Hacks",0,1,0,1
+1129,"Radiant Fitness Collective",0,1,0,0
+1130,"Remote Tech Collective",0,1,0,0
+1131,"Linguistic Journeys",0,1,0,0
+1132,"Eventful Memories Network",0,1,0,0
+1133,"Student Sparks Collective",0,1,0,0
+1134,"Blueprint Livehouse",0,1,0,1
+1135,"TOCHIO DONUT",0,1,1,1
+1136,"Remote Service Collaborate",0,1,0,0
+1137,"Gadget Gardening Hub",0,1,0,0
+1138,"qa multiple token testing",0,1,0,0
+1139,"Hunter's Den",0,1,0,0
+1140,oho,0,1,0,0
+1141,"Gamer Guild",0,1,0,0
+1142,"EcoFashion Clan",0,1,0,0
+1143,"Tress Talk Tribe",0,1,0,0
+1144,"Fdw Testers Hub",0,1,0,0
+1145,"Film Buffs Collective",0,1,0,0
+1146,"Sport Style Squad",0,1,0,0
+1147,"Tech Test Hub",0,1,0,0
+1148,"Pooch Grooming Hub",0,1,0,0
+1149,"test du",0,1,0,0
+1150,"Appliance Allies Network",0,1,0,0
+1151,"Tech Solutions Circle",0,1,0,0
+1152,"Wellness Warriors",0,1,0,0
+1153,"Money Monday",0,1,0,0
+1154,"Youth Beauty Nest",0,1,0,0
+1155,"ROBOTO not font",0,1,0,0
+1156,Fooooood,0,1,0,0
+1157,"Shining Stars Kids",0,1,0,0
+1158,"Joyful Kids Clan",0,1,0,0
+1159,"Melody Dining Collective",0,1,0,0
+1160,"Household Hive",0,1,0,0
+1161,"Love Pet Care Community",0,1,0,0
+1162,"Blossom Beauty Tribe",0,1,0,0
+1163,"Tokenizer Hub",0,1,0,0
+1164,"Fit UHT Tribe",0,1,0,0
+1165,"Foodie Network Hub",0,1,0,0
+1166,"Harley Riders Network",0,1,0,0
+1167,"Healthy Kid Crew",0,1,0,0
+1168,"Online Growth Guild",0,1,0,0
+1169,"Baked By Apple",1,1,0,1
+1170,"QA Strategy Squad",0,1,0,0
+1171,"Custom Chopper Clan",0,1,0,0
+1172,"Tianzhi sweet wisdom",0,1,1,1
+1173,"N all alone",0,1,0,0
+1174,"Fit Trainer Tribe",0,1,0,0
+1175,"Movie Buffs Collective",0,1,0,0
+1176,"Anime & Manga Zone",0,1,0,0
+1177,"Please do not post on this community",0,1,0,1
+1178,"Hike & Discover Crew",0,1,0,0
+1179,"Nightlife Memories Collective",0,1,0,1
+1180,"Sport Success Hub",0,1,0,0
+1181,"Culinary Connection Crew",0,1,0,0
+1182,BiteBar.BKK,0,1,0,1
+1183,"Marketing Mavericks Hub",0,1,0,0
+1184,"Service Stars United",0,1,0,0
+1185,"Happy Hen Hangout",0,1,0,0
+1186,"Collectible Glass Clan",0,1,0,0
+1187,Smiski,0,1,0,0
+1188,"Smash Masters Community",0,1,0,0
+1189,"Finance eCommerce Hub",0,1,0,0
+1190,"Old Phone Collectors United",0,1,0,0
+1191,"Level Up Friends",0,1,0,0
+1192,"Nurture Nook Circle",0,1,0,0
+1193,"Rev Up Qa",0,1,0,0
+1194,"Game Dev Innovators",0,1,0,0
+1195,"Camera Collectors United",0,1,0,0
+1196,"Shell to Plate Community",0,1,0,0
+1197,"Sport Chic Collective",0,1,0,0
+1198,"Game Dev Collective",0,1,0,0
+1199,"Read and Rise Club",0,1,0,0
+1200,"eCommerce Sales Tribe",0,1,0,0
+1201,"Chic Chit Chat Crew",0,1,0,0
+1202,"Doll Care Hub",0,1,0,0
+1203,"Green Commute",0,1,0,0
+1204,"Google Chic Clan",0,1,0,0
+1205,"Tech Savvy Lodgings",0,1,0,0
+1206,"MAYA Music Festival Pvt Ltd",0,1,0,1
+1207,"Tt fdw",0,1,0,0
+1208,"Tt create commu thru direct responsive",0,1,0,0
+1209,"Evo Crew Collective",0,1,0,0
+1210,"Tech Impact Innovate",0,1,0,0
+1211,Ddff,0,1,0,0
+1212,Hurrytoeatrunclub,0,1,1,1
+1213,"Electron Innovate Test",0,1,0,0
+1214,"Movie Night Gang",0,1,0,0
+1215,"outdoor activity EDIT event2",0,1,0,0
+1216,"Lido Connect",0,1,1,1
+1217,"BlueS Cafe",0,1,0,0
+1218,asklaksa,0,1,0,0
+1219,"Perfectus Dev Team",0,1,0,1
+1220,"Tech Explorers Hub",0,1,0,0
+1221,"Teach you & Child",0,1,0,0
+1222,"Chic Confidence Clan",0,1,0,0
+1223,"Trainer Tech Swap",0,1,0,0
+1224,"Glamour Fusion Guild",0,1,0,0
+1225,"LKR community",0,1,0,0
+1226,"FitLife Champions",0,1,0,0
+1227,"Unity Hub",1,1,1,1
+1228,"The Adoptable Puppy Cafe",0,1,1,1
+1229,poi,0,1,0,0
+1230,"FitPro Connects",0,1,0,0
+1231,v13,0,1,0,0
+1232,Drink's,0,1,0,0
+1233,"GearHead Gang",0,1,0,0
+1234,"Pic Prime Inspire",0,1,0,0
+1235,Pets,0,1,0,0
+1236,"PayTech Empowerment Hub",0,1,0,0
+1237,FuCommunity,0,1,0,1
+1238,"Chic Stripe Collective",0,1,0,0
+1239,"Paws Play Together",0,1,0,0
+1240,GGarden,0,1,0,0
+1241,"Fitness Fashion Lab",0,1,0,0
+1242,"Storytelling Film Hub",1,1,1,0
+1243,"edited Pet Pal Pals",1,1,1,0
+1244,"GameBuddies United",0,1,0,0
+1245,"TeamBoost Network",0,1,0,0
+1246,"Bojji Food Fusion Club",0,1,0,0
+1247,"Sparkle Testers Hub",0,1,0,0
+1248,"Monstor Skills Hub",0,1,0,0
+1249,"Test Dash - T",0,1,0,0
+1250,"Clean Test Crew",0,1,0,0
+1251,"9 Inches Fried Banana",1,1,0,0
+1252,"Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry s standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survi",0,1,0,0
+1253,Baggy,0,1,0,0
+1254,"Book Buffs Club",0,1,0,1
+1255,"Dessert Dream Team",0,1,0,0
+1256,"Test Service Collective",0,1,0,0
+1257,"Explore & Share Collective",0,1,1,0
+1258,"The AI Service Lab",0,1,0,0
+1259,"AI Wealth Collective",0,1,0,0
+1260,"Trend Tribe Network",1,1,1,1
+1261,"Pet Pals Network",0,1,0,0
+1262,"Tomato Club",0,1,0,0
+1263,Puppy,0,1,0,0
+1264,Smiley,0,1,0,0
+1265,Kuma,0,1,0,0
+1266,"Crypto test",0,1,0,0
+1267,"Celestial Circle",0,1,0,1
+1268,"The 12th Man Hub",0,1,0,1
+1269,"Hacksmiths United",0,1,0,1
+1270,"Realm Raiders",0,1,0,1
+1271,TechForge,0,1,0,1
+1272,"Neural Pulse",0,1,0,1
+1273,"Timelines Revisited",0,1,0,1
+1274,"Urban Legends",0,1,0,1
+1275,"Remote Crew",0,1,0,0
+1276,"Book lover",0,1,0,0
+1277,teste,0,1,0,0
+1278,"Only pay as Tolen",0,1,0,0
+1279,"Test Estonia",0,1,0,0
+1280,Me,0,1,0,0
+1281,"Nerd Network Hub",0,1,0,0
+1282,Smile,0,1,0,0
+1283,GoodGoods,0,1,0,0
+1284,"Water Wellness Zone",0,1,0,0
+1285,"I am Groot",0,1,0,0
+1286,"Tech Trend Explorers",0,1,0,0
+1287,"Fashion Vibes Hub",0,1,0,0
+1288,Rich,0,1,0,0
+1289,"Dont Thai to me",0,1,0,0
+1290,"Investing Mentors - Investing for Beginners",0,1,0,1
+1291,"History Buffs - History Enthusiasts",0,1,0,1
+1292,"F1 Fans Thailand",0,1,0,1
+1293,"Cafes - Restaurants - Bars - Accommodation - Travel",0,1,0,1
+1294,"Delicious Restaurant Reviews",0,1,0,1
+1295,"Funny Memes",0,1,0,1
+1296,"Pokemon GO Thailand",0,1,0,1
+1297,"Bitcoin Thai Community",0,1,0,1
+1298,"Bangkok Run Club",0,1,0,1
+1299,"One Piece Fans Thailand",0,1,0,1
+1300,"Bangkok Foodie",0,1,0,1
+1301,"Expats In Bangkok",0,1,0,1
+1302,"Blackpink Thailand",0,1,0,1
+1303,"One FC",0,1,0,1
+1304,"FIFA Premier League",0,1,0,1
+1305,"Genshin Impact Thailand",0,1,0,1
+1306,"Twin tower KLCC",0,1,0,0
+1307,"Hunter X Hunter",0,1,0,0
+1308,Gintama,0,1,0,0
+1309,PopEyes,0,1,0,0
+1310,"PungPung Meet Joy",0,1,0,0
+1311,"PungPung Pet Play",0,1,0,0
+1312,"Testers Choice Hub",0,1,0,0
+1313,"Paw Care",0,1,0,0
+1314,"Tech Funding Alliance",0,1,0,1
+1315,"Style Inspire Hub",0,1,1,0
+1316,"InnovateTech Tribe",1,1,1,1
+1317,"Chic Chat",1,1,1,1
+1318,"The Scape - Singapore",1,1,1,1
+1319,"test segment event",1,1,1,1
+1320,"ElectriSkill Network",0,1,0,1
+1321,"Playdate Circle",0,1,0,0
+1322,BU,0,1,0,0
+1323,"Inspire Art Sellers",1,1,1,1
+1324,"freedom code",0,1,0,0
+1325,"Rhythm Revival Clan",0,1,0,0
+1326,"test my page home",0,1,0,0
+1327,"Rhythm Revival New 5",0,1,0,0
+1328,"Rhythm Revival New 6",0,1,0,0
+1329,"Rhythm Revival New 7",0,1,0,0
+1330,"Rhythm Revival New 8",0,1,0,0
+1331,"Rhythm Revival New 9",0,1,0,0
+1332,"Rhythm Revival New 10",0,1,0,0
+1333,"test my page home 2",0,1,0,0
+1334,"Test Growth Collective",1,1,1,1
+1335,"Rhythm Revival New 11",0,1,0,0
+1336,"Rhythm Revival New 12",0,0,0,1
+1337,"Reputation Scroe test",0,1,0,0
+1338,"Artistic Fusion",0,1,0,0
+1339,"Travel Hive",0,0,0,0
+1340,สวัสดีชาวโลก,0,0,0,0
+1341,"Test Tip Exchange",0,0,0,0

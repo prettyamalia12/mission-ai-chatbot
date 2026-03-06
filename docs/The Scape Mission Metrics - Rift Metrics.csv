@@ -1,0 +1,13 @@
+No,metric,entityId,name,propagateToSubEntity,platform,eventName,propertyNames,propertyValues,incrementalProperty,Environment,Status,Testing Status,Testing Results Link
+1,complete-gobbler-nest-rift,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,complete-gobbler-nest-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,GOBBLER_NEST,Win",,STG,Added,Testing Passed,
+2,complete-ghajar-farm-rift,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,complete-ghajar-farm-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,GHAJAR_FARM,Win",,STG,Added,Testing Passed,
+3,complete-naidu-trial-rift,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,complete-naidu-trial-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,NAIDU_TRIAL,Win",,STG,Added,Testing Passed,
+4,complete-blob-pit-rift,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,complete-blob-pit-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,BLOB_PIT,Win",,STG,Added,Testing Passed,
+5,complete-shard-cavern-rift,e-9946bedf-3c65-4111-b296-ca6fd2a3a738,complete-shard-cavern-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,SHARD_CAVERN,Win",,STG,Added,Testing Passed,
+6,complete-gobbler-nest-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-gobbler-nest-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id,","true,GOBBLER_NEST,Win",,PROD,Added,,
+7,complete-ghajar-farm-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-ghajar-farm-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,GHAJAR_FARM,Win",,PROD,Added,,
+8,complete-naidu-trial-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-naidu-trial-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,NAIDU_TRIAL,Win",,PROD,Added,,
+9,complete-blob-pit-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-blob-pit-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,BLOB_PIT,Win",,PROD,Added,,
+10,complete-shard-cavern-rift,e-a0bc4913-3ba1-4424-9e35-7968386e645b,complete-shard-cavern-rift,true,segment,Game Match Resulted,"is_rifts_mode, monster_master_id, match_result","true,SHARD_CAVERN,Win",,PROD,Added,,
+,,,,,,,,,,,,,
+11,complete-nexus-rift,,complete-nexus-rift,true,segment,Game Match Resulted,"is_nexus,  match_result","true, Win",,STG,Added,,

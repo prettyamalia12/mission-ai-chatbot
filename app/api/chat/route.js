@@ -1,4 +1,4 @@
-const USE_MOCK = !process.env.GEMINI_API_KEY
+const USE_MOCK = !process.env.ANTHROPIC_API_KEY && !process.env.OPENAI_API_KEY
 
 // Simulate a full conversation flow based on message count
 function getMockResponse(messages) {
@@ -185,26 +185,35 @@ export async function POST(request) {
     })
   }
 
-  // Real Gemini API (direct REST — avoids SDK v1beta hardcoding)
   const { SYSTEM_PROMPT } = await import('@/lib/system-prompt')
-  const { UPDATE_MISSION_PREVIEW_TOOL_GEMINI } = await import('@/lib/gemini')
+  const { EVENT_CATALOG } = await import('@/lib/event-catalog')
+  const { GAME_CATALOG } = await import('@/lib/game-catalog')
+  const { METRICS_CATALOG } = await import('@/lib/metrics-catalog')
+  const { COMMUNITY_CATALOG } = await import('@/lib/community-catalog')
+  const { REWARDS_CATALOG } = await import('@/lib/rewards-catalog')
 
-  const geminiMessages = messages.map(m => ({
-    role: m.role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: m.content }],
+  const fullSystemPrompt = [
+    SYSTEM_PROMPT,
+    '---',
+    EVENT_CATALOG,
+    '---',
+    GAME_CATALOG,
+    '---',
+    METRICS_CATALOG,
+    '---',
+    COMMUNITY_CATALOG,
+    '---',
+    REWARDS_CATALOG,
+    '---',
+    'CRITICAL: You must ALWAYS include a text response in every reply. Never respond with only a tool call and no text. When calling update_mission_preview or generate_cover_image, you must also write a message to the user in the same response — either asking the next question or confirming what was done.',
+  ].join('\n\n')
+
+  const openaiMessages = messages.map(m => ({
+    role: m.role === 'assistant' ? 'assistant' : 'user',
+    content: m.content,
   }))
 
-  const body = {
-    systemInstruction: {
-      parts: [{ text: SYSTEM_PROMPT + '\n\nCRITICAL: You must ALWAYS include a text response in every reply. Never respond with only a function call and no text. When calling update_mission_preview, you must also write a message to the user in the same response — either asking the next question or confirming what was updated.' }]
-    },
-    tools: [{ functionDeclarations: [UPDATE_MISSION_PREVIEW_TOOL_GEMINI] }],
-    toolConfig: { functionCallingConfig: { mode: 'AUTO' } },
-    contents: geminiMessages,
-  }
-
-  const GEMINI_BASE = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash`
-  const API_KEY = process.env.GEMINI_API_KEY
+  const { openai, UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI } = await import('@/lib/openai-client')
 
   const stream = new ReadableStream({
     async start(controller) {
@@ -213,64 +222,46 @@ export async function POST(request) {
       }
 
       try {
-        // Loop: handle multiple tool call rounds until we get actual text back
-        // Gemini 2.5-flash (thinking model) may chain multiple function calls before responding
-        let contents = geminiMessages
-        let gotText = false
-        const MAX_ROUNDS = 4
+        let fullText = ''
+        let toolName = null
+        let toolArgBuffer = ''
 
-        for (let round = 0; round < MAX_ROUNDS && !gotText; round++) {
-          const callBody = round === 0
-            ? body
-            : { systemInstruction: body.systemInstruction, contents }
+        const response = await openai.chat.completions.create({
+          model: 'gpt-4o-mini',
+          max_tokens: 4096,
+          stream: true,
+          messages: [
+            { role: 'system', content: fullSystemPrompt },
+            ...openaiMessages,
+          ],
+          tools: [UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI],
+          tool_choice: 'auto',
+        })
 
-          const res = await fetch(`${GEMINI_BASE}:generateContent?key=${API_KEY}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(callBody),
-          })
-          if (!res.ok) throw new Error(await res.text())
+        for await (const chunk of response) {
+          const delta = chunk.choices[0]?.delta
+          if (!delta) continue
 
-          const data = await res.json()
-          const parts = data.candidates?.[0]?.content?.parts || []
-
-          // Visible text = parts without thoughtSignature
-          const visibleText = parts
-            .filter(p => p.text && !p.thoughtSignature)
-            .map(p => p.text)
-            .join('')
-          const funcCall = parts.find(p => p.functionCall)
-
-          // Send tool call to client so preview updates immediately
-          if (funcCall) {
-            send({ type: 'tool_call', tool: funcCall.functionCall.name, input: funcCall.functionCall.args })
+          if (delta.content) {
+            fullText += delta.content
+            send({ type: 'text', content: delta.content })
           }
 
-          if (visibleText) {
-            send({ type: 'text', content: visibleText })
-            gotText = true
-          } else if (funcCall) {
-            // No text yet — add model turn + function response to history, loop for text
-            contents = [
-              ...contents,
-              { role: 'model', parts },
-              {
-                role: 'user',
-                parts: [{
-                  functionResponse: {
-                    name: funcCall.functionCall.name,
-                    response: { result: 'Preview updated successfully.' },
-                  },
-                }],
-              },
-            ]
-          } else {
-            // No text and no function call — stop
-            break
+          if (delta.tool_calls?.[0]) {
+            const tc = delta.tool_calls[0]
+            if (tc.function?.name) toolName = tc.function.name
+            if (tc.function?.arguments) toolArgBuffer += tc.function.arguments
           }
         }
 
-        if (!gotText) {
+        if (toolArgBuffer) {
+          try {
+            const toolInput = JSON.parse(toolArgBuffer)
+            send({ type: 'tool_call', tool: toolName, input: toolInput })
+          } catch { /* ignore parse error */ }
+        }
+
+        if (!fullText && !toolArgBuffer) {
           send({ type: 'text', content: "I've updated the mission preview. What would you like to configure next?" })
         }
 

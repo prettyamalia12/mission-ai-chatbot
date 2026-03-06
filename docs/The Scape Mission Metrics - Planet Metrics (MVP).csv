@@ -1,0 +1,6 @@
+No,metric,entityId,name,propagateToSubEntity,platform,eventName,propertyNames,propertyValues,incrementalProperty,Environment,Status,Testing Status,Testing Results Link
+1,discover-first-planet,e-a0bc4913-3ba1-4424-9e35-7968386e645b,discover-first-planet,true,segment,Item Purchased,"merchandise_type,
+community_id","planet, 177",,PROD,Added,Passed,https://bitazza.slack.com/archives/C0807RMDLQ5/p1768548177619899?thread_ts=1768546213.859299&cid=C0807RMDLQ5
+,activate-first-planet,e-a0bc4913-3ba1-4424-9e35-7968386e645b,activate-first-planet,true,segment,Planet Activated,,,,PROD,Not Added,,
+2,build-genetic-modification-lab-planet,e-a0bc4913-3ba1-4424-9e35-7968386e645b,build-genetic-modification-lab-planet,true,segment,Planet Structure Built,structure_name,Genetic Modifications Lab,,PROD,Added,Passed,
+3,assign-food-worker-planet,e-a0bc4913-3ba1-4424-9e35-7968386e645b,assign-food-worker-planet,true,segment,Planet Workforce Updated,"food_workforce, food_workforce, food_workforce, food_workforce, food_workforce, food_workforce, food_workforce, food_workforce, food_workforce, food_workforce","1, 2, 3, 4, 5, 6, 7, 8, 9, 10",,PROD,Added,Passed,

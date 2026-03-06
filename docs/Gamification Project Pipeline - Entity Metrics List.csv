@@ -1,0 +1,1173 @@
+No,Event Name,Metrics ID & Name (STG),propertyNames,Metrics filter,propertyValues,Incremented By (STG),Status,Metrics ID & Name (Prod),Attributes (Prod),Metrics filter,Value,Incremented By (PROD),Status,Implemented On,Test Results,Comment
+1,Token Purchased,token-purchased,-,equals,,-,Added,token-purchased,-,,,-,Added,All,,
+2,Token Purchased,token-purchased-thb-amount,"product (thb), 
+topup_amount (amount)",equals,,topup_amount,Added,token-purchased-amount-thb,"product (thb), 
+topup_amount (amount)",,,topup_amount,Added,All,,
+3,Token Purchased,token-purchased-thb-amount-freedom-cafe,"product (thb), 
+topup_amount (amount), 
+community_name (freedom cafe)",equals,,topup_amount,Added,token-purchased-amount-thb-freedom-cafe,"product (thb), 
+topup_amount (amount), 
+community_name (freedom cafe)",,,topup_amount,Added,Freedom Cafe,,
+4,Token Purchased,token-purchased-amount-thb-tomyumthai,"product (thb), 
+topup_amount (amount), 
+community_name (tomyumthai staging)",equals,,topup_amount,Added,token-purchased-amount-thb-tomyumthai,"product (thb), 
+topup_amount (amount), 
+community_name (tomyumthai),
+community_id(335)",,,topup_amount,Added,Tomyum Koong,,
+5,Fdp Payment Completed,,,equals,,,Added,token-purchased-amount-thb-baan-unrak-foundation,"currency(THB), order_amount(amount), merchant_name (baan unrak foundation)",,,order_amount,Testing Done,Baan Unrak Foundation,,Change to FDP Payment Event
+6,FDW Email Verified,fdw-email-verified,-,equals,,-,Added,fdw-email-verified,-,,,-,Added,Freedom World,,
+7,FDW Signed In,-,,equals,,,Added,fdw-signed-in,-,,,-,Added,Freedom World,,
+8,FDW Signed Up,-,,equals,,,Added,fdw-signed-up,-,,,-,Added,Freedom World,,
+9,Community Joined,community-joined,-,equals,,-,Added,community-joined,-,,,-,Added,All,,
+10,Community Joined,community-joined-tomyumthai-staging,community_name (tomyumthai staging),equals,,-,Added,community-joined-tomyumthai,community_name (tomyumthai),,,-,Added,Tomyum Koong,,
+11,Community Joined,community-joined-yiz-entertainment-staging,community_name (yiz entertainment staging),equals,,-,Added,community-joined-yiz-entertainment,community_name (yiz entertainment),,,-,Added,Yiz Entertaiment,,
+12,Community Joined,-,,equals,,,Added,community-joined-mystic-valley-festival,community_name (Mystic Valley Festival),,,-,Added,Mystic Valley,,
+13,Community Joined,-,,equals,,,Added,community-joined-mystic-valley-photobooth,,,,-,Added,Mystic Valley,,
+14,Community Joined,-,,equals,,,Added,community-joined-mystic-valley-fairy-quests,,,,-,Added,Mystic Valley,,
+15,Community Joined,-,,equals,,,Added,community-joined-mystic-valley-fairy-quest,,,,-,Added,Mystic Valley,,
+16,Card Onboarded,card-onboarded,-,equals,,-,Added,card-onboarded,,,,,Added,Freedom Card,,
+17,Card Topped Up,card-topped-up,-,equals,,-,Added,card-topped-up,-,,,-,Added,Freedom Card,,
+18,Card Topped Up,card-topped-up-amount-thb,"amount (amount),
+product (thb)",equals,,amount,Added,card-topped-up-amount-thb,"amount (amount),
+product (thb)",,,amount,Added,Freedom Card,,
+19,Card Spent,card-spent,-,equals,,-,Added,card-spent,-,,,-,Added,Freedom Card,,
+20,Card Spent,card-spent-amount,amount (amount),equals,,amount,Added,card-spent-amount,amount (amount),,,amount,Added,Freedom Card,,
+21,Card Spent,-,,equals,,,,card-spent-amount-september,amount (amount),,,amount,Added,Freedom Card,,
+22,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-(bhp),"amount (amount),
+merchant (au bon pain (BHP))",,,amount,Added,Freedom Card,,AU BON PAIN (BHP)
+23,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-(stl),"amount (amount),
+merchant (au bon pain (STL))",,,amount,Added,Freedom Card,,AU BON PAIN (STL)
+24,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-(index-pattaya),"amount (amount),
+merchant (au bon pain (INDEX PATTAYA)",,,amount,Added,Freedom Card,,AU BON PAIN(INDEX PATTAYA)
+25,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-(kvl),"amount (amount),
+merchant (au bon pain (KVL))",,,amount,Added,Freedom Card,,AU BON PAIN(KVL)
+26,Card Spent,card-spent-amount-au-bon-pain-(the-nine),"amount (amount),
+merchant (au bon pain (the nine))",equals,,amount,Added,card-spent-amount-au-bon-pain-the-nine,"amount (amount),
+merchant (au bon pain (the nine))",,,amount,Added,Freedom Card,,AU BON PAIN (THE NINE)
+27,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-rama9-hosp,"amount (amount),
+merchant (au bon pain-rama9 hosp.))",,,amount,Added,Freedom Card,,AU BON PAIN-RAMA9 HOSP.
+28,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-smv,"amount (amount),
+merchant (au bon pain (SMV))",,,amount,Added,Freedom Card,,AU BON PAIN (SMV)
+29,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-skh,"amount (amount),
+merchant (au bon pain (SKH))",,,amount,Added,Freedom Card,,AU BON PAIN (SKH)
+30,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-sm2,"amount (amount),
+merchant (au bon pain (SM2))",,,amount,Added,Freedom Card,,AU BON PAIN (SM2)
+31,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-scb,"amount (amount),
+merchant (au bon pain (SCB))",,,amount,Added,Freedom Card,,AU BON PAIN (SCB)
+32,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-brr,"amount (amount),
+merchant (au bon pain (BRR))",,,amount,Added,Freedom Card,,AU BON PAIN (BRR)
+33,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-smtv-chonburi,"amount (amount),
+merchant (au bon pain-smtv chonburi)",,,amount,Added,Freedom Card,,AU BON PAIN-SMTV CHONBURI
+34,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-tisco,"amount (amount),
+merchant (au bon pain (tisco))",,,amount,Added,Freedom Card,,AU BON PAIN (TISCO)
+35,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-rsu-sukhumvi,"amount (amount),
+merchant (au bon pain (RSU sukhumvi)",,,amount,Added,Freedom Card,,AU BON PAIN (RSU SUKHUMVI
+36,Card Spent,,,equals,,,Added,card-spent-amount-au-bon-pain-bkp,"amount (amount),
+merchant (au bon pain (BKP))",,,amount,Added,Freedom Card,,AU BON PAIN (BKP)
+37,Card Signuped,card-signed-up,-,equals,,-,Added,card-signed-up,,,,,Added,Freedom Card,,
+38,Physical Card Activated,physical-card-activated,-,equals,,-,Added,physical-card-activated,-,,,-,Added,Bitazza (GL & TH),,
+39,Trade Order Completed,trade-order-completed,-,equals,,-,Added,trade-order-completed,-,,,-,Added,Bitazza (GL & TH),,
+40,Trade Order Completed,trade-order-completed-usdt-gl,"platform(gl),
+trading_pair(usdt)",equals,,-,Added,-,,,,,Added,Bitazza GL,,
+41,Trade Order Completed,trade-order-completed-gl-usdt-futures-amount,"platform(gl),
+trading_pair(usdt),
+trade_type(futures),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-futures-usdt-amount-gl,"platform(gl),
+trading_pair(usdt),
+trade_type(futures),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,
+42,Trade Order Completed,trade-order-completed-gl-spot-usdt-amount,"platform(gl),
+trading_pair(usdt),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-usdt-amount-gl,"platform(gl),
+trading_pair(usdt),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,
+43,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-usd-amount-gl,"platform(gl),
+trading_pair(usd),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,
+44,Trade Order Completed,-,,equals,,,Added,trade-order-completed-futures-usd-amount-gl,"platform(gl),
+trading_pair(usd),
+trade_type(futures),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,
+45,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-wif-amount-gl,"platform(gl),
+trading_product(WIF),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,WIF
+46,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-ton-amount-gl,"platform(gl),
+trading_product(TON),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,TON
+47,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-dogs-amount-gl,"platform(gl),
+trading_product(DOGS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,DOGS
+48,Trade Order Completed,trade-order-completed-spot-doge-amount-gl,"platform(gl),
+trading_pair(DOGE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-doge-amount-gl,"platform(gl),
+trading_product(DOGE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,DOGE
+49,Trade Order Completed,trade-order-completed-spot-shib-amount-gl,"platform(gl),
+trading_pair(SHIB),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-shib-amount-gl,"platform(gl),
+trading_product(SHIB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,SHIB
+50,Trade Order Completed,trade-order-completed-spot-babydoge-amount-gl,"platform(gl),
+trading_product(BABYDOGE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-babydoge-amount-gl,"platform(gl),
+trading_product(BABYDOGE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,BABYDOGE
+51,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-bome-amount-gl,"platform(gl),
+trading_product(BOME),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,BOME
+52,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-eos-amount-gl,"platform(gl),
+trading_product(EOS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,EOS
+53,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-rndr-amount-gl,"platform(gl),
+trading_product(RENDER),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,RNDR
+54,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-pendle-amount-gl,"platform(gl),
+trading_product(PENDLE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,PENDLE
+55,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-meme-amount-gl,"platform(gl),
+trading_product(MEME),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,MEME
+56,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-sats-amount-gl,"platform(gl),
+trading_product(1000SATS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,SATS
+57,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-metis-amount-gl,"platform(gl),
+trading_product(METIS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,METIS
+58,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-chz-amount-gl,"platform(gl),
+trading_product(CHZ),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,CHZ
+59,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-apt-amount-gl,"platform(gl),
+trading_product(APT),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,APT
+60,Trade Order Completed,trade-order-completed-spot-pepe-amount-gl,"platform(gl),
+trading_product(PEPE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-pepe-amount-gl,"platform(gl),
+trading_product(PEPE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,PEPE
+61,Trade Order Completed,trade-order-completed-spot-floki-amount-gl,"platform(gl),
+trading_product(FLOKI),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-floki-amount-gl,"platform(gl),
+trading_product(FLOKI),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,FLOKI
+62,Trade Order Completed,trade-order-completed-spot-bonk-amount-gl,"platform(gl),
+trading_product(BONK),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-bonk-amount-gl,"platform(gl),
+trading_product(BONK),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,BONK
+63,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-eth-amount-gl,"platform(gl),
+trading_product(ETH),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,ETH
+64,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-btc-amount-gl,"platform(gl),
+trading_product(BTC),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,BTC
+65,Trade Order Completed,trade-order-completed-spot-fdm-amount-gl,"platform(gl),
+trading_product(FDM),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-fdm-amount-gl,"platform(gl),
+trading_product(FDM),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza GL,,FDM
+66,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-ton-amount-th,"platform(th),
+trading_product(TON),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,TON
+67,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-dogs-amount-th,"platform(th),
+trading_product(DOGS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,DOGS
+68,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-usdt-amount-th,"platform(th),
+trading_pair(usdt),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,
+69,Trade Order Completed,trade-order-completed-spot-fdm-amount-th,"platform(th),
+trading_pair(fdm),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,-,,,,,Added,Bitazza TH,,
+70,Trade Order Completed,,,equals,,,Added,trade-order-completed-spot-wif-amount-th,"platform(th),
+trading_product(WIF),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,WIF
+71,Trade Order Completed,trade-order-completed-spot-doge-amount-th,"platform(th),
+trading_pair(DOGE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-doge-amount-th,"platform(th),
+trading_product(DOGE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,DOGE
+72,Trade Order Completed,trade-order-completed-spot-shib-amount-th,"platform(th),
+trading_pair(SHIB),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-shib-amount-th,"platform(th),
+trading_product(SHIB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,SHIB
+73,Trade Order Completed,trade-order-completed-spot-babydoge-amount-th,"platform(th),
+trading_product(BABYDOGE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-babydoge-amount-th,"platform(th),
+trading_product(BABYDOGE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,BABYDOGE
+74,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-bome-amount-th,"platform(th),
+trading_product(BOME),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,BOME
+75,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-eos-amount-th,"platform(th),
+trading_product(EOS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,EOS
+76,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-rndr-amount-th,"platform(th),
+trading_product(RNDR),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,RNDR
+77,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-pendle-amount-th,"platform(th),
+trading_product(PENDLE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,PENDLE
+78,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-meme-amount-th,"platform(th),
+trading_product(MEME),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,MEME
+79,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-sats-amount-th,"platform(th),
+trading_product(1000SATS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,SATS
+80,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-metis-amount-th,"platform(th),
+trading_product(METIS),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,METIS
+81,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-chz-amount-th,"platform(th),
+trading_product(CHZ),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,CHZ
+82,Trade Order Completed,-,,equals,,,Added,trade-order-completed-spot-apt-amount-th,"platform(th),
+trading_product(APT),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,APT
+83,Trade Order Completed,trade-order-completed-spot-pepe-amount-th,"platform(th),
+trading_product(PEPE),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-pepe-amount-th,"platform(th),
+trading_product(PEPE),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,PEPE
+84,Trade Order Completed,trade-order-completed-spot-floki-amount-th,"platform(th),
+trading_product(FLOKI),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-floki-amount-th,"platform(th),
+trading_product(FLOKI),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,FLOKI
+85,Trade Order Completed,trade-order-completed-spot-bonk-amount-th,"platform(th),
+trading_product(BONK),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-bonk-amount-th,"platform(th),
+trading_product(BONK),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,BONK
+86,Trade Order Completed,-,,,,,Added,trade-order-completed-spot-eth-amount-th,"platform(th),
+trading_product(ETH),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,ETH
+87,Trade Order Completed,-,,,,,Added,trade-order-completed-spot-btc-amount-th,"platform(th),
+trading_product(BTC),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,BTC
+88,Trade Order Completed,-,,,,,Added,trade-order-completed-spot-ftm-amount-th,"platform(th),
+trading_product(FTM),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza TH,,FTM
+89,Friend Invited,friend-invited,-,,,-,Added,friend-invited,-,,,,Added,All,,
+90,Friend Invited Verified,friend-invited-verified,-,,,-,Added,friend-invited-verified,-,,,,Added,All,,
+91,Friend Invited Verified,friend-invited-verified-freedom-cafe-staging,community_name(freedom cafe staging),equals,,-,Added,friend-invited-verified-freedom-cafe,community_name(freedom cafe),,,,Added,Freedom Cafe,,
+92,Friend Invited Verified,friend-invited-verified-tomyumthai-staging,community_name(tomyumthai staging),equals,,-,Added,friend-invited-verified-tomyumthai,community_name(tomyumthai),,,,Added,Tom Yum Thai,,
+93,Friend Invited Verified,friend-invited-verified-bored-town-staging,community_name(bored town staging),equals,,,Added,friend-invited-verified-bored-town,community_name(bored town),,,,Added,Bored Town,,
+94,Friend Invited Verified,-,,,,,Added,friend-invited-verified-fuse,community_name(fuse),,,,Added,FUSE,,
+95,Friend Invited Verified,-,,,,,Added,friend-invited-verified-freedom-fantasy-football,community_name(freedom fantasy football),,,,Added,Freedom Fantasy Football,,
+96,Friend Invited Verified,-,,,,,Added,friend-invited-verified-baan-unrak-foundation,"community_name(baan unrak foundation), verification_level(converted)",,,,Added,Baan Unrak Foundation,,
+97,Friend Invited Verified,-,,,,,Added,friend-invited-verified-rosie-master-by-madam-marie,community_name(Rosie Master by Madam Marie),,,,Added,Rosie Master by Madam Marie,,
+98,Friend Invited Verified,-,,,,,Added,friend-invited-verified-discover-thailand,community_name(Discover Thailand),,,,Added,Discover Thailand,,
+99,Friend Invited Kyced,friend-invited-kyced,-,,,-,Added,friend-invited-kyced,-,,,,Added,Bitazza (GL & TH),,
+100,Friend Invited Kyced,friend-invited-kyced-bitazza_th,referee_kyc_platform(bitazza_th),equals,,,Added,friend-invited-kyced-bitazza_th,referee_kyc_platform(bitazza_th),,,,Added,Bitazza App - TH,,
+101,Friend Invited Kyced,friend-invited-kyced-bitazza_gl,referee_kyc_platform(bitazza_gl),equals,,-,Added,friend-invited-kyced-bitazza_gl,referee_kyc_platform(bitazza_gl),,,,Added,Bitazza GL,,
+102,Deposit Completed,deposit-completed,-,equals,,-,Added,deposit-completed,-,,,-,Added,Bitazza (GL & TH),,
+103,Deposit Completed,deposit-completed-th-amount,"platform(th),
+amount(amount)",equals,,amount,Added,deposit-completed-th-amount,"platform(th),
+amount(amount)",,,amount,Added,Bitazza TH,,
+104,Deposit Completed,deposit-completed-gl-amount,"platform(gl),
+amount(amount)",equals,,amount,Added,deposit-completed-gl-amount,"platform(gl),
+amount(amount)",,,amount,Added,Bitazza GL,,
+105,Item Purchased,item-purchased,-,equals,,-,Added,item-purchased,-,,,,Added,All,,
+106,Item Purchased,item-purchased-37-amount,"community_id(37),
+quantity(amount)",equals,,quantity,Added,item-purchased-37-amount,"community_id(37),
+quantity(amount)",,,quantity,Added,Freedom Cafe,,
+107,Item Purchased,item-purchased-37-535-amount,"community_id(37),
+quantity(amount), merchandise_id(535)",equals,,quantity,Added,,,,,quantity,Added,Freedom Cafe,,Best Blueberry Cheesecake
+108,Item Purchased,item-purchased-37-533-amount,"community_id(37),
+quantity(amount), merchandise_id(533)",equals,,quantity,Added,,,,,quantity,Added,Freedom Cafe,,Better Blueberry Cheesecake
+109,Item Purchased,item-purchased-609-amount,"community_id(609),
+quantity(amount)",equals,,quantity,Added,item-purchased-64-amount,"community_id(64),
+quantity(amount)",,,quantity,Added,Bored Town,,
+110,Item Purchased,item-purchased-671-amount,"community_id(671),
+quantity(amount)",equals,,quantity,Added,item-purchased-335-amount,"community_id(335),
+quantity(amount)",,,quantity,Added,Tom Yum Thai,,
+111,Item Purchased,item-purchased-seenspace-539-amount,"community_id(668),
+quantity(amount),
+merchandise_id(539)",equals,,quantity,Added,item-purchased-79-amount-736 ,"community_id(79),
+quantity(amount),
+merchandise_id(736)",,,quantity,Added,Seen Space,,The Andean Alpaca
+112,Item Purchased,item-purchased-seenspace-548-amount,"community_id(668),
+quantity(amount),
+merchandise_id(548)",equals,,quantity,Added,item-purchased-79-amount-737 ,"community_id(79),
+quantity(amount),
+merchandise_id(737)",,,quantity,Added,Seen Space,,Frontera Chardonnay
+113,Item Purchased,item-purchased-seenspace-549-amount,"community_id(668),
+quantity(amount),
+merchandise_id(549)",equals,,quantity,Added,item-purchased-79-amount-734,"community_id(79),
+quantity(amount),
+merchandise_id(734)",,,quantity,Added,Seen Space,,Grand Cru Vineyards
+114,Item Purchased,item-purchased-seenspace-543-amount,"community_id(668),
+quantity(amount),
+merchandise_id(543)",equals,,quantity,Added,item-purchased-79-amount-732 ,"community_id(79),
+quantity(amount),
+merchandise_id(732)",,,quantity,Added,Seen Space,,The Hungry Wasp
+115,Item Purchased,item-purchased-seenspace-550-amount,"community_id(668),
+quantity(amount),
+merchandise_id(550)",equals,,quantity,Added,item-purchased-79-amount-735,"community_id(79),
+quantity(amount),
+merchandise_id(735)",,,quantity,Added,Seen Space,,Vasse Felix
+116,Item Purchased,item-purchased-seenspace-540-amount,"community_id(668),
+quantity(amount),
+merchandise_id(540)",equals,,quantity,Added,item-purchased-79-amount-743,"community_id(79),
+quantity(amount),
+merchandise_id(743)",,,quantity,Added,Seen Space,,The Andean Alpaca Cabernet Sauvignon
+117,Item Purchased,item-purchased-seenspace-546-amount,"community_id(668),
+quantity(amount),
+merchandise_id(546)",equals,,quantity,Added,item-purchased-79-amount-739 ,"community_id(79),
+quantity(amount),
+merchandise_id(739)",,,quantity,Added,Seen Space,,Wolf Blass Eaglehawk Cabernet Sauvignon
+118,Item Purchased,item-purchased-seenspace-542-amount,"community_id(668),
+quantity(amount),
+merchandise_id(542)",equals,,quantity,Added,item-purchased-79-amount-742 ,"community_id(79),
+quantity(amount),
+merchandise_id(742)",,,quantity,Added,Seen Space,,Frontera Cabernet Sauvignon
+119,Item Purchased,item-purchased-seenspace-547-amount,"community_id(668),
+quantity(amount),
+merchandise_id(547)",equals,,quantity,Added,item-purchased-79-amount-738,"community_id(79),
+quantity(amount),
+merchandise_id(738)",,,quantity,Added,Seen Space,,Trinity Reserve
+120,Item Purchased,item-purchased-seenspace-544-amount,"community_id(668),
+quantity(amount),
+merchandise_id(544)",equals,,quantity,Added,item-purchased-79-amount-741,"community_id(79),
+quantity(amount),
+merchandise_id(741)",,,quantity,Added,Seen Space,,Maroues Casa Concha
+121,Item Purchased,item-purchased-seenspace-541-amount,"community_id(668),
+quantity(amount),
+merchandise_id(541)",equals,,quantity,Added,item-purchased-79-amount-744,"community_id(79),
+quantity(amount),
+merchandise_id(744)",,,quantity,Added,Seen Space,,Cosentino Winery THE CAB
+122,Item Purchased,item-purchase-seenspace-drinks,"community_id(668),
+quantity(amount),
+merchandise_id(539), 
+merchandise_id(548),
+merchandise_id(549), 
+merchandise_id(543),
+merchandise_id(550), 
+merchandise_id(546),
+merchandise_id(542), 
+merchandise_id(547),
+merchandise_id(544), 
+merchandise_id(541)",equals,,quantity,Added,-,-,,,,,Seen Space,,Buy any seenspace drinks
+123,Item Purchased,,,,,,Added,item-purchased-312-amount-886,"community_id(312),
+quantity(amount),
+merchandise_id(886)",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket-Aug
+124,Item Purchased,,,,,,Added,item-purchased-312-amount-887,"community_id(312),
+quantity(amount),
+merchandise_id(887)",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket-July
+125,Item Purchased,,,,,,Added,item-purchased-312-amount-888,"community_id(312),
+quantity(amount),
+merchandise_id(888)",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket-Oct
+126,Item Purchased,,,,,,Added,item-purchased-312-amount-889,"community_id(312),
+quantity(amount),
+merchandise_id(889)",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket-Sep
+127,Item Purchased,,,,,,Added,item-purchased-312-amount-890,"community_id(312),
+quantity(amount),
+merchandise_id(890)",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket-Nov
+128,Item Purchased,item-purchased-boozia-tickets,"community_id(312),
+quantity(amount),
+merchandise_id(886)
+merchandise_id(887),
+merchandise_id(888),
+merchandise_id(889),
+merchandise_id(890),",equals,,quantity,Added,item-purchased-boozia-tickets,"community_id(312),
+quantity(amount),
+merchandise_id(886)
+merchandise_id(887),
+merchandise_id(888),
+merchandise_id(889),
+merchandise_id(890),",,,quantity,Added,Boozia,,Boozia Monthly Tasting Ticket (July - Nov)
+129,Item Purchased,,,,,,Added,item-purchased-68-amount-795,"community_id(68),
+quantity(amount),
+merchandise_id(795)",,,quantity,Added,Rosie Master by Madam Marie,,REJURAN Once Face 2cc
+130,Item Purchased,,,,,,Added,item-purchased-68-amount-794,"community_id(68),
+quantity(amount),
+merchandise_id(794)",,,quantity,Added,Rosie Master by Madam Marie,,IPL LASER PLUS Once
+131,Item Purchased,,,,,,Added,item-purchased-68-amount-799,"community_id(68),
+quantity(amount),
+merchandise_id(799)",,,quantity,Added,Rosie Master by Madam Marie,,SCREW THREADS INFINITY 1 Stitch
+132,Item Purchased,,,,,,Added,item-purchased-68-amount-805,"community_id(68),
+quantity(amount),
+merchandise_id(805)",,,quantity,Added,Rosie Master by Madam Marie,,SCREW THREADS INFINITY 10 Stitches
+133,Item Purchased,,,,,,Added,item-purchased-68-amount-797,"community_id(68),
+quantity(amount),
+merchandise_id(797)",,,quantity,Added,Rosie Master by Madam Marie,,HIFU  1 time
+134,Item Purchased,,,,,,Added,item-purchased-361-amount-903,"community_id(361),
+quantity(amount),
+merchandise_id(903)",,,quantity,Added,OktoberFest,,OktoberFest MainTicket
+135,Item Purchased,,,,,,Added,item-purchased-79-amount,"community_id(79),
+quantity(amount)",,,quantity,Added,Seen Space,,Purchase Any item from Seenspace
+136,Fdp Payment Completed,tat-shop-and-spend,"currency(THB), payment_amount(amount), merchant_name 
+Details HERE",equals,,payment_amount,Not Added,tat-shop-and-spend,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",,,payment_amount,Added,Discover Thailand,,"- Purchase tickets on Shop (Track with Spending Amount)
+- Spend at Freedom Pay (Direct payment)
+*Accumulate Spending from participating merchants
+**measurement : Transaction Value"
+137,Item Purchased,tat-ride-and-redeem,"community_id(777),
+quantity(amount), merchandise_id",equals,,quantity,Not Added,tat-ride-and-redeem,"community_id(409),
+quantity(amount), merchandise_id",,,quantity,Not Added,Discover Thailand,,"Purchase tickets on shop (Track with SKUs & product id)
+*Event: Shop Only"
+138,Fdp Payment Completed,tat-landmark-explorer,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",equals,,,Added,tat-landmark-explorer,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",,,,Added,Discover Thailand,,"- Purchase tickets on Shop (Track with SKUs from each merchant name)
+- Spend at Freedom Pay (Direct payment)
+*Event: Shop+Direct Payment (transaction)"
+139,Fdp Payment Completed,tat-sip-and-chill,,,,,Not Added,tat-sip-and-chill,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",,,,Added,Discover Thailand,,"- Purchase tickets on Shop (Track with SKUs - Merchant name)
+- Spend at Freedom Pay (Direct payment)
+*Event: Shop+Direct Payment (Transaction)"
+140,Fdp Payment Completed,tat-relax-and-unwind,,,,,Not Added,tat-relax-and-unwind,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",,,,Added,Discover Thailand,,"- Purchase tickets on Shop (Track with SKUs - Merchant name)
+- Spend at Freedom Pay (Direct payment)
+*Event: Shop+Direct Payment (Transaction)"
+141,Fdp Payment Completed,tat-island-dining,,,,,Not Added,tat-island-dining,"currency(THB), payment_amount(amount), merchant_name
+Details HERE",,,,Added,Discover Thailand,,"- Purchase tickets on Shop (Track with SKUs - Merchant name)
+- Spend at Freedom Pay (Direct payment)
+*Event: Shop+Direct Payment (transaction)"
+142,Friend Invited Verified,tat-invite-friends-converted,,equals,,,Not Added,tat-invite-friends-converted,"community_id(777), verification_level(converted)",,,,Not Added,Discover Thailand,,
+143,Fdp Payment Completed,seenspace-spending,"currency(SEEN), payment_amount(amount), merchant_name(Seen Space)",equals,,payment_amount,Added,seenspace-spending,"currency(SEEN), payment_amount(amount), merchant_name(Seenspace)",,,payment_amount,Added,Seen Space,,Speenspace spending mission
+144,Social Scoring Received,bitazza-community-social-score,"community_id(), point(amount)",equals,,point,Not Added,bitazza-community-social-score,"community_id(118), point(amount)",,,point,Added,Bitazza (FDW App),,social score mission for BTZ community on the FDW app
+145,Social Scoring Received,,,,,,,freedom-fashion-social-score,"community_id(82), point(amount)",,,point,Added,Freedom Fashion,,
+146,Social Scoring Received,,,,,,,freedom-cafe-social-score,"community_id(37), point(amount)",,,point,Added,Freedom Cafe,,
+147,Fdp Payment Completed,,,,,,,token-purchased-amount-thb-gift-of-happiness,"currency(THB), order_amount(amount), merchant_name (Gift of Happiness Foundation)",,,order_amount,Added,Gift of Happiness Foundation,,Change to Fdp Payment Completed
+148,Friend Invited Verified,-,,,,,,friend-invited-verified-gift-of-happiness,"community_id(418), verification_level(converted)",,,,Added,Gift of Happiness Foundation,,
+149,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-th-v2,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,
+150,Trade Order Completed,trade-order-completed-spot-moodeng-amount-th,"platform(th),
+trading_product(MOODENG),
+trade_type(spot),
+trading_value(amount)",equals,,trading_value,Added,trade-order-completed-spot-moodeng-amount-th,"platform(th),
+trading_product(MOODENG),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,MOODENG
+151,Community Joined,community-joined-freedom-cafe,community_id(37),equals,,,Not Added,,,,,,,Freedom Cafe,,Join Freedom Cafe
+152,Friend Invited Verified,friend-invited-verified-freedom-cafe-staging-v2,community_id(37),equals,,,Not Added,,,,,,,Freedom Cafe,,
+153,Item Purchased,item-purchased-freedom-cafe,"community_id(37),
+quantity(amount)",equals,,quantity,Not Added,,,,,,,Freedom Cafe,,Buy any items from Freedom Cafe shop
+154,Item Purchased,item-purchased-freedom-cafe-best-blueberry-cake,"community_id(37),
+quantity(amount), merchandise_id(535)",equals,,quantity,Not Added,,,,,,,Freedom Cafe,,Best Blueberry Cheesecake
+155,Item Purchased,item-purchased-freedom-cafe-better-blueberry-cake,"community_id(37),
+quantity(amount), merchandise_id(533)",equals,,quantity,Not Added,,,,,,,Freedom Cafe,,Better Blueberry Cheesecake
+156,Item Purchased,top-golf-first-time-purchaser,"community_id(951),
+quantity(amount)",equals,,quantity,Added,top-golf-first-time-purchaser,"community_id(951),
+quantity(amount)",,,quantity,Added,Top Golf Thailand,,
+157,Community Joined,community-joined-tether,community_id(1043),equals,,,Not Added,community-joined-tether,community_id(982),,,,Added,Tether,,For Tether Campaign here: https://docs.google.com/spreadsheets/d/1v1w0fMiDMFmyLjgIEY8LR8siKWcSJ8u5uC3Y8uf3PqE/edit?gid=1320183304#gid=1320183304
+158,Deposit Completed,deposit-completed-th-amount-tether,"platform(th),
+amount(amount), 
+product(thb)",equals,,amount,Not Added,deposit-completed-th-amount-tether,"platform(th),
+amount(amount), 
+product(thb)",,,amount,Added,Tether,,
+159,Trade Order Completed,buy-usdt-spot-thb-bitazza-th,"trade_type(spot), 
+trading_product(USDT),
+trading_ending(USDT),
+tracing_ending(THB),
+trading_value(amount),
+order_side(Buy)",equals,,trading_value,Not Added,,,,,,,Tether,,Buy X USDT volume of USDT/ THB in spot
+160,Trade Order Completed,sell-usdt-spot-thb-bitazza-th,"trade_type(spot), 
+trading_product(THB),
+trading_ending(USDT),
+tracing_ending(THB),
+trading_value(amount), 
+order_sell(Sell)",equals,,trading_value,Not Added,,,,,,,Tether,,Sell X THB volume of USDT/THB in spot
+161,Token Purchased,,,,,,,token-purchased-thb-amount-cherean,"product (thb), 
+topup_amount (amount), 
+community_id(698)",,,topup_amount,Added,Cherean,,
+162,Item Purchased,,,,,,,first-time-purchaser-cherean,community_id(698),,,,Added,Cherean,,
+163,Friend Invited Verified,,,,,,,friend-invited-verified-cherean,"community_id(698), verification_level(converted)",,,,Added,Cherean,,
+164,Item Purchased,,,,,,,first-time-purchaser-sstown,community_id(420),,,,Added,SSTown,,
+165,Item Purchased,,,,,,,item-purchase-sstown,"community_id(420), 
+quantity(amount)",,,quantity,Not Added,SSTown,,
+166,Item Purchased,,,,,,,item-purchase-sstown-bundle,"community_id(420), 
+quantity(amount), 
+merchandise_id(1231)",,,quantity,Not Added,SSTown,,
+167,Token Purchased,,,,,,,token-purchased-thb-amount-sstown,"token_amount (amount), 
+community_id(420)",,,token_amount,Added,SSTown,,
+168,Friend Invited Verified,,,,,,,friend-invited-verified-sstown,"community_id(420), verification_level(converted)",,,,Added,SSTown,,
+169,Fdp Payment Completed,,,equals,,,,first-time-purchaser-area-five-cafe,"currency(THB), merchant_name (Area Five Cafe)",,,,Added,Area Five Cafe,,
+170,Fdp Payment Completed,,,equals,,,,spending-area-five-cafe,"currency(THB), order_amount(amount), 
+merchant_name (Area Five Cafe)",,,amount,Added,Area Five Cafe,,
+171,Friend Invited Verified,,,equals,,,,friend-invited-verified-area-five-cafe,"community_id(992), verification_level(converted)",,,,Added,Area Five Cafe,,
+172,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-th-v3,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Milestone Trading with Trump as reward
+173,Friend Invited Kyced,friend-invited-kyced-bitazza_th-v2,referee_kyc_platform(bitazza_th),equals,,,Not Added,friend-invited-kyced-bitazza_th-v2,referee_kyc_platform(bitazza_th),,,,Added,Bitazza App - TH,,Friend Referral with FDM as reward
+174,Community Joined,,,,,,,community-joined-v2-freedom,-,,,-,Added,All,,
+175,Social Post Created,,,,,,,social-post-created-freedom,target_type(user),,,-,Added,All,,
+176,Social Follow Created,,,,,,,social-follow-created-freedom,-,,,-,Added,All,,
+177,Friend Invited Verified,,,,,,,friend-invited-verified-freedom,verification_level(converted),,,-,Added,All,,
+178,Avatar Skin Changed,,,,,,,avatar-skin-changed-freedom,is_default_string(false),,,-,Added,All,,
+179,Game Match Resulted,,,,,,,defeat-monster-freedom,"monster_killed_total(amount),
+match_result(win)",,,monster_killed_total,Added,All,,
+180,Item Purchased,,,,,,,item-purchased-freedom,community_id(35),,,,Not Added,All,,
+181,Community Joined,,,,,,,community-joined-cherean,community_id(698),,,,Added,Cherean,,
+182,Community Joined,,,,,,,community-joined-onyx,community_id(432),,,,Added,Onyx,,
+183,Fdp Payment Completed,,,,,,,first-time-purchaser-onyx,"currency(THB), merchant_name (
+ONYX)",,,,Added,Onyx,,
+184,Fdp Payment Completed,,,,,,,spending-onyx,"currency(THB), order_amount(amount), 
+merchant_name (ONYX)",,,amount,Added,Onyx,,
+185,Item Purchased,,,,,,,item-purchase-onyx,"community_id(432),
+quantity(amount),
+merchandise_id(), 
+merchandise_id()",,,quantity,Not Added,Onyx,,
+186,Trade Order Completed,,,,,,,trade-order-completed-spot-zent-amount-gl,"platform(gl),
+trading_product(ZENT),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App- GL,,
+187,Trade Order Completed,,,,,,,trade-order-completed-spot-zent-amount-th,"platform(th),
+trading_product(ZENT),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,
+188,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-th-v4,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Not Added,Bitazza App - TH,,Milestone Trading March - July
+189,Fdp Payment Completed,,,,,,,first-time-purchaser-roon-khanom-khai,"currency(THB), merchant_name (
+Roon Khanom Khai)",,,,Added,Roon Khanom Khai,,Change to Fdp Payment
+190,Fdp Payment Completed,,,,,,,spending-roon-khanom-thai,"currency(THB), order_amount(amount), 
+merchant_name (
+Roon Khanom Khai)",,,order_amount,Added,Roon Khanom Khai,,Change to Fdp Payment
+191,Friend Invited Verified,,,,,,,friend-invited-verified-roon-khanom-thai,"community_id(1085), verification_level(converted)",,,,Testing Done,Roon Khanom Khai,,
+192,Community Joined,,,,,,,community-joined-fuse,community_id(100),,,,Testing Done,FUSE,,
+193,Friend Invited Verified,,,,,,,friend-invited-verified-fuse-v2,"community_id(100), verification_level(converted)",,,,Testing Done,FUSE,,
+194,Social Scoring Received,,,,,,,community-social-score-fuse,"community_id(100), point(amount)",,,point,Testing Done,FUSE,,
+195,Game Match Resulted,defeat-monster-fuse,"monster_killed_total(amount),
+match_result(win)",equals,,monster_killed_total,Added,defeat-monster-fuse,"monster_killed_total(amount),
+match_result(win)",,,monster_killed_total,Testing Done,FUSE,,metrics reset 9/4/2025
+196,Item Purchased,,,,,,,item-purchased-fuse,"community_id(100),
+quantity(amount),
+merchandise_id(1569)",,,quantity,Testing Done,FUSE,,
+197,Community Joined,,,,,,,community-joined-v-street,community_id(869),,,,Testing Done,V street,,
+198,Game Match Resulted,,,,,,,defeat-monster-top-golf,"monster_killed_total(amount),
+match_result(win)",,,monster_killed_total,Testing Done,Top Golf Thailand,,
+199,Trade Order Completed,tether-spot-usdt-amount-th,"platform(th),
+trading_product(USDT),
+trade_type(spot),
+quantity(amount),
+order_side (Buy)",,,quantity,Added,tether-spot-usdt-amount-th,"platform(th),
+trading_product(USDT),
+trade_type(spot),
+quantity(amount),               
+order_side (Buy)",,,quantity,Testing Done,Tether,,
+200,Item Purchased,,,,,,,spending-8-iron-golf,"value(amount), community_id(1096)",,,value,Testing Done,8 Iron Golf,,
+201,Item Purchased,,,,,,,first-time-purchaser-8-iron-golf,community_id(1096),,,value,Testing Done,8 Iron Golf,,
+202,Friend Invited Verified,,,,,,,friend-invited-verified-8-iron-golf,"community_id(1096), verification_level(converted)",,,,Testing Done,8 Iron Golf,,
+203,Game Match Resulted,,,,,,,defeat-monster-area-five-cafe,"monster_killed_total(amount),
+match_result(win)",,,monster_killed_total,Testing Done,Area Five Cafe,,
+204,Fdp Payment Completed,,,,,,,first-time-purchase-japan-and-friends,"currency(THB), merchant_name (
+Japan and Friends)",,,,Added,Japan and Friends,,
+205,Fdp Payment Completed,,,,,,,spending-japan-and-friends,"currency(THB), order_amount(amount), 
+merchant_name (
+Japan and Friends)",,,amount,Added,Japan and Friends,,
+206,Friend Invited Verified,,,,,,,friend-invite-verified-japan-and-friends,"community_id(1095), verification_level(converted)",,,,Testing Done,Japan and Friends,,
+207,Community Joined,,,,,,,community-joined-muic-blockchain-club,community_id(1212),,,,Added,MUIC Blockchain Club,,
+208,Item Purchased,,,,,,,first-time-purchase-prang-view,community_id(1077),,,,Testing Done,Prang View,,
+209,Item Purchased,,,,,,,spending-prang-view,"value(amount), community_id(1077)",,,value,Testing Done,Prang View, ,
+210,Friend Invited Verified,,,,,,,friend-invite-verified-prang-view,"community_id(1077), verification_level(converted)",,,,Testing Done,Prang View,,
+211,Social Scoring Received,,,,,,,freedom-social-score,"community_id(35), point(amount)",,,point,Pending,Freedom World,,
+212,Deposit Completed,,,,,,,deposit-completed-th-amount-v2,"platform(th), 
+product(thb)",,,,Testing Done,Bitazza App - TH,,
+213,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-th-v5,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Testing Done,Bitazza App - TH,,
+214,Trade Order Completed,,,,,,,first-trade-order-completed-spot-thb-amount-th,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Testing Done,Bitazza App - TH,Using user 360,
+215,Fdp Payment Completed,,,,,,,first-time-purchase-ratio-waffle,"currency(THB), merchant_name (
+Ratio Waffle)",,,,Added,Ratio Waffle,,
+216,Fdp Payment Completed,,,,,,,spending-ratio-waffle,"currency(THB), order_amount(amount), 
+merchant_name (
+Ratio Waffle)",,,order_amount,Added,Ratio Waffle,,
+217,Friend Invited Verified,,,,,,,friend-invite-verified-ratio-waffle,"community_id(1201), verification_level(converted)",,,,Testing Done,Ratio Waffle,,
+218,Item Purchased,,,,,,,first-time-purchase-tochio-donut,community_id(1219),,,,Testing Done,Tochio Donut,,
+219,Item Purchased,,,,,,,spending-tochio-donut,"value(amount), community_id(1219)",,,value,Testing Done,Tochio Donut,,
+220,Friend Invited Verified,,,,,,,friend-invite-verified-tochio-donut,"community_id(1219), verification_level(converted)",,,,Testing Done,Tochio Donut,,
+221,Fdp Payment Completed,,,,,,,first-time-purchase-anant-ja-pan-cha-yen,"currency(THB), merchant_name (
+Anant Ja Pan Chayen)",,,,Added,ANant Ja Pan Cha Yen,,
+222,Fdp Payment Completed,,,,,,,spending-anant-ja-pan-cha-yen,"currency(THB), order_amount(amount), 
+merchant_name (
+Anant Ja Pan Chayen)",,,order_amount,Added,ANant Ja Pan Cha Yen,,
+223,Friend Invited Verified,,,,,,,friend-invite-verified-anant-ja-pan-cha-yen,"community_id(1420), verification_level(converted)",,,,Added,ANant Ja Pan Cha Yen,,
+224,Item Purchased,,,,,,,first-time-purchase-bangbang-bangkok,community_id(1071),,,,Testing Done,BangBang Bangkok,,
+225,Item Purchased,,,,,,,spending-bangbang-bangkok,"value(amount), community_id(1071)",,,value,Testing Done,BangBang Bangkok,,
+226,Item Purchased,,,,,,,first-time-purchase-bangkok-deejay,community_id(1070),,,,Testing Done,Bangkok Deejay,https://bitazza.atlassian.net/browse/BG-910?focusedCommentId=109947,
+227,Item Purchased,,,,,,,spending-bangkok-deejay,"value(amount), community_id(1070)",,,value,Testing Done,Bangkok Deejay,,
+228,Item Purchased,,,,,,,first-time-purchase-oxygen-tour,community_id(1200),,,,Added,Oxygen Tour Koh Tao,,
+229,Item Purchased,,,,,,,spending-oxygen-tour,"value(amount), community_id(1200)",,,value,Added,Oxygen Tour Koh Tao,,
+230,Friend Invited Verified,,,,,,,friend-invite-verified-oxygen-tour,"community_id(1200), verification_level(converted)",,,,Added,Oxygen Tour Koh Tao,,
+231,Item Purchased,,,,,,,first-time-purchase-songkhla,community_id(1195),,,,Added,Songkhla,https://bitazza.atlassian.net/browse/BG-929?focusedCommentId=112224,
+232,Token Purchased,,,,,,,token-purchased-thb-amount-songkhla,"product (thb), 
+topup_amount (amount), 
+community_id(1195)",,,topup_amount,Added,Songkhla,,
+233,Friend Invited Verified,,,,,,,friend-invite-verified-songkhla,"community_id(1195), verification_level(converted)",,,,Added,Songkhla,,
+234,Item Purchased,,,,,,,item-purchased-songkhla,"quantity(amount), community_id(1195)",,,quantity,Added,Songkhla,,
+235,Trade Order Completed,,,,,,,tether-sell-usdt-amount-thb,"platform(th),
+trading_product(USDT),
+trade_type(spot),
+trading_value(amount),
+order_side (Sell)",,,trading_value,Added,Tether,,
+236,Trade Order Completed,,,,,,,ledger-spot-usdt-amount-th,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,Ledger Campaign,
+237,Friend Invited Verified,,,,,,,invite-friend-converted-bangkok-community-help-foundation,"community_id(472),
+verification_level(converted)",,,,Added,Bangkok Community Help Foundation,,
+238,"fdp_payment_completed (STG) or 
+Fdp Payment Completed (PROD)",token-purchased-amount-thb-bangkok-community-help-foundation,"currency(THB), order_amount(amount), merchant_name (Bangkok Community Help Foundation)",equals,,order_amount,Added,token-purchased-amount-thb-bangkok-community-help-foundation,"currency(THB), order_amount(amount), merchant_name (Bangkok Community Help Foundation)",,,order_amount,Not Added,Bangkok Community Help Foundation,,Change to Fdp Payment Completed
+239,Friend Invited Verified,,,,,,,friend-invite-verified-tomyum-koong,"community_id(335),
+verification_level(converted)",,,,Added,Tomyum Koong,,
+240,Fdp Payment Completed,,,,,,,first-time-purchase-tomyum-koong,"currency(THB), merchant_name (TomYum Koong)",,,,Added,Tomyum Koong,,
+241,Fdp Payment Completed,,,,,,,spending-tomyum-koong,"currency(THB), order_amount(amount), merchant_name (TomYum Koong)",,,order_amount,Added,Tomyum Koong,,
+242,Friend Invited Verified,,,,,,,friend-invite-verified-ricos-sathorn,"community_id(1395),
+verification_level(converted)",,,,Added,Rico's Sathorn,,
+243,Fdp Payment Completed,,,,,,,first-time-purchase-ricos-sathorn,"currency(THB), merchant_name (Rico's Sathorn)",,,,Added,Rico's Sathorn,,
+244,Fdp Payment Completed,,,,,,,spending-ricos-sathorn,"currency(THB), order_amount(amount), merchant_name (Rico's Sathorn)",,,order_amount,Added,Rico's Sathorn,,
+245,Friend Invited Verified,,,,,,,friend-invite-verified-yuutako,"community_id(1406),
+verification_level(converted)",,,,Added,Yuutako,,
+246,Fdp Payment Completed,,,,,,,first-time-purchase-yuutako,"currency(THB), merchant_name (yuutako)",,,,Added,Yuutako,,
+247,Fdp Payment Completed,,,,,,,spending-yuutako,"currency(THB), order_amount(amount), merchant_name (yuutako)",,,order_amount,Added,Yuutako,,
+245,Friend Invited Verified,,,,,,,friend-invite-verified-tech&trade,"community_id(1396),
+verification_level(converted)",,,,Added,Tech & Trade Community Thailand,,
+246,Fdp Payment Completed,,,,,,,first-time-purchase-tech&trade,"currency(THB), merchant_name (Tech & Trade community Thailand)",,,,Added,Tech & Trade Community Thailand,,
+247,Fdp Payment Completed,,,,,,,spending-tech&trade,"currency(THB), order_amount(amount), merchant_name (Tech & Trade community Thailand)",,,order_amount,Added,Tech & Trade Community Thailand,,
+248,Friend Invited Verified,,,,,,,friend-invite-verified-baked-by-apple,"community_id(1255),
+verification_level(converted)",,,,Added, Baked by Apple,,
+249,Fdp Payment Completed,,,,,,,first-time-purchase-baked-by-apple,"currency(THB), merchant_name (
+Baked by Apple)",,,,Added, Baked by Apple,,
+250,Fdp Payment Completed,,,,,,,spending-baked-by-apple,"currency(THB), order_amount(amount), merchant_name (
+Baked by Apple)",,,order_amount,Added, Baked by Apple,,
+251,Friend Invited Verified,,,,,,,friend-invite-verified-rinn-refined-thai-tea,"community_id(1448),
+verification_level(converted)",,,,Added,RiNn Refined Thai Tea,,
+252,Fdp Payment Completed,,,,,,,first-time-purchase-rinn-refined-thai-tea,"currency(THB), merchant_name (
+RiNn Refined Thai Tea
+)",,,,Added,RiNn Refined Thai Tea,,
+253,Item Purchase,,,,,,,spending-serene-rinn-refined-thai-tea,"community_id(1448),
+quantity(amount),
+merchandise_id(2106)",,,quantity,Added,RiNn Refined Thai Tea,,
+254,Item Purchase,,,,,,,spending-serene-rinn-sage-thai-tea,"community_id(1448),
+quantity(amount),
+merchandise_id(2108)",,,quantity,Added,RiNn Refined Thai Tea,,
+255,Fdp Payment Completed,,,,,,,first-time-purchase-v-street,"currency(THB), merchant_name (V Street)",,,,Added,V street,,
+256,Fdp Payment Completed,,,,,,,spending-v-street,"currency(THB), merchant_name (V Street),
+order_amount(amount)",,,order_amount,Added,V street,,
+251,Friend Invited Verified,,,,,,,friend-invite-verified-v-street,"community_id(869),
+verification_level(converted)",,,,Added,V street,,
+252,Fdp Payment Completed,,,,,,,first-time-purchase-ruyicha-hatyai,"currency(THB), merchant_name (Ruyicha Hatyai)",,,,Added,Ruyicha Hatyai,,
+253,Fdp Payment Completed,,,,,,,spending-ruyicha-hatyai,"currency(THB), merchant_name (Ruyicha Hatyai), order_amount(amount)",,,order_amount,Added,Ruyicha Hatyai,,
+254,Item Purchase,,,,,,,spending-boba-milk-tea-ruyicha-hatyai,"community_id(1488),
+quantity(amount),
+merchandise_id(2158)",,,quantity,Added,Ruyicha Hatyai,,
+255,Item Purchase,,,,,,,spending-chocolate-milk-tea-ruyicha-hatyai,"community_id(1488),
+quantity(amount),
+merchandise_id(2160)",,,quantity,Added,Ruyicha Hatyai,,
+256,Item Purchase,,,,,,,spending-iced-thai-tea-ruyicha-hatyai,"community_id(1488),
+quantity(amount),
+merchandise_id(2159)",,,quantity,Added,Ruyicha Hatyai,,
+257,Friend Invited Verified,,,,,,,friend-invite-verified-ruyicha-hatyai,"community_id(1488),
+verification_level(converted)",,,,Added,Ruyicha Hatyai,,
+258,Community Joined,,,,,,,community-joined-epic-entertaiment,community_id(40),,,,Added,Epic Entertainment,,
+259,Fdp Payment Completed,,,,,,,first-time-purchase-refine-cofee-roster-tdcc,"currency(THB), merchant_name (Refine Coffee Roster TCDC)",,,,Added,Refine Coffee Roster TCDC,,TAT
+260,Fdp Payment Completed,,,,,,,first-time-purchase-savor,"currency(THB), merchant_name (Savor)",,,,Added,Savor,,TAT
+261,Fdp Payment Completed,,,,,,,first-time-purchase-friend-coffee-and-bar,"currency(THB), merchant_name (Friend Coffee and Bar)",,,,Added,Friend Coffee and bar,,TAT
+262,Fdp Payment Completed,,,,,,,first-time-purchase-ristr8to-original,"currency(THB), merchant_name (Ristr8to Original)",,,,Added,Ristr8to Original,,TAT
+263,Fdp Payment Completed,,,,,,,first-time-purchase-trofe,"currency(THB), merchant_name (Trofe)",,,,Added,Trofe,,TAT
+264,Fdp Payment Completed,,,,,,,first-time-purchase-thong-urai,"currency(THB), merchant_name (Thong Urai Cafe and Paw Made Painting)",,,,Added,Thong Urai Cafe and Paw Made Painting,,TAT
+265,Fdp Payment Completed,,,,,,,first-time-purchase-teety-scoops,"currency(THB), merchant_name (Teety Scoops)",,,,Added,Teety Scoops,,TAT
+266,Fdp Payment Completed,,,,,,,first-time-purchase-beans-of-us,"currency(THB), merchant_name (Beans of us Coffee Roaster)",,,,Added,Beans of us Coffee Roaster,,TAT
+267,Fdp Payment Completed,,,,,,,first-time-purchase-wishlist-studio,"currency(THB), merchant_name (Wishlist Studio)",,,,Added,Wishlist Studio,,
+268,Fdp Payment Completed,,,,,,,spending-wishlist-studio,"currency(THB), merchant_name (Wishlist Studio), order_amount(amount)",,,order_amount,Added,Wishlist Studio,,
+269,Friend Invited Verified,,,,,,,friend-invited-verified-wishlist-studio,"community_id(1468),
+verification_level(converted)",,,,Added,Wishlist Studio,,
+270,Fdp Payment Completed,,,,,,,first-time-purchase-teds-coffee,"currency(THB), merchant_name (TEDS Coffee & Eatery)",,,,Added,TEDS Coffee & Eatery ,,TAT
+271,Fdp Payment Completed,,,,,,,first-time-purchase-morrow-coff,"currency(THB), merchant_name (Morrow coff)",,,,Added,Morrow coff,,TAT
+272,Fdp Payment Completed,,,,,,,first-time-purchase-tam,"currency(THB), merchant_name (TAM)",,,,Added,TAM,,TAT
+273,Fdp Payment Completed,,,,,,,first-time-purchase-great-shot,"currency(THB), merchant_name (Great Shot Bar CNX)",,,,Added,Great Shot Bar CNX,,TAT
+274,Fdp Payment Completed,,,,,,,first-time-purchase-well-coffee,"currency(THB), merchant_name (Well Coffee Station)",,,,Added,Well Coffee Station,,TAT
+275,Fdp Payment Completed,,,,,,,first-time-purchase-bob-coffee,"currency(THB), merchant_name (BOB Coffee)",,,,Added,BOB Coffee,,TAT
+276,Fdp Payment Completed,,,,,,,first-time-purchase-jai-loy,"currency(THB), merchant_name (
+JAI Loy Cafe&Rooftop)",,,,Added,JAI Loy Cafe&Rooftop,,TAT
+277,Card Spent,card-spent-everyday-eats,"amount (amount),
+mission_category(everyday_eats)",equals,,amount,Testing Done,card-spent-everyday-eats,"amount (amount),
+mission_category(everyday_eats)",,,amount,Added,Freedom Card,,
+278,Card Spent,card-spent-binge-chill,"amount (amount),
+mission_category(binge_and_chill)",equals,,amount,Testing Done,card-spent-binge-chill,"amount (amount),
+mission_category(binge_and_chill)",,,amount,Added,Freedom Card,,
+279,Card Spent,card-spent-retail-theraphy,"amount (amount),
+mission_category(retail_therapy)",equals,,amount,Testing Done,card-spent-retail-theraphy,"amount (amount),
+mission_category(retail_therapy)",,,amount,Added,Freedom Card,,
+280,Card Spent,card-spent-game-on,"amount (amount),
+mission_category(game_on)",equals,,amount,Testing Done,card-spent-game-on,"amount (amount),
+mission_category(game_on)",,,amount,Added,Freedom Card,,
+281,Card Spent,card-spent-book-go,"amount (amount),
+mission_category(book_and_go)",equals,,amount,Testing Done,card-spent-book-go,"amount (amount),
+mission_category(book_and_go)",,,amount,Added,Freedom Card,,
+282,Friend Invited Verified,friend-invited-verified-freedom-card,"community_id(1056), verification_level(converted)",equals,,,Testing Done,friend-invited-verified-freedom-card,"community_id(296), verification_level(converted)",,,,Not Added,Freedom Card,,
+283,Token Purchased,,,,,,,token-purchased-thb-amount-roon-khanom-khai,"product (thb), 
+topup_amount (amount), 
+community_id(1085)",,,topup_amount,Added,Roon Khanom Khai,,
+284,Fdp Payment Completed,,,,,,,spending-refine-cofee-roster-tdcc,"currency(THB), 
+merchant_name (Refine Coffee Roster TCDC), 
+order_amount(amount)",,,order_amount,Added,Refine Coffee Roster TCDC,,TAT
+285,Fdp Payment Completed,,,,,,,spending-savor,"currency(THB), merchant_name (Savor), order_amount(amount)",,,order_amount,Added,Savor,,TAT
+286,Fdp Payment Completed,,,,,,,spending-friend-coffee-and-bar,"currency(THB), merchant_name (Friend Coffee and Bar), order_amount(amount)",,,order_amount,Added,Friend Coffee and bar,,TAT
+287,Fdp Payment Completed,,,,,,,spending-ristr8to-original,"currency(THB), merchant_name (Ristr8to Original), order_amount(amount)",,,order_amount,Added,Ristr8to Original,,TAT
+288,Fdp Payment Completed,,,,,,,spending-trofe,"currency(THB), merchant_name (Trofe), order_amount(amount)",,,order_amount,Added,Trofe,,TAT
+289,Fdp Payment Completed,,,,,,,spending-thong-urai,"currency(THB), merchant_name (Thong Urai Cafe and Paw Made Painting), order_amount(amount)",,,order_amount,Added,Thong Urai Cafe and Paw Made Painting,,TAT
+290,Fdp Payment Completed,,,,,,,spending-teety-scoops,"currency(THB), merchant_name (Teety Scoops), order_amount(amount)",,,order_amount,Added,Teety Scoops,,TAT
+291,Fdp Payment Completed,,,,,,,spending-beans-of-us,"currency(THB), merchant_name (Beans of us Coffee Roaster), order_amount(amount)",,,order_amount,Added,Beans of us Coffee Roaster,,TAT
+292,Fdp Payment Completed,,,,,,,spending-teds-coffee,"currency(THB), merchant_name (TEDS Coffee & Eatery), order_amount(amount)",,,order_amount,Added,TEDS Coffee & Eatery ,,TAT
+293,Fdp Payment Completed,,,,,,,spending-morrow-coff,"currency(THB), merchant_name (Morrow coff), 
+order_amount(amount)",,,order_amount,Added,Morrow coff,,TAT
+294,Fdp Payment Completed,,,,,,,spending-tam,"currency(THB), merchant_name (TAM), order_amount(amount)",,,order_amount,Added,TAM,,TAT
+295,Fdp Payment Completed,,,,,,,spending-great-shot,"currency(THB), merchant_name (Great Shot Bar CNX), order_amount(amount)",,,order_amount,Added,Great Shot Bar CNX,,TAT
+296,Fdp Payment Completed,,,,,,,spending-well-coffee,"currency(THB), merchant_name (Well Coffee Station), order_amount(amount)",,,order_amount,Added,Well Coffee Station,,TAT
+297,Fdp Payment Completed,,,,,,,spending-bob-coffee,"currency(THB), merchant_name (BOB Coffee), order_amount(amount)",,,order_amount,Added,BOB Coffee,,TAT
+298,Fdp Payment Completed,,,,,,,spending-jai-loy,"currency(THB), merchant_name (
+JAI Loy Cafe&Rooftop), order_amount(amount)",,,order_amount,Added,JAI Loy Cafe&Rooftop,,TAT
+299,Friend Invited Verified,,,,,,,friend-invited-verified-refine-cofee-roster-tdcc,"community_id(1389),
+verification_level(converted)",,,,Added,Refine Coffee Roster TCDC,,TAT
+300,Friend Invited Verified,,,,,,,friend-invited-verified-savor,"community_id(1390),
+verification_level(converted)",,,,Added,Savor,,TAT
+301,Friend Invited Verified,,,,,,,friend-invited-verified-friend-coffee-and-bar,"community_id(1417),
+verification_level(converted)",,,,Added,Friend Coffee and bar,,TAT
+302,Friend Invited Verified,,,,,,,friend-invited-verified-ristr8to-original,"community_id(1429),
+verification_level(converted)",,,,Added,Ristr8to Original,,TAT
+303,Friend Invited Verified,,,,,,,friend-invited-verified-trofe,"community_id(1525),
+verification_level(converted)",,,,Added,Trofe,,TAT
+304,Friend Invited Verified,,,,,,,friend-invited-verified-thong-urai,"community_id(1503),
+verification_level(converted)",,,,Added,Thong Urai Cafe and Paw Made Painting,,TAT
+305,Friend Invited Verified,,,,,,,friend-invited-verified-teety-scoops,"community_id(1397),
+verification_level(converted)",,,,Added,Teety Scoops,,TAT
+306,Friend Invited Verified,,,,,,,friend-invited-verified-beans-of-us,"community_id(1544),
+verification_level(converted)",,,,Added,Beans of us Coffee Roaster,,TAT
+307,Friend Invited Verified,,,,,,,friend-invited-verified-teds-coffee,"community_id(1548),
+verification_level(converted)",,,,Added,TEDS Coffee & Eatery ,,TAT
+308,Friend Invited Verified,,,,,,,friend-invited-verified-morrow-coff,"community_id(1538),
+verification_level(converted)",,,,Added,Morrow coff,,TAT
+309,Friend Invited Verified,,,,,,,friend-invited-verified-tam,"community_id(1539),
+verification_level(converted)",,,,Added,TAM,,TAT
+310,Friend Invited Verified,,,,,,,friend-invited-verified-great-shot,"community_id(1549),
+verification_level(converted)",,,,Added,Great Shot Bar CNX,,TAT
+311,Friend Invited Verified,,,,,,,friend-invited-verified-well-coffee,"community_id(1579),
+verification_level(converted)",,,,Added,Well Coffee Station,,TAT
+312,Friend Invited Verified,,,,,,,friend-invited-verified-bob-coffee,"community_id(1618),
+verification_level(converted)",,,,Added,BOB Coffee,,TAT
+313,Friend Invited Verified,,,,,,,friend-invited-verified-jai-loy,"community_id(1626),
+verification_level(converted)",,,,Added,JAI Loy Cafe&Rooftop,,TAT
+314,Deposit Completed,,,,,,Not Added,deposit-completed-th-usdt-amount-tether,"platform(th),
+amount(amount), 
+product(USDT)",,,amount,Added,Tether,,
+315,Fdp Payment Completed,,,,,,,first-time-purchase-scoopify,"currency(THB), merchant_name (Scoopify)",,,,Added,Scoopify,,
+316,Fdp Payment Completed,,,,,,,spending-scoopify,"currency(THB), merchant_name (Scoopify), order_amount(amount)",,,order_amount,Added,Scoopify,,
+317,Friend Invited Verified,,,,,,,invite-friend-scoopify,"community_id(1580),
+verification_level(converted)",,,,Added,Scoopify,,
+318,Fdp Payment Completed,,,,,,,first-time-purchase-inthanin-ladkrabang,"currency(TYM), merchant_name (Inthanin Ladkrabang branch)",,,,Added,Inthanin Ladkrabang Branch,,
+319,Fdp Payment Completed,,,,,,,spending-inthanin-ladkrabang,"currency(TYM), merchant_name (Inthanin Ladkrabang branch), order_amount (amount)",,,order_amount,Added,Inthanin Ladkrabang Branch,,
+320,Token Purchased,,,,,,,token-purchased-amount-thb-tomyumkoong,"product (thb), 
+topup_amount (amount), 
+community_id(335)",,,topup_amount,Added,Tomyum Koong,,
+321,Fdp Payment Completed,,,,,,,first-time-purchase-heartening-cafe,"currency(THB), merchant_name (Heartening cafe)",,,,Added,Heartening cafe,,TAT
+322,Fdp Payment Completed,,,,,,,spending-heartening-cafe,"currency(THB), merchant_name (Heartening cafe), order_amount (amount)",,,order_amount,Added,Heartening cafe,,TAT
+323,Friend Invited Verified,,,,,,,invite-friend-heartening-cafe,"community_id(1656),
+verification_level(converted)",,,,Added,Heartening cafe,,TAT
+324,Fdp Payment Completed,,,,,,,first-time-purchase-kor-cafeandstudio,"currency(THB), merchant_name (Kor cafeandstudio)",,,,Added, Kor cafeandstudio,,TAT
+325,Fdp Payment Completed,,,,,,,spending-kor-cafeandstudio,"currency(THB), merchant_name (Kor cafeandstudio), order_amount (amount)",,,order_amount,Added, Kor cafeandstudio,,TAT
+326,Friend Invited Verified,,,,,,,invite-friend-kor-cafeandstudio,"community_id(1655),
+verification_level(converted)",,,,Added, Kor cafeandstudio,,TAT
+327,Fdp Payment Completed,,,,,,,first-time-purchase-kom-coffee,"currency(THB), merchant_name (KOM COFFEE)",,,,Added,KOM COFFEE,,TAT
+328,Fdp Payment Completed,,,,,,,spending-kom-coffee,"currency(THB), merchant_name (KOM COFFEE), order_amount (amount)",,,order_amount,Added,KOM COFFEE,,TAT
+329,Friend Invited Verified,,,,,,,invite-friend-kom-coffee,"community_id(1663),
+verification_level(converted)",,,,Added,KOM COFFEE,,TAT
+330,NFT Ticket Validated,ginventure-entry-tickets-validated,"community_id(777), 
+product_name(Ginventure General Ticket), 
+product_name(Ginventure Early Bird Ticket), 
+product_name(Ginventure Door Ticket), 
+product_name()",equals,,,Added,ginventure-entry-tickets-validated,"community_id(66), 
+product_name(General ticket), 
+product_name(Early Bird Ticket), 
+product_name(At door ticket), 
+product_name(Special Ticket)",,,,Added,GULP BKK,,TEST On the Discover Thailand Community STG. Applied to GULP BKK in PROD
+331,Deposit Completed,,,,,,,deposit-completed-th-amount-daily,"platform(th),
+amount(amount),
+product(THB)",,,amount,Added,Bitazza App - TH,,Daily missions
+332,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-daily,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Daily missions
+333,Trade Order Completed,,,,,,,trade-order-completed-thb-th-pengu-monthly,"platform(th),
+trading_product(PENGU),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Monthly missions
+334,Trade Order Completed,,,,,,,trade-order-completed-thb-th-monthly,"platform(th), trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Monthly missions - cancelled
+335,Fdp Payment Completed,,,,,,,spending-top-golf-thailand,"currency(THB), merchant_name (Topgolf Thailand), order_amount (amount)",,,order_amount,Added,Top Golf Thailand,,
+336,Trade Order Completed,,,,,,,trade-order-completed-thb-th-aster-monthly,"platform(th),
+trading_product(ASTER),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Monthly missions
+337,Card Spent,,,,,,,card-spent-grab,"amount (amount),
+merchant_group(grab)",,,amount,Added,Freedom Card,,
+338,Card Spent,,,,,,,card-spent-lineman,"amount (amount),
+merchant_group(lineman)",,,amount,Added,Freedom Card,,
+339,Card Spent,,,,,,,card-spent-netflix,"amount (amount),
+merchant_group(netflix)",,,amount,Added,Freedom Card,,
+340,Card Spent,,,,,,,card-spent-apple,"amount (amount),
+merchant_group(apple)",,,amount,Added,Freedom Card,,
+341,Card Spent,,,,,,,card-spent-youtube,"amount (amount),
+merchant_group(youtube)",,,amount,Added,Freedom Card,,
+342,Card Spent,,,,,,,card-spent-spotify,"amount (amount),
+merchant_group(spotify)",,,amount,Added,Freedom Card,,
+343,Card Spent,,,,,,,card-spent-retail-theraphy,"amount (amount),
+mission_category(retail_therapy)",,,amount,Added,Freedom Card,,
+344,Card Spent,,,,,,,card-spent-shein,"amount (amount),
+merchant_group(shein)",,,amount,Added,Freedom Card,,
+345,Card Spent,,,,,,,card-spent-aliexpress,"amount (amount),
+merchant_group(aliexpress)",,,amount,Added,Freedom Card,,
+346,Card Spent,,,,,,,card-spent-playstation,"amount (amount),
+merchant_group(playstation)",,,amount,Added,Freedom Card,,
+347,Card Spent,,,,,,,card-spent-steam,"amount (amount),
+merchant_group(steam)",,,amount,Added,Freedom Card,,
+348,Card Spent,,,,,,,card-spent-agoda,"amount (amount),
+merchant_group(agoda)",,,amount,Added,Freedom Card,,
+349,Card Spent,,,,,,,card-spent-bookingcom,"amount (amount),
+merchant_group(booking)",,,amount,Added,Freedom Card,,
+350,Card Spent,,,,,,,card-spent-tripcom,"amount (amount),
+merchant_group(trip.com)",,,amount,Added,Freedom Card,,
+351,Card Spent,,,,,,,card-spent-paybill,"amount (amount),
+mission_category (pay_bill)",,,amount,Added,Freedom Card,,
+352,Card Spent,,,,,,,card-spent-weekly,amount (amount),,,amount,Added,Freedom Card,,
+353,Fdp Payment Completed,,,,,,,donate-conserve-natural-forest,"currency(THB), order_amount(amount), merchant_name (Conserve Natural Forest)",,,order_amount,Added,Conserve Natural Forest,,
+354,Friend Invited Verified,,,,,,,friend-conserve-natural-forest,"community_id(1639),
+verification_level(converted)",,,,Added,Conserve Natural Forest,,
+355,Trade Order Completed,,,,,,,trade-order-completed-spot-thb-amount-new-user,"platform(th),
+trading_ending(THB),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Testing Done,Bitazza App - TH,,New user
+356,Console Profile Edited,freedom-console-profile-edited,is_default_cover(false),equals,,Added,,freedom-console-profile-edited,is_default_cover(false),,,,Added,Freedom Console,,Console Get Started Mission: Upload Community Cover
+357,Console Location Updated,freedom-console-location-updated,poi_status(created),equals,,Added,,freedom-console-location-updated,poi_status(created),,,,Added,Freedom Console,,Console Get Started Mission: Setup your location
+358,Social Post Created,freedom-console-first-post-published,,equals,,Added,,freedom-console-first-post-published,,,,,Added,Freedom Console,,Console Get Started Mission: Publish Your first post
+359,Console Status Updated,freedom-console-community-published,publish_status(published),equals,,Added,,freedom-console-community-published,publish_status(published),,,,Added,Freedom Console,,Console Get Started Mission: Publish Your Community
+360,Fdp Payment Completed,,,equals,,,,donate-dog-rescue-mae,"currency(THB), order_amount(amount), merchant_name (
+Dog Rescue Mae Phim Foundation)",,,order_amount,Testing Done,Dog Rescue Mae Phim Foundation,,
+361,Friend Invited Verified,,,equals,,,,invite-friend-dog-rescue-mae,"community_id(1730),
+verification_level(converted)",,,,Testing Done,Dog Rescue Mae Phim Foundation,,
+362,Fdp Payment Completed,,,equals,,,,first-time-purchase-calm-bangkok,"currency(THB), merchant_name (CALM Bangkok)",,,,Added,CALM Bangkok,,
+363,Fdp Payment Completed,,,equals,,,,spending-calm-bangkok,"currency(THB), merchant_name (CALM Bangkok), order_amount(amount)",,,order_amount,Added,CALM Bangkok,,
+364,Friend Invited Verified,,,equals,,,,invite-friend-calm-bangkok,"community_id(1155),
+verification_level(converted)",,,,Added,CALM Bangkok,,
+365,Fdp Payment Completed,,,equals,,,,first-time-purchase-bonjour-bonsoir,"currency(THB), merchant_name (Bonjour Bonsoir)",,,,Added,Bonjour Bonsoir,,
+366,Fdp Payment Completed,,,equals,,,,spending-bonjour-bonsoir,"currency(THB), merchant_name (Bonjour Bonsoir), order_amount(amount)",,,order_amount,Added,Bonjour Bonsoir,,
+367,Friend Invited Verified,,,equals,,,,invite-friend-bonjour-bonsoir,"community_id(1703),
+verification_level(converted)",,,,Added,Bonjour Bonsoir,,
+368,Fdp Payment Completed,,,equals,,,,first-time-purchase-sos-craft-beer,"currency(THB), merchant_name (SOS CRAFT BEER & BURGER)",,,,Added,SOS CRAFT BEER & BURGER,,
+369,Fdp Payment Completed,,,equals,,,,spending-sos-craft-beer,"currency(THB), merchant_name (SOS CRAFT BEER & BURGER), order_amount(amount)",,,order_amount,Added,SOS CRAFT BEER & BURGER,,
+370,Friend Invited Verified,,,equals,,,,invite-friend-sos-craft-beer,"community_id(1718),
+verification_level(converted)",,,,Added,SOS CRAFT BEER & BURGER,,
+371,Trade Order Completed,,,equals,,,,trade-order-completed-thb-th-btc-monthly,"platform(th),
+trading_product(BTC),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Monthly missions JAN 2026
+372,Trade Order Completed,,,equals,,,,trade-order-completed-thb-th-eth-monthly,"platform(th),
+trading_product(ETH),
+trade_type(spot),
+trading_value(amount)",,,trading_value,Added,Bitazza App - TH,,Monthly missions JAN 2026
+373,Fdp Payment Completed,,,equals,,,,first-time-purchase-choch-songwat,"currency(THB), merchant_name (Choch Songwat)",,,,Added,Choch Songwat,,
+374,Fdp Payment Completed,,,equals,,,,spending-choch-songwat,"currency(THB), merchant_name (Choch Songwat), order_amount(amount)",,,order_amount,Added,Choch Songwat,,
+375,Friend Invited Verified,,,equals,,,,invite-friend-choch-songwat,"community_id(1733),
+verification_level(converted)",,,,Added,Choch Songwat,,
+376,Fdp Payment Completed,,,equals,,,,first-time-purchase-somewhere-in-songwat,"currency(THB), merchant_name (Somewhere in Songwat)",,,,Added,Somewhere in Songwat,,
+377,Fdp Payment Completed,,,equals,,,,spending-somewhere-in-songwat,"currency(THB), merchant_name (Somewhere in Songwat
+t), order_amount(amount)",,,order_amount,Added,Somewhere in Songwat,,
+378,Friend Invited Verified,,,equals,,,,invite-friend-somewhere-in-songwat,"community_id(1746),
+verification_level(converted)",,,,Added,Somewhere in Songwat,,
+379,Fdp Payment Completed,,,equals,,,,first-time-purchase-eggplant-smoothie,"currency(THB), merchant_name (Eggplant Smoothie & Juice Bar)",,,,Added,Eggplant Smoothie & Juice Bar,,
+380,Fdp Payment Completed,,,equals,,,,spending-eggplant-smoothie,"currency(THB), merchant_name (Eggplant Smoothie & Juice Bar
+), order_amount(amount)",,,order_amount,Added,Eggplant Smoothie & Juice Bar,,
+381,Friend Invited Verified,,,equals,,,,invite-friend-eggplant-smoothie,"community_id(1733),
+verification_level(converted)",,,,Added,Eggplant Smoothie & Juice Bar,,
+382,Fdp Payment Completed,,,equals,,,,first-time-purchase-ek-teng-phu-ki,"currency(THB), merchant_name (Ek Teng Phu Ki)",,,,Added,Ek Teng Phu Ki,,
+383,Fdp Payment Completed,,,equals,,,,spending-ek-teng-phu-ki,"currency(THB), merchant_name (Ek Teng Phu Ki), order_amount(amount)",,,order_amount,Added,Ek Teng Phu Ki,,
+384,Friend Invited Verified,,,equals,,,,invite-friend-ek-teng-phu-ki,"community_id(1749),
+verification_level(converted)",,,,Added,Ek Teng Phu Ki,,
+385,Fdp Payment Completed,,,equals,,,,donate-adoptable-puppy,"currency(THB), order_amount(amount), merchant_name (The Adoptable Puppy Cafe and Thai Dogs Matter)",,,order_amount,Added,Dog Rescue Mae Phim Foundation,,
+386,Friend Invited Verified,,,equals,,,,invite-friend-adoptable-puppy,"community_id(1444),
+verification_level(converted)",,,,Added,Dog Rescue Mae Phim Foundation,,
+387,Social Post Approved,social-post-approved-bitazza-th,community_id(380),equals,,,,social-post-approved-bitazza-th,community_id(118),,,,Not Added,Bitazza App - TH,,
+388,fdp_payment_completed,spending-missions-the-scape,merchant_name,not equals,Adventure LN Hub,order_amount,Added,,,,,,,,,
+,,,merchant_name,not equals,Freedom,,,,,,,,,,,
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,any,amount,,,,,,,,,,,
+389,fdp_payment_completed,spend-less-than-1k-cafe-multiple-transaction,merchant_name,equals,Freedom Cafe,,Added,,,,,,,Freedom Cafe,,To test metrics filter on STG (less than)
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,less than,1000,,,,,,,,,,,
+390,fdp_payment_completed,spend-less-than-1k-except-cafe-one-transaction,merchant_name,not equals,Freedom Cafe,,Added,,,,,,,,,
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,less than,1000,,,,,,,,,,,
+391,fdp_payment_completed,spend-less-than-equal-1k-cafe,merchant_name,equals,Freedom Cafe,,Added,,,,,,,Freedom Cafe,,To test metrics filter on STG (less than equal)
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,less than equals,1000,,,,,,,,,,,
+392,fdp_payment_completed,spend-more-than-1k-cafe-multiple-transactions,merchant_name,equals,Freedom Cafe,,Added,,,,,,,Freedom Cafe,,To test metrics filter on STG (more than)
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,greater than,1000,,,,,,,,,,,
+393,fdp_payment_completed,spend-more-than-equal-1k-cafe-one-transaction,merchant_name,equals,Freedom Cafe,,Added,,,,,,,Freedom Cafe,,To test metrics filter on STG (more than equal)
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,greater than equals,1000,,,,,,,,,,,
+394,fdp_payment_completed,spend-more-than-equals-1k-cafe-multiple-transactions,merchant_name,equals,Freedom Cafe,,Added,,,,,,,,,
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,greater than equals,1000,,,,,,,,,,,
+395,fdp_payment_completed,spend-equals-any-cafe,merchant_name,equals,Freedom Cafe,order_amount,Added,,,,,,,,,
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,any,amount,,,,,,,,,,,
+396,fdp_payment_completed,spend-more-than-1k-except-cafe,merchant_name,not equals,Freedom Cafe,,Added,,,,,,,,,
+,,,currency,equals,THB,,,,,,,,,,,
+,,,order_amount,greater than,1000,,,,,,,,,,,
+397,Fdp Payment Completed,,,,,,,first-time-purchase-groobglace-bkk,"currency
+merchant_name","Equals
+Equals","THB
+Groobglace bkk",,Added,Groobglace bkk,,
+398,Fdp Payment Completed,,,,,,,spending-groobglace-bkk,"currency
+merchant_name
+order_amount","Equals
+Equals
+ANY","THB
+Groobglace bkk
+amount",order_amount,Added,Groobglace bkk,,
+399,Friend Invited Verified,,,,,,,invite-friend-groobglace-bkk,"community_id
+verification_level","Equals
+Equals","1731
+converted",,Added,Groobglace bkk,,
+397,Fdp Payment Completed,,,,,,,first-time-purchase-pal-bangkok,"currency
+merchant_name","Equals
+Equals","THB
+PAL Bangkok",,Added,PAL Bangkok,,
+398,Fdp Payment Completed,,,,,,,spending-pal-bangkok,"currency
+merchant_name
+order_amount","Equals
+Equals
+ANY","THB
+PAL Bangkok
+amount",order_amount,Added,PAL Bangkok,,
+399,Friend Invited Verified,,,,,,,invite-friend-pal-bangkok,"community_id
+verification_level","Equals
+Equals","1840
+converted",,Added,PAL Bangkok,,
+403,Fdp Payment Completed,,,,,,,donate-paws-bangkok,"currency 
+order_amount
+merchant_name","Equals
+ANY
+Equals","THB
+amount
+PAWS Bangkok",order_amount,Added,PAWS Bangkok,,
+404,Friend Invited Verified,,,,,,,invite-friend-paws-bangkok,"community_id
+verification_level","Equals
+Equals","1868
+converted",,Added,PAWS Bangkok,,
+405,Fdp Payment Completed,,,,,,,first-time-topup-dog-hotel,"currency
+merchant_name
+product_category_code","Equals
+Equals
+Equals","THB
+The Dog Hotel BKK
+token-bundle",,Added,The Dog Hotel BKK,,
+406,Fdp Payment Completed,,,,,,,spending-dog-hotel,"currency
+merchant_name
+order_amount","Equals
+Equals
+ANY","THB
+The Dog Hotel BKK
+amount",order_amount,Added,The Dog Hotel BKK,,
+407,Friend Invited Verified,,,,,,,invite-friend-dog-hotel,"community_id
+verification_level","Equals
+Equals","1885
+converted",,Added,The Dog Hotel BKK,,
+408,Card Spent,,,,,,,card-spent-milestone,amount ,ANY,amount,amount,Added,Freedom Card,,
+409,Card Spent,,,,,,,card-spent-monthly,amount,ANY,amount,amount,Added,Freedom Card,,
+410,,,,,,,,,,,,,,,,
+411,,,,,,,,,,,,,,,,
+412,,,,,,,,,,,,,,,,
+413,,,,,,,,,,,,,,,,
+414,,,,,,,,,,,,,,,,
+415,,,,,,,,,,,,,,,,
+416,,,,,,,,,,,,,,,,
+417,,,,,,,,,,,,,,,,
+418,,,,,,,,,,,,,,,,
+419,,,,,,,,,,,,,,,,
+420,,,,,,,,,,,,,,,,
+421,,,,,,,,,,,,,,,,
+422,,,,,,,,,,,,,,,,
+423,,,,,,,,,,,,,,,,
+424,,,,,,,,,,,,,,,,
+425,,,,,,,,,,,,,,,,
+426,,,,,,,,,,,,,,,,
+427,,,,,,,,,,,,,,,,
+428,,,,,,,,,,,,,,,,
+429,,,,,,,,,,,,,,,,
+430,,,,,,,,,,,,,,,,
+431,,,,,,,,,,,,,,,,
+432,,,,,,,,,,,,,,,,
+433,,,,,,,,,,,,,,,,
+434,,,,,,,,,,,,,,,,
+435,,,,,,,,,,,,,,,,
+436,,,,,,,,,,,,,,,,
+437,,,,,,,,,,,,,,,,
+438,,,,,,,,,,,,,,,,
+439,,,,,,,,,,,,,,,,
+440,,,,,,,,,,,,,,,,
+441,,,,,,,,,,,,,,,,
+442,,,,,,,,,,,,,,,,
+443,,,,,,,,,,,,,,,,
+444,,,,,,,,,,,,,,,,
+445,,,,,,,,,,,,,,,,
+446,,,,,,,,,,,,,,,,
+447,,,,,,,,,,,,,,,,
+448,,,,,,,,,,,,,,,,
+449,,,,,,,,,,,,,,,,
+450,,,,,,,,,,,,,,,,
+451,,,,,,,,,,,,,,,,
+452,,,,,,,,,,,,,,,,
+453,,,,,,,,,,,,,,,,
+454,,,,,,,,,,,,,,,,
+455,,,,,,,,,,,,,,,,
+456,,,,,,,,,,,,,,,,
+457,,,,,,,,,,,,,,,,
+458,,,,,,,,,,,,,,,,
+459,,,,,,,,,,,,,,,,
+460,,,,,,,,,,,,,,,,
+461,,,,,,,,,,,,,,,,
+462,,,,,,,,,,,,,,,,
+463,,,,,,,,,,,,,,,,
+464,,,,,,,,,,,,,,,,
+465,,,,,,,,,,,,,,,,
+466,,,,,,,,,,,,,,,,
+467,,,,,,,,,,,,,,,,
+468,,,,,,,,,,,,,,,,
+469,,,,,,,,,,,,,,,,
+470,,,,,,,,,,,,,,,,
+471,,,,,,,,,,,,,,,,
+472,,,,,,,,,,,,,,,,
+473,,,,,,,,,,,,,,,,
+474,,,,,,,,,,,,,,,,
+475,,,,,,,,,,,,,,,,
+476,,,,,,,,,,,,,,,,
+477,,,,,,,,,,,,,,,,
+478,,,,,,,,,,,,,,,,
+479,,,,,,,,,,,,,,,,
+480,,,,,,,,,,,,,,,,
+481,,,,,,,,,,,,,,,,
+482,,,,,,,,,,,,,,,,
+483,,,,,,,,,,,,,,,,
+484,,,,,,,,,,,,,,,,
+485,,,,,,,,,,,,,,,,
+486,,,,,,,,,,,,,,,,
+487,,,,,,,,,,,,,,,,
+488,,,,,,,,,,,,,,,,
+489,,,,,,,,,,,,,,,,
+490,,,,,,,,,,,,,,,,
+491,,,,,,,,,,,,,,,,
+492,,,,,,,,,,,,,,,,
+493,,,,,,,,,,,,,,,,
+494,,,,,,,,,,,,,,,,
+495,,,,,,,,,,,,,,,,
+496,,,,,,,,,,,,,,,,
+497,,,,,,,,,,,,,,,,
+498,,,,,,,,,,,,,,,,
+499,,,,,,,,,,,,,,,,
+500,,,,,,,,,,,,,,,,
+501,,,,,,,,,,,,,,,,
+502,,,,,,,,,,,,,,,,
+503,,,,,,,,,,,,,,,,
+504,,,,,,,,,,,,,,,,
+505,,,,,,,,,,,,,,,,
+506,,,,,,,,,,,,,,,,
+507,,,,,,,,,,,,,,,,
+508,,,,,,,,,,,,,,,,
+509,,,,,,,,,,,,,,,,
+510,,,,,,,,,,,,,,,,
+511,,,,,,,,,,,,,,,,
+512,,,,,,,,,,,,,,,,
+513,,,,,,,,,,,,,,,,
+514,,,,,,,,,,,,,,,,
+515,,,,,,,,,,,,,,,,
+516,,,,,,,,,,,,,,,,
+517,,,,,,,,,,,,,,,,
+518,,,,,,,,,,,,,,,,
+519,,,,,,,,,,,,,,,,
+520,,,,,,,,,,,,,,,,
+521,,,,,,,,,,,,,,,,
+522,,,,,,,,,,,,,,,,
+523,,,,,,,,,,,,,,,,
+524,,,,,,,,,,,,,,,,
+525,,,,,,,,,,,,,,,,
+526,,,,,,,,,,,,,,,,
+527,,,,,,,,,,,,,,,,
+528,,,,,,,,,,,,,,,,
+529,,,,,,,,,,,,,,,,
+530,,,,,,,,,,,,,,,,
+531,,,,,,,,,,,,,,,,
+532,,,,,,,,,,,,,,,,
+533,,,,,,,,,,,,,,,,
+534,,,,,,,,,,,,,,,,
+535,,,,,,,,,,,,,,,,

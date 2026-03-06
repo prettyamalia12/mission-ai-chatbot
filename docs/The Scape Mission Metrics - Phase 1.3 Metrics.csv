@@ -1,0 +1,8 @@
+No,metric,entityId,name,propagateToSubEntity,platform,eventName,propertyNames,propertyValues,incrementalProperty,Environment,Status,Testing Status,Testing Results Link
+1,defeat-monster-blob-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-blob-v2-the-scape,true,segment,Game Match Resulted,monster_killed_blob,amount,monster_killed_blob,PROD,Added,,
+2,defeat-monster-naidu-puppeteer-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-naidu-puppeteer-v2-the-scape,true,segment,Game Match Resulted,monster_killed_naidu_puppeteer,amount,monster_killed_naidu_puppeteer,PROD,Added,,
+3,durasteel-materials-collected-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,durasteel-materials-collected-v2-the-scape,true,segment,Game Match Resulted,received_materials_DRS,amount,received_materials_DRS,PROD,Added,,
+4,obsidian-materials-collected-v2- the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,obsidian-materials-collected-v2- the-scape,true,segment,Game Match Resulted,received_materials_OBS,amount,received_materials_OBS,PROD,Added,,
+5,nanocircuits-materials-collected-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,nanocircuits-materials-collected-v2-the-scape,true,segment,Game Match Resulted,received_materials_NCC,amount,received_materials_NCC,PROD,Added,,
+6,defeat-protectorate-knights-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-protectorate-knights-v2-the-scape,true,segment,Game Match Resulted,monster_killed_protectorate_knight,amount,monster_killed_protectorate_knight,PROD,Added,,
+7,defeat-monster-ghajar-explorers-v2-the-scape,e-a0bc4913-3ba1-4424-9e35-7968386e645b,defeat-monster-ghajar-explorers-v2-the-scape,true,segment,Game Match Resulted,monster_killed_GHAJAR,amount,monster_killed_GHAJAR,PROD,Added,,

@@ -1,0 +1,2286 @@
+[
+    {
+        "event_name": "Planet Activated",
+        "event_description": "Triggered when a user activates a planet, enabling it to generate resources and contribute to their network.",
+        "properties": [
+            {
+                "property_name": "activated_planets",
+                "property_description": "The number of currently activated planets for the user."
+            },
+            {
+                "property_name": "fdvUserId",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "planet_id",
+                "property_description": "Unique identifier of the planet."
+            },
+            {
+                "property_name": "planet_name",
+                "property_description": "Display name of the planet."
+            },
+            {
+                "property_name": "total_planets",
+                "property_description": "The total number of planets owned by the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Planet Deactivated",
+        "event_description": "Recorded when a user deactivates a planet, halting its resource production and network contribution.",
+        "properties": [
+            {
+                "property_name": "activated_planets",
+                "property_description": "The number of currently activated planets for the user."
+            },
+            {
+                "property_name": "fdvUserId",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "planet_id",
+                "property_description": "Unique identifier of the planet."
+            },
+            {
+                "property_name": "planet_name",
+                "property_description": "Display name of the planet."
+            },
+            {
+                "property_name": "total_planets",
+                "property_description": "The total number of planets owned by the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Planet Reward Claimed",
+        "event_description": "Triggered when a user successfully claims accumulated rewards from their planet.",
+        "properties": [
+            {
+                "property_name": "claimed_amount",
+                "property_description": "The numerical amount of rewards claimed by the user."
+            },
+            {
+                "property_name": "claimed_reward",
+                "property_description": "The type or name of the reward that was claimed."
+            },
+            {
+                "property_name": "fdvUserId",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            }
+        ]
+    },
+    {
+        "event_name": "Planet Structure Built",
+        "event_description": "Recorded when a user constructs a new structure on one of their planets.",
+        "properties": [
+            {
+                "property_name": "fdvUserId",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "planet_id",
+                "property_description": "Unique identifier of the planet."
+            },
+            {
+                "property_name": "planet_name",
+                "property_description": "Display name of the planet."
+            },
+            {
+                "property_name": "structure_id",
+                "property_description": "Unique identifier for the built structure."
+            },
+            {
+                "property_name": "structure_name",
+                "property_description": "Display name of the built structure."
+            },
+            {
+                "property_name": "structure_type",
+                "property_description": "The category or type of the structure (e.g., Food, Industrial)."
+            },
+            {
+                "property_name": "total_food_structure",
+                "property_description": "Total number of food-type structures on the planet."
+            },
+            {
+                "property_name": "total_industrial_structure",
+                "property_description": "Total number of industrial-type structures on the planet."
+            },
+            {
+                "property_name": "total_structure",
+                "property_description": "Total number of all structures on the planet."
+            }
+        ]
+    },
+    {
+        "event_name": "Planet Workforce Updated",
+        "event_description": "Triggered when a user reallocates or adjusts workforce assignments across their planet's sectors.",
+        "properties": [
+            {
+                "property_name": "available_workforce",
+                "property_description": "The remaining workforce units available for assignment on the planet."
+            },
+            {
+                "property_name": "fdvUserId",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "food_workforce",
+                "property_description": "The number of workforce units assigned to food production."
+            },
+            {
+                "property_name": "industrial_workforce",
+                "property_description": "The number of workforce units assigned to industrial tasks."
+            },
+            {
+                "property_name": "planet_id",
+                "property_description": "Unique identifier of the planet."
+            },
+            {
+                "property_name": "planet_name",
+                "property_description": "Display name of the planet."
+            }
+        ]
+    },
+    {
+        "event_name": "Game Match Ended",
+        "event_description": "Fires when a game match session terminates, capturing comprehensive match outcome and player state data.",
+        "properties": [
+            {
+                "property_name": "card_channeling_count",
+                "property_description": "Number of times the player channeled a card during the match."
+            },
+            {
+                "property_name": "card_detail_viewed_count",
+                "property_description": "Number of times the player viewed card detail information."
+            },
+            {
+                "property_name": "consumable_used_count",
+                "property_description": "Number of consumable items used during the match."
+            },
+            {
+                "property_name": "endTime",
+                "property_description": "The timestamp when the game match ended."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "gameEndData",
+                "property_description": "Object containing the game session data captured at match end."
+            },
+            {
+                "property_name": "gameEndData.location",
+                "property_description": "(Within gameEndData) Object containing geographic location data of the match."
+            },
+            {
+                "property_name": "gameEndData.location.id",
+                "property_description": "(Within gameEndData) The unique identifier of the match location."
+            },
+            {
+                "property_name": "gameEndData.location.lat",
+                "property_description": "(Within gameEndData) The latitude of the match location."
+            },
+            {
+                "property_name": "gameEndData.location.long",
+                "property_description": "(Within gameEndData) The longitude of the match location."
+            },
+            {
+                "property_name": "gameEndData.location.service_area_code",
+                "property_description": "(Within gameEndData) The service area code for the match location."
+            },
+            {
+                "property_name": "gameEndData.location_id",
+                "property_description": "(Within gameEndData) The unique identifier of the geographic or in-game location."
+            },
+            {
+                "property_name": "gameEndData.location_lat",
+                "property_description": "(Within gameEndData) The latitude coordinate of the match location."
+            },
+            {
+                "property_name": "gameEndData.location_long",
+                "property_description": "(Within gameEndData) The longitude coordinate of the match location."
+            },
+            {
+                "property_name": "gameEndData.location_service_area_code",
+                "property_description": "(Within gameEndData) The service area code of the location."
+            },
+            {
+                "property_name": "gameEndData.match",
+                "property_description": "The gameEndData match value associated with this event."
+            },
+            {
+                "property_name": "gameEndData.match.match_abandon",
+                "property_description": "Boolean indicating whether the match was abandoned by the player."
+            },
+            {
+                "property_name": "gameEndData.match.match_duration",
+                "property_description": "The total duration of the match in seconds."
+            },
+            {
+                "property_name": "gameEndData.match.match_result",
+                "property_description": "The outcome of the match (e.g., win, lose)."
+            },
+            {
+                "property_name": "gameEndData.match_abandon",
+                "property_description": "(Within gameEndData) Boolean indicating whether the match was abandoned by the player."
+            },
+            {
+                "property_name": "gameEndData.match_duration",
+                "property_description": "(Within gameEndData) The total duration of the match in seconds."
+            },
+            {
+                "property_name": "gameEndData.match_result",
+                "property_description": "(Within gameEndData) The outcome of the match (e.g., win, lose)."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_BLOB",
+                "property_description": "(Within gameEndData) Number of BLOB monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_DOMINION_SCOUT",
+                "property_description": "(Within gameEndData) Number of DOMINION SCOUT monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_GHAJAR",
+                "property_description": "(Within gameEndData) Number of GHAJAR monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_NAIDU_PUPPETEER",
+                "property_description": "(Within gameEndData) Number of NAIDU PUPPETEER monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_PROTECTORATE_KNIGHT",
+                "property_description": "(Within gameEndData) Number of PROTECTORATE KNIGHT monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_SCAPE_HARPY",
+                "property_description": "(Within gameEndData) Number of SCAPE HARPY monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_SHARD_GOBBLER",
+                "property_description": "(Within gameEndData) Number of SHARD GOBBLER monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_SOULGAZER",
+                "property_description": "(Within gameEndData) Number of SOULGAZER monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_WRAITH",
+                "property_description": "(Within gameEndData) Number of WRAITH monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_killed_total",
+                "property_description": "(Within gameEndData) Total number of monsters killed during the match."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_BLOB",
+                "property_description": "(Within gameEndData) Number of BLOB monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_GHAJAR",
+                "property_description": "(Within gameEndData) Number of GHAJAR monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_PROTECTORATE_KNIGHT",
+                "property_description": "(Within gameEndData) Number of PROTECTORATE KNIGHT monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_SCAPE_HARPY",
+                "property_description": "(Within gameEndData) Number of SCAPE HARPY monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_SHARD_GOBBLER",
+                "property_description": "(Within gameEndData) Number of SHARD GOBBLER monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_SOULGAZER",
+                "property_description": "(Within gameEndData) Number of SOULGAZER monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_WRAITH",
+                "property_description": "(Within gameEndData) Number of WRAITH monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monster_remain_total",
+                "property_description": "(Within gameEndData) Total number of monsters remaining at match end."
+            },
+            {
+                "property_name": "gameEndData.monsters",
+                "property_description": "(Within gameEndData) Array of monster objects present in the match."
+            },
+            {
+                "property_name": "gameEndData.monsters.$",
+                "property_description": "(Within gameEndData) An individual monster entry within the monsters array."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.hp",
+                "property_description": "(Within gameEndData) The hit points of this monster."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.id",
+                "property_description": "(Within gameEndData) The unique identifier of this monster instance."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.level",
+                "property_description": "(Within gameEndData) The level of this monster."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.masterId",
+                "property_description": "(Within gameEndData) The master template identifier for this monster type."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.name",
+                "property_description": "(Within gameEndData) The display name of this monster."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.types",
+                "property_description": "(Within gameEndData) Array of type tags or categories for this monster."
+            },
+            {
+                "property_name": "gameEndData.monsters.$.xp",
+                "property_description": "(Within gameEndData) The experience points awarded for defeating this monster."
+            },
+            {
+                "property_name": "gameEndData.player",
+                "property_description": "(Within gameEndData) Object containing the player's state data."
+            },
+            {
+                "property_name": "gameEndData.player.avatar_id",
+                "property_description": "(Within gameEndData) The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "gameEndData.player.avatar_name",
+                "property_description": "(Within gameEndData) The display name of the player's avatar."
+            },
+            {
+                "property_name": "gameEndData.player.current_hp",
+                "property_description": "(Within gameEndData) The player's current hit points."
+            },
+            {
+                "property_name": "gameEndData.player.current_xp",
+                "property_description": "(Within gameEndData) The player's current experience points."
+            },
+            {
+                "property_name": "gameEndData.player.fdvId",
+                "property_description": "(Within gameEndData) The player's Freedom ID."
+            },
+            {
+                "property_name": "gameEndData.player.level",
+                "property_description": "(Within gameEndData) The player's current level."
+            },
+            {
+                "property_name": "gameEndData.player.max_hp",
+                "property_description": "(Within gameEndData) The player's maximum hit points."
+            },
+            {
+                "property_name": "gameEndData.player.remaining_xp",
+                "property_description": "(Within gameEndData) Experience points remaining until the next level."
+            },
+            {
+                "property_name": "gameEndData.player.total_xp",
+                "property_description": "(Within gameEndData) The player's total accumulated experience points."
+            },
+            {
+                "property_name": "gameEndData.player.wearable",
+                "property_description": "(Within gameEndData) Object containing the player's currently equipped wearable items."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Accessory",
+                "property_description": "(Within gameEndData) The accessory item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Boots",
+                "property_description": "(Within gameEndData) The boots item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Chest",
+                "property_description": "(Within gameEndData) The chest armor equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Cloak",
+                "property_description": "(Within gameEndData) The cloak item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Gloves",
+                "property_description": "(Within gameEndData) The gloves item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Head",
+                "property_description": "(Within gameEndData) The headgear item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Pants",
+                "property_description": "(Within gameEndData) The pants item equipped by the player."
+            },
+            {
+                "property_name": "gameEndData.player.wearable.Skin",
+                "property_description": "(Within gameEndData) The skin applied to the player's avatar."
+            },
+            {
+                "property_name": "gameEndData.player.xp_progress_percentage",
+                "property_description": "(Within gameEndData) Percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "gameEndData.player_avatar_id",
+                "property_description": "(Within gameEndData) The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "gameEndData.player_current_hp",
+                "property_description": "(Within gameEndData) The player's current hit points at the end of the match."
+            },
+            {
+                "property_name": "gameEndData.player_current_xp",
+                "property_description": "(Within gameEndData) The player's current experience points."
+            },
+            {
+                "property_name": "gameEndData.player_fdv_id",
+                "property_description": "(Within gameEndData) The player's Freedom ID."
+            },
+            {
+                "property_name": "gameEndData.player_level",
+                "property_description": "(Within gameEndData) The player's current level."
+            },
+            {
+                "property_name": "gameEndData.player_max_hp",
+                "property_description": "(Within gameEndData) The player's maximum hit points."
+            },
+            {
+                "property_name": "gameEndData.player_remaining_xp",
+                "property_description": "(Within gameEndData) The experience points remaining until the player's next level."
+            },
+            {
+                "property_name": "gameEndData.player_total_xp",
+                "property_description": "(Within gameEndData) The player's total accumulated experience points."
+            },
+            {
+                "property_name": "gameEndData.player_xp_progress_percentage",
+                "property_description": "(Within gameEndData) The percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "gameLocationId",
+                "property_description": "The unique identifier of the in-game location where the match takes place."
+            },
+            {
+                "property_name": "gameSessionId",
+                "property_description": "The unique identifier for the current game session."
+            },
+            {
+                "property_name": "location",
+                "property_description": "Object containing geographic location data of the match."
+            },
+            {
+                "property_name": "location.id",
+                "property_description": "The unique identifier of the match location."
+            },
+            {
+                "property_name": "location.lat",
+                "property_description": "The latitude of the match location."
+            },
+            {
+                "property_name": "location.long",
+                "property_description": "The longitude of the match location."
+            },
+            {
+                "property_name": "location.service_area_code",
+                "property_description": "The service area code for the match location."
+            },
+            {
+                "property_name": "location_id",
+                "property_description": "The unique identifier of the geographic or in-game location."
+            },
+            {
+                "property_name": "location_lat",
+                "property_description": "The latitude coordinate of the match location."
+            },
+            {
+                "property_name": "location_long",
+                "property_description": "The longitude coordinate of the match location."
+            },
+            {
+                "property_name": "location_service_area_code",
+                "property_description": "The service area code of the location."
+            },
+            {
+                "property_name": "match",
+                "property_description": "Object containing the core match result data."
+            },
+            {
+                "property_name": "match.match_abandon",
+                "property_description": "Boolean indicating whether the match was abandoned by the player."
+            },
+            {
+                "property_name": "match.match_duration",
+                "property_description": "The total duration of the match in seconds."
+            },
+            {
+                "property_name": "match.match_result",
+                "property_description": "The outcome of the match (e.g., win, lose)."
+            },
+            {
+                "property_name": "match_abandon",
+                "property_description": "Boolean indicating whether the match was abandoned by the player."
+            },
+            {
+                "property_name": "match_duration",
+                "property_description": "The total duration of the match in seconds."
+            },
+            {
+                "property_name": "match_result",
+                "property_description": "The outcome of the match (e.g., win, lose)."
+            },
+            {
+                "property_name": "monster_killed_AESIR_MIND_SCULPTOR",
+                "property_description": "Number of AESIR MIND SCULPTOR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_AESIR_MOOD_ENGINEER",
+                "property_description": "Number of AESIR MOOD ENGINEER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_BLOB",
+                "property_description": "Number of BLOB monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_JUGGERNAUT",
+                "property_description": "Number of DOMINION JUGGERNAUT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_LANCER",
+                "property_description": "Number of DOMINION LANCER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_SCOUT",
+                "property_description": "Number of DOMINION SCOUT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_EMPEROR_TYRAX",
+                "property_description": "Number of EMPEROR TYRAX monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GARRO_DOMINION_CAPTAIN",
+                "property_description": "Number of GARRO DOMINION CAPTAIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GARRO_ENRAGED_CAPTAIN",
+                "property_description": "Number of GARRO ENRAGED CAPTAIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GHAJAR",
+                "property_description": "Number of GHAJAR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GHAJAR_ABDUCTOR",
+                "property_description": "Number of GHAJAR ABDUCTOR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GOBBLER_ABOMINATION",
+                "property_description": "Number of GOBBLER ABOMINATION monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GOBBLER_QUEEN",
+                "property_description": "Number of GOBBLER QUEEN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_HARPY_SKYCLAW",
+                "property_description": "Number of HARPY SKYCLAW monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_JUGGERNAUT_SELF_DESTRUCT",
+                "property_description": "Number of JUGGERNAUT SELF DESTRUCT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_MEGABLOB",
+                "property_description": "Number of MEGABLOB monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_MOODERLING",
+                "property_description": "Number of MOODERLING monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_NAIDU_ACOLYTE",
+                "property_description": "Number of NAIDU ACOLYTE monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_NAIDU_PUPPETEER",
+                "property_description": "Number of NAIDU PUPPETEER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_PROTECTORATE_KNIGHT",
+                "property_description": "Number of PROTECTORATE KNIGHT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_PROTECTORATE_TEMPLAR",
+                "property_description": "Number of PROTECTORATE TEMPLAR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SCAPE_HARPY",
+                "property_description": "Number of SCAPE HARPY monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SHARD_GOBBLER",
+                "property_description": "Number of SHARD GOBBLER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SOULGAZER",
+                "property_description": "Number of SOULGAZER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SOULSTARER",
+                "property_description": "Number of SOULSTARER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SPECTER",
+                "property_description": "Number of SPECTER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SYNDICATE_ASSASSIN",
+                "property_description": "Number of SYNDICATE ASSASSIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SYNDICATE_THIEF",
+                "property_description": "Number of SYNDICATE THIEF monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_TYRAX_EMPOWERED",
+                "property_description": "Number of TYRAX EMPOWERED monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_WRAITH",
+                "property_description": "Number of WRAITH monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_total",
+                "property_description": "Total number of monsters killed during the match."
+            },
+            {
+                "property_name": "monster_next_move_viewed_count",
+                "property_description": "Number of times the player viewed the monster's next move."
+            },
+            {
+                "property_name": "monster_remain_AESIR_MIND_SCULPTOR",
+                "property_description": "Number of AESIR MIND SCULPTOR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_AESIR_MOOD_ENGINEER",
+                "property_description": "Number of AESIR MOOD ENGINEER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_BLOB",
+                "property_description": "Number of BLOB monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_JUGGERNAUT",
+                "property_description": "Number of DOMINION JUGGERNAUT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_LANCER",
+                "property_description": "Number of DOMINION LANCER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_LANCER_ELITE",
+                "property_description": "Number of DOMINION LANCER ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_SCOUT",
+                "property_description": "Number of DOMINION SCOUT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_EMPEROR_TYRAX",
+                "property_description": "Number of EMPEROR TYRAX monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_EMPEROR_TYRAX_ELITE",
+                "property_description": "Number of EMPEROR TYRAX ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GARRO_DOMINION_CAPTAIN",
+                "property_description": "Number of GARRO DOMINION CAPTAIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GARRO_ENRAGED_CAPTAIN",
+                "property_description": "Number of GARRO ENRAGED CAPTAIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GHAJAR",
+                "property_description": "Number of GHAJAR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GHAJAR_ABDUCTOR",
+                "property_description": "Number of GHAJAR ABDUCTOR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GOBBLER_ABOMINATION",
+                "property_description": "Number of GOBBLER ABOMINATION monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GOBBLER_QUEEN",
+                "property_description": "Number of GOBBLER QUEEN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_HARPY_SKYCLAW",
+                "property_description": "Number of HARPY SKYCLAW monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_JUGGERNAUT_SELF_DESTRUCT",
+                "property_description": "Number of JUGGERNAUT SELF DESTRUCT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_MEGABLOB",
+                "property_description": "Number of MEGABLOB monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_MOODERLING",
+                "property_description": "Number of MOODERLING monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_NAIDU_ACOLYTE",
+                "property_description": "Number of NAIDU ACOLYTE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_NAIDU_PUPPETEER",
+                "property_description": "Number of NAIDU PUPPETEER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_PROTECTORATE_KNIGHT",
+                "property_description": "Number of PROTECTORATE KNIGHT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_PROTECTORATE_TEMPLAR",
+                "property_description": "Number of PROTECTORATE TEMPLAR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SCAPE_HARPY",
+                "property_description": "Number of SCAPE HARPY monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SHARD_GOBBLER",
+                "property_description": "Number of SHARD GOBBLER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SOULGAZER",
+                "property_description": "Number of SOULGAZER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SOULSTARER",
+                "property_description": "Number of SOULSTARER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SPECTER",
+                "property_description": "Number of SPECTER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SYNDICATE_ASSASSIN",
+                "property_description": "Number of SYNDICATE ASSASSIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SYNDICATE_THIEF",
+                "property_description": "Number of SYNDICATE THIEF monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_ASCENDED_ELITE",
+                "property_description": "Number of TYRAX ASCENDED ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_ASCENDED_WORLDBREAKER",
+                "property_description": "Number of TYRAX ASCENDED WORLDBREAKER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_EMPOWERED",
+                "property_description": "Number of TYRAX EMPOWERED monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_WRAITH",
+                "property_description": "Number of WRAITH monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_total",
+                "property_description": "Total number of monsters remaining at match end."
+            },
+            {
+                "property_name": "monsters",
+                "property_description": "Array of monster objects present in the match."
+            },
+            {
+                "property_name": "monsters.$",
+                "property_description": "An individual monster entry within the monsters array."
+            },
+            {
+                "property_name": "monsters.$.hp",
+                "property_description": "The hit points of this monster."
+            },
+            {
+                "property_name": "monsters.$.id",
+                "property_description": "The unique identifier of this monster instance."
+            },
+            {
+                "property_name": "monsters.$.level",
+                "property_description": "The level of this monster."
+            },
+            {
+                "property_name": "monsters.$.masterId",
+                "property_description": "The master template identifier for this monster type."
+            },
+            {
+                "property_name": "monsters.$.name",
+                "property_description": "The display name of this monster."
+            },
+            {
+                "property_name": "monsters.$.types",
+                "property_description": "Array of type tags or categories for this monster."
+            },
+            {
+                "property_name": "monsters.$.types.$",
+                "property_description": "An individual type tag for this monster."
+            },
+            {
+                "property_name": "monsters.$.xp",
+                "property_description": "The experience points awarded for defeating this monster."
+            },
+            {
+                "property_name": "player",
+                "property_description": "Object containing the player's state data."
+            },
+            {
+                "property_name": "player.avatar_id",
+                "property_description": "The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "player.avatar_name",
+                "property_description": "The display name of the player's avatar."
+            },
+            {
+                "property_name": "player.current_hp",
+                "property_description": "The player's current hit points."
+            },
+            {
+                "property_name": "player.current_xp",
+                "property_description": "The player's current experience points."
+            },
+            {
+                "property_name": "player.fdvId",
+                "property_description": "The player's Freedom ID."
+            },
+            {
+                "property_name": "player.level",
+                "property_description": "The player's current level."
+            },
+            {
+                "property_name": "player.max_hp",
+                "property_description": "The player's maximum hit points."
+            },
+            {
+                "property_name": "player.remaining_xp",
+                "property_description": "Experience points remaining until the next level."
+            },
+            {
+                "property_name": "player.total_xp",
+                "property_description": "The player's total accumulated experience points."
+            },
+            {
+                "property_name": "player.wearable",
+                "property_description": "Object containing the player's currently equipped wearable items."
+            },
+            {
+                "property_name": "player.wearable.Accessory",
+                "property_description": "The accessory item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Boots",
+                "property_description": "The boots item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Chest",
+                "property_description": "The chest armor equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Cloak",
+                "property_description": "The cloak item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Gloves",
+                "property_description": "The gloves item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Head",
+                "property_description": "The headgear item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Pants",
+                "property_description": "The pants item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Skin",
+                "property_description": "The skin applied to the player's avatar."
+            },
+            {
+                "property_name": "player.wearable.Weapon",
+                "property_description": "The weapon item equipped by the player."
+            },
+            {
+                "property_name": "player.xp_progress_percentage",
+                "property_description": "Percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "player_avatar_id",
+                "property_description": "The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "player_current_hp",
+                "property_description": "The player's current hit points at the end of the match."
+            },
+            {
+                "property_name": "player_current_xp",
+                "property_description": "The player's current experience points."
+            },
+            {
+                "property_name": "player_fdv_id",
+                "property_description": "The player's Freedom ID."
+            },
+            {
+                "property_name": "player_level",
+                "property_description": "The player's current level."
+            },
+            {
+                "property_name": "player_max_hp",
+                "property_description": "The player's maximum hit points."
+            },
+            {
+                "property_name": "player_remaining_xp",
+                "property_description": "The experience points remaining until the player's next level."
+            },
+            {
+                "property_name": "player_total_xp",
+                "property_description": "The player's total accumulated experience points."
+            },
+            {
+                "property_name": "player_xp_progress_percentage",
+                "property_description": "The percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "skip_turn_count",
+                "property_description": "Number of turns skipped by the player during the match."
+            },
+            {
+                "property_name": "userId",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Game Match Resulted",
+        "event_description": "Records the detailed result of a completed game match, including rewards, player stats, and monster encounter data.",
+        "properties": [
+            {
+                "property_name": "avatar_name",
+                "property_description": "The display name of the player's avatar."
+            },
+            {
+                "property_name": "cluster_type",
+                "property_description": "The type of cluster or game zone where the match took place."
+            },
+            {
+                "property_name": "daily_engagement_limit_reached",
+                "property_description": "Boolean indicating if the player reached their daily engagement limit."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "faction_points",
+                "property_description": "The faction points earned or affected by this match result."
+            },
+            {
+                "property_name": "fdv_id",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "is_fds_node",
+                "property_description": "Boolean indicating if the match location is an FDS network node."
+            },
+            {
+                "property_name": "is_flag",
+                "property_description": "Boolean indicating if this match involved a flag objective."
+            },
+            {
+                "property_name": "is_nexus",
+                "property_description": "Boolean indicating if this match involved a nexus objective."
+            },
+            {
+                "property_name": "is_penalized",
+                "property_description": "Boolean indicating if the player received a penalty in this match."
+            },
+            {
+                "property_name": "is_rifts_mode",
+                "property_description": "Boolean indicating if the match was played in Rifts mode."
+            },
+            {
+                "property_name": "location_country_code",
+                "property_description": "The country code of the match location."
+            },
+            {
+                "property_name": "location_lat",
+                "property_description": "The latitude coordinate of the match location."
+            },
+            {
+                "property_name": "location_long",
+                "property_description": "The longitude coordinate of the match location."
+            },
+            {
+                "property_name": "match_result",
+                "property_description": "The outcome of the match (e.g., win, lose)."
+            },
+            {
+                "property_name": "monster_id",
+                "property_description": "The unique identifier of the monster encountered."
+            },
+            {
+                "property_name": "monster_killed_",
+                "property_description": "Count of kills where the monster type was unspecified or null."
+            },
+            {
+                "property_name": "monster_killed_AESIR_MINDSCULPTOR",
+                "property_description": "Number of AESIR MINDSCULPTOR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_AESIR_MIND_SCULPTOR",
+                "property_description": "Number of AESIR MIND SCULPTOR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_AESIR_MOOD_ENGINEER",
+                "property_description": "Number of AESIR MOOD ENGINEER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_BLOB",
+                "property_description": "Number of BLOB monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_JUGGERNAUT",
+                "property_description": "Number of DOMINION JUGGERNAUT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_LANCER",
+                "property_description": "Number of DOMINION LANCER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_LANCER_ELITE",
+                "property_description": "Number of DOMINION LANCER ELITE monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_DOMINION_SCOUT",
+                "property_description": "Number of DOMINION SCOUT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_EMPEROR_TYRAX",
+                "property_description": "Number of EMPEROR TYRAX monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_EMPEROR_TYRAX_ELITE",
+                "property_description": "Number of EMPEROR TYRAX ELITE monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GARRO_DOMINION_CAPTAIN",
+                "property_description": "Number of GARRO DOMINION CAPTAIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GARRO_ENRAGED_CAPTAIN",
+                "property_description": "Number of GARRO ENRAGED CAPTAIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GHAJAR",
+                "property_description": "Number of GHAJAR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GHAJAR_ABDUCTOR",
+                "property_description": "Number of GHAJAR ABDUCTOR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GOBBLER_ABOMINATION",
+                "property_description": "Number of GOBBLER ABOMINATION monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_GOBBLER_QUEEN",
+                "property_description": "Number of GOBBLER QUEEN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_HARPY_SKYCLAW",
+                "property_description": "Number of HARPY SKYCLAW monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_JUGGERNAUT_SELF_DESTRUCT",
+                "property_description": "Number of JUGGERNAUT SELF DESTRUCT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_MEGABLOB",
+                "property_description": "Number of MEGABLOB monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_MOODERLING",
+                "property_description": "Number of MOODERLING monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_NAIDU_ACOLYTE",
+                "property_description": "Number of NAIDU ACOLYTE monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_NAIDU_PUPPETEER",
+                "property_description": "Number of NAIDU PUPPETEER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_PROTECTORATE_KNIGHT",
+                "property_description": "Number of PROTECTORATE KNIGHT monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_PROTECTORATE_TEMPLAR",
+                "property_description": "Number of PROTECTORATE TEMPLAR monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SCAPE_HARPY",
+                "property_description": "Number of SCAPE HARPY monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SHARD_GOBBLER",
+                "property_description": "Number of SHARD GOBBLER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SOULGAZER",
+                "property_description": "Number of SOULGAZER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SOULSTARER",
+                "property_description": "Number of SOULSTARER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SPECTER",
+                "property_description": "Number of SPECTER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SYNDICATE_ASSASSIN",
+                "property_description": "Number of SYNDICATE ASSASSIN monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_SYNDICATE_THIEF",
+                "property_description": "Number of SYNDICATE THIEF monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_TYRAX_ASCENDED_ELITE",
+                "property_description": "Number of TYRAX ASCENDED ELITE monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_TYRAX_ASCENDED_WORLDBREAKER",
+                "property_description": "Number of TYRAX ASCENDED WORLDBREAKER monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_TYRAX_EMPOWERED",
+                "property_description": "Number of TYRAX EMPOWERED monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_WRAITH",
+                "property_description": "Number of WRAITH monsters killed during the match."
+            },
+            {
+                "property_name": "monster_killed_null",
+                "property_description": "Count of kills where the monster type was unspecified or null."
+            },
+            {
+                "property_name": "monster_killed_total",
+                "property_description": "Total number of monsters killed during the match."
+            },
+            {
+                "property_name": "monster_latitude",
+                "property_description": "The latitude coordinate of the monster's location."
+            },
+            {
+                "property_name": "monster_longitude",
+                "property_description": "The longitude coordinate of the monster's location."
+            },
+            {
+                "property_name": "monster_master_id",
+                "property_description": "The master template identifier of the monster type."
+            },
+            {
+                "property_name": "monster_name",
+                "property_description": "The display name of the monster."
+            },
+            {
+                "property_name": "monster_remain_",
+                "property_description": "Count of remaining monsters with an unspecified or null type."
+            },
+            {
+                "property_name": "monster_remain_AESIR_MINDSCULPTOR",
+                "property_description": "Number of AESIR MINDSCULPTOR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_AESIR_MIND_SCULPTOR",
+                "property_description": "Number of AESIR MIND SCULPTOR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_AESIR_MOOD_ENGINEER",
+                "property_description": "Number of AESIR MOOD ENGINEER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_BLOB",
+                "property_description": "Number of BLOB monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_JUGGERNAUT",
+                "property_description": "Number of DOMINION JUGGERNAUT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_LANCER",
+                "property_description": "Number of DOMINION LANCER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_LANCER_ELITE",
+                "property_description": "Number of DOMINION LANCER ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_DOMINION_SCOUT",
+                "property_description": "Number of DOMINION SCOUT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_EMPEROR_TYRAX",
+                "property_description": "Number of EMPEROR TYRAX monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_EMPEROR_TYRAX_ELITE",
+                "property_description": "Number of EMPEROR TYRAX ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GARRO_DOMINION_CAPTAIN",
+                "property_description": "Number of GARRO DOMINION CAPTAIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GARRO_ENRAGED_CAPTAIN",
+                "property_description": "Number of GARRO ENRAGED CAPTAIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GHAJAR",
+                "property_description": "Number of GHAJAR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GHAJAR_ABDUCTOR",
+                "property_description": "Number of GHAJAR ABDUCTOR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GOBBLER_ABOMINATION",
+                "property_description": "Number of GOBBLER ABOMINATION monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_GOBBLER_QUEEN",
+                "property_description": "Number of GOBBLER QUEEN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_HARPY_SKYCLAW",
+                "property_description": "Number of HARPY SKYCLAW monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_JUGGERNAUT_SELF_DESTRUCT",
+                "property_description": "Number of JUGGERNAUT SELF DESTRUCT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_MEGABLOB",
+                "property_description": "Number of MEGABLOB monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_MOODERLING",
+                "property_description": "Number of MOODERLING monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_NAIDU_ACOLYTE",
+                "property_description": "Number of NAIDU ACOLYTE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_NAIDU_PUPPETEER",
+                "property_description": "Number of NAIDU PUPPETEER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_PROTECTORATE_KNIGHT",
+                "property_description": "Number of PROTECTORATE KNIGHT monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_PROTECTORATE_TEMPLAR",
+                "property_description": "Number of PROTECTORATE TEMPLAR monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SCAPE_HARPY",
+                "property_description": "Number of SCAPE HARPY monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SHARD_GOBBLER",
+                "property_description": "Number of SHARD GOBBLER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SOULGAZER",
+                "property_description": "Number of SOULGAZER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SOULSTARER",
+                "property_description": "Number of SOULSTARER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SPECTER",
+                "property_description": "Number of SPECTER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SYNDICATE_ASSASSIN",
+                "property_description": "Number of SYNDICATE ASSASSIN monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_SYNDICATE_THIEF",
+                "property_description": "Number of SYNDICATE THIEF monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_ASCENDED_ELITE",
+                "property_description": "Number of TYRAX ASCENDED ELITE monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_ASCENDED_WORLDBREAKER",
+                "property_description": "Number of TYRAX ASCENDED WORLDBREAKER monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_TYRAX_EMPOWERED",
+                "property_description": "Number of TYRAX EMPOWERED monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_WRAITH",
+                "property_description": "Number of WRAITH monsters remaining at match end."
+            },
+            {
+                "property_name": "monster_remain_null",
+                "property_description": "Count of remaining monsters with an unspecified or null type."
+            },
+            {
+                "property_name": "monster_types",
+                "property_description": "Array of type tags associated with the monster in this match."
+            },
+            {
+                "property_name": "monster_types.$",
+                "property_description": "An individual type tag within the monster's types array."
+            },
+            {
+                "property_name": "nexus_tier",
+                "property_description": "The tier level of the nexus involved in the match."
+            },
+            {
+                "property_name": "player_avatar_id",
+                "property_description": "The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "player_current_hp",
+                "property_description": "The player's current hit points at the end of the match."
+            },
+            {
+                "property_name": "player_current_xp",
+                "property_description": "The player's current experience points."
+            },
+            {
+                "property_name": "player_fdv_id",
+                "property_description": "The player's Freedom ID."
+            },
+            {
+                "property_name": "player_level",
+                "property_description": "The player's current level."
+            },
+            {
+                "property_name": "player_max_hp",
+                "property_description": "The player's maximum hit points."
+            },
+            {
+                "property_name": "player_remaining_xp",
+                "property_description": "The experience points remaining until the player's next level."
+            },
+            {
+                "property_name": "player_stats",
+                "property_description": "Object containing the player's combat stat modifiers at the end of the match."
+            },
+            {
+                "property_name": "player_stats.BlockIncrease",
+                "property_description": "The increase applied to the player's block stat."
+            },
+            {
+                "property_name": "player_stats.CombatEndHPGain",
+                "property_description": "Hit points gained by the player at combat end."
+            },
+            {
+                "property_name": "player_stats.CombatStartChannelGain",
+                "property_description": "Channel points gained at the start of combat."
+            },
+            {
+                "property_name": "player_stats.DamageIncrease",
+                "property_description": "The increase applied to the player's damage output."
+            },
+            {
+                "property_name": "player_stats.DamageReduction",
+                "property_description": "The reduction applied to incoming damage for the player."
+            },
+            {
+                "property_name": "player_stats.Fortify",
+                "property_description": "The fortify stat value for the player."
+            },
+            {
+                "property_name": "player_stats.HealIncrease",
+                "property_description": "The increase applied to the player's healing effectiveness."
+            },
+            {
+                "property_name": "player_total_xp",
+                "property_description": "The player's total accumulated experience points."
+            },
+            {
+                "property_name": "player_xp_progress_percentage",
+                "property_description": "The percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "received_materials_ADMT",
+                "property_description": "The amount of ADMT material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_ATHS",
+                "property_description": "The amount of ATHS material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_BIOG",
+                "property_description": "The amount of BIOG material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_BSTR",
+                "property_description": "The amount of BSTR material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_CRM",
+                "property_description": "The amount of CRM material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_DRS",
+                "property_description": "The amount of DRS material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_FDS",
+                "property_description": "The amount of FDS material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_NCC",
+                "property_description": "The amount of NCC material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_NNC",
+                "property_description": "The amount of NNC material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_NRFM",
+                "property_description": "The amount of NRFM material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_OBS",
+                "property_description": "The amount of OBS material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_PMF",
+                "property_description": "The amount of PMF material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_QTPC",
+                "property_description": "The amount of QTPC material received as a reward from this match."
+            },
+            {
+                "property_name": "received_materials_VSA",
+                "property_description": "The amount of VSA material received as a reward from this match."
+            },
+            {
+                "property_name": "received_nft",
+                "property_description": "Boolean or count indicating if the player received an NFT reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000002",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000002' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000003",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000003' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000004",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000004' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000005",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000005' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000006",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000006' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000007",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000007' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000008",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000008' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000009",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000009' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000010",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000010' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000011",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000011' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000012",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000012' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000013",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000013' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000014",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000014' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000015",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000015' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000016",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000016' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000017",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000017' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000018",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000018' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000019",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000019' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH4_CSCAPE000001_WSCAPE000020",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH4_CSCAPE000001_WSCAPE000020' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH5_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH5_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH5_CSCAPE000001_WSCAPE000002",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH5_CSCAPE000001_WSCAPE000002' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH5_CSCAPE000001_WSCAPE000003",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH5_CSCAPE000001_WSCAPE000003' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH5_CSCAPE000001_WSCAPE000004",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH5_CSCAPE000001_WSCAPE000004' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_BATCH5_CSCAPE000001_WSCAPE000005",
+                "property_description": "Boolean indicating whether the NFT item 'BATCH5_CSCAPE000001_WSCAPE000005' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_EPICS_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'EPICS_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000002",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000002' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000003",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000003' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000004",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000004' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000005",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000005' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000006",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000006' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_MAGE_CSCAPE000001_WSCAPE000007",
+                "property_description": "Boolean indicating whether the NFT item 'MAGE_CSCAPE000001_WSCAPE000007' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_PET_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'PET_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000001",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000001' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000002",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000002' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000003",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000003' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000004",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000004' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000005",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000005' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000006",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000006' was received as a match reward."
+            },
+            {
+                "property_name": "received_nft_TANK_CSCAPE000001_WSCAPE000007",
+                "property_description": "Boolean indicating whether the NFT item 'TANK_CSCAPE000001_WSCAPE000007' was received as a match reward."
+            },
+            {
+                "property_name": "received_xp",
+                "property_description": "The amount of experience points received from this match."
+            },
+            {
+                "property_name": "remaining_hp",
+                "property_description": "The player's remaining hit points at the end of the match."
+            },
+            {
+                "property_name": "reputation_points",
+                "property_description": "The reputation points earned or affected by this match."
+            },
+            {
+                "property_name": "session_id",
+                "property_description": "The unique identifier for the game session."
+            },
+            {
+                "property_name": "total_monsters",
+                "property_description": "The total number of monsters in the match."
+            },
+            {
+                "property_name": "userImageUrl",
+                "property_description": "The URL of the user's profile or avatar image."
+            },
+            {
+                "property_name": "userName",
+                "property_description": "The display name of the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Game Match Started",
+        "event_description": "Triggered when a new game match session begins, capturing the initial state of the player and environment.",
+        "properties": [
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "gameLocationId",
+                "property_description": "The unique identifier of the in-game location where the match takes place."
+            },
+            {
+                "property_name": "gameSessionId",
+                "property_description": "The unique identifier for the current game session."
+            },
+            {
+                "property_name": "gameStartData",
+                "property_description": "Object containing the game session data captured at match start."
+            },
+            {
+                "property_name": "gameStartData.location",
+                "property_description": "(Within gameStartData) Object containing geographic location data of the match."
+            },
+            {
+                "property_name": "gameStartData.location.id",
+                "property_description": "(Within gameStartData) The unique identifier of the match location."
+            },
+            {
+                "property_name": "gameStartData.location.lat",
+                "property_description": "(Within gameStartData) The latitude of the match location."
+            },
+            {
+                "property_name": "gameStartData.location.long",
+                "property_description": "(Within gameStartData) The longitude of the match location."
+            },
+            {
+                "property_name": "gameStartData.location.service_area_code",
+                "property_description": "(Within gameStartData) The service area code for the match location."
+            },
+            {
+                "property_name": "gameStartData.location_id",
+                "property_description": "(Within gameStartData) The unique identifier of the geographic or in-game location."
+            },
+            {
+                "property_name": "gameStartData.location_lat",
+                "property_description": "(Within gameStartData) The latitude coordinate of the match location."
+            },
+            {
+                "property_name": "gameStartData.location_long",
+                "property_description": "(Within gameStartData) The longitude coordinate of the match location."
+            },
+            {
+                "property_name": "gameStartData.location_service_area_code",
+                "property_description": "(Within gameStartData) The service area code of the location."
+            },
+            {
+                "property_name": "gameStartData.monster_start_BLOB",
+                "property_description": "(Within gameStartData) Number of BLOB monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_DOMINION_SCOUT",
+                "property_description": "(Within gameStartData) Number of DOMINION SCOUT monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_GHAJAR",
+                "property_description": "(Within gameStartData) Number of GHAJAR monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_NAIDU_PUPPETEER",
+                "property_description": "(Within gameStartData) Number of NAIDU PUPPETEER monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_PROTECTORATE_KNIGHT",
+                "property_description": "(Within gameStartData) Number of PROTECTORATE KNIGHT monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_SCAPE_HARPY",
+                "property_description": "(Within gameStartData) Number of SCAPE HARPY monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_SHARD_GOBBLER",
+                "property_description": "(Within gameStartData) Number of SHARD GOBBLER monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_SOULGAZER",
+                "property_description": "(Within gameStartData) Number of SOULGAZER monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_WRAITH",
+                "property_description": "(Within gameStartData) Number of WRAITH monsters at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monster_start_total",
+                "property_description": "(Within gameStartData) Total number of monsters present at the start of the match."
+            },
+            {
+                "property_name": "gameStartData.monsters",
+                "property_description": "(Within gameStartData) Array of monster objects present in the match."
+            },
+            {
+                "property_name": "gameStartData.monsters.$",
+                "property_description": "(Within gameStartData) An individual monster entry within the monsters array."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.hp",
+                "property_description": "(Within gameStartData) The hit points of this monster."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.id",
+                "property_description": "(Within gameStartData) The unique identifier of this monster instance."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.level",
+                "property_description": "(Within gameStartData) The level of this monster."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.masterId",
+                "property_description": "(Within gameStartData) The master template identifier for this monster type."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.name",
+                "property_description": "(Within gameStartData) The display name of this monster."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.types",
+                "property_description": "(Within gameStartData) Array of type tags or categories for this monster."
+            },
+            {
+                "property_name": "gameStartData.monsters.$.xp",
+                "property_description": "(Within gameStartData) The experience points awarded for defeating this monster."
+            },
+            {
+                "property_name": "gameStartData.player",
+                "property_description": "(Within gameStartData) Object containing the player's state data."
+            },
+            {
+                "property_name": "gameStartData.player.avatar_id",
+                "property_description": "(Within gameStartData) The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "gameStartData.player.avatar_name",
+                "property_description": "(Within gameStartData) The display name of the player's avatar."
+            },
+            {
+                "property_name": "gameStartData.player.current_hp",
+                "property_description": "(Within gameStartData) The player's current hit points."
+            },
+            {
+                "property_name": "gameStartData.player.current_xp",
+                "property_description": "(Within gameStartData) The player's current experience points."
+            },
+            {
+                "property_name": "gameStartData.player.fdvId",
+                "property_description": "(Within gameStartData) The player's Freedom ID."
+            },
+            {
+                "property_name": "gameStartData.player.level",
+                "property_description": "(Within gameStartData) The player's current level."
+            },
+            {
+                "property_name": "gameStartData.player.max_hp",
+                "property_description": "(Within gameStartData) The player's maximum hit points."
+            },
+            {
+                "property_name": "gameStartData.player.remaining_xp",
+                "property_description": "(Within gameStartData) Experience points remaining until the next level."
+            },
+            {
+                "property_name": "gameStartData.player.total_xp",
+                "property_description": "(Within gameStartData) The player's total accumulated experience points."
+            },
+            {
+                "property_name": "gameStartData.player.wearable",
+                "property_description": "(Within gameStartData) Object containing the player's currently equipped wearable items."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Accessory",
+                "property_description": "(Within gameStartData) The accessory item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Boots",
+                "property_description": "(Within gameStartData) The boots item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Chest",
+                "property_description": "(Within gameStartData) The chest armor equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Cloak",
+                "property_description": "(Within gameStartData) The cloak item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Gloves",
+                "property_description": "(Within gameStartData) The gloves item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Head",
+                "property_description": "(Within gameStartData) The headgear item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Pants",
+                "property_description": "(Within gameStartData) The pants item equipped by the player."
+            },
+            {
+                "property_name": "gameStartData.player.wearable.Skin",
+                "property_description": "(Within gameStartData) The skin applied to the player's avatar."
+            },
+            {
+                "property_name": "gameStartData.player.xp_progress_percentage",
+                "property_description": "(Within gameStartData) Percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "gameStartData.player_avatar_id",
+                "property_description": "(Within gameStartData) The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "gameStartData.player_current_hp",
+                "property_description": "(Within gameStartData) The player's current hit points at the end of the match."
+            },
+            {
+                "property_name": "gameStartData.player_current_xp",
+                "property_description": "(Within gameStartData) The player's current experience points."
+            },
+            {
+                "property_name": "gameStartData.player_fdv_id",
+                "property_description": "(Within gameStartData) The player's Freedom ID."
+            },
+            {
+                "property_name": "gameStartData.player_level",
+                "property_description": "(Within gameStartData) The player's current level."
+            },
+            {
+                "property_name": "gameStartData.player_max_hp",
+                "property_description": "(Within gameStartData) The player's maximum hit points."
+            },
+            {
+                "property_name": "gameStartData.player_remaining_xp",
+                "property_description": "(Within gameStartData) The experience points remaining until the player's next level."
+            },
+            {
+                "property_name": "gameStartData.player_total_xp",
+                "property_description": "(Within gameStartData) The player's total accumulated experience points."
+            },
+            {
+                "property_name": "gameStartData.player_xp_progress_percentage",
+                "property_description": "(Within gameStartData) The percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "location",
+                "property_description": "Object containing geographic location data of the match."
+            },
+            {
+                "property_name": "location.id",
+                "property_description": "The unique identifier of the match location."
+            },
+            {
+                "property_name": "location.lat",
+                "property_description": "The latitude of the match location."
+            },
+            {
+                "property_name": "location.long",
+                "property_description": "The longitude of the match location."
+            },
+            {
+                "property_name": "location.service_area_code",
+                "property_description": "The service area code for the match location."
+            },
+            {
+                "property_name": "location_id",
+                "property_description": "The unique identifier of the geographic or in-game location."
+            },
+            {
+                "property_name": "location_lat",
+                "property_description": "The latitude coordinate of the match location."
+            },
+            {
+                "property_name": "location_long",
+                "property_description": "The longitude coordinate of the match location."
+            },
+            {
+                "property_name": "location_service_area_code",
+                "property_description": "The service area code of the location."
+            },
+            {
+                "property_name": "monster_start_AESIR_MIND_SCULPTOR",
+                "property_description": "Number of AESIR MIND SCULPTOR monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_AESIR_MOOD_ENGINEER",
+                "property_description": "Number of AESIR MOOD ENGINEER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_BLOB",
+                "property_description": "Number of BLOB monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_DOMINION_JUGGERNAUT",
+                "property_description": "Number of DOMINION JUGGERNAUT monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_DOMINION_LANCER",
+                "property_description": "Number of DOMINION LANCER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_DOMINION_LANCER_ELITE",
+                "property_description": "Number of DOMINION LANCER ELITE monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_DOMINION_SCOUT",
+                "property_description": "Number of DOMINION SCOUT monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_EMPEROR_TYRAX",
+                "property_description": "Number of EMPEROR TYRAX monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_EMPEROR_TYRAX_ELITE",
+                "property_description": "Number of EMPEROR TYRAX ELITE monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GARRO_DOMINION_CAPTAIN",
+                "property_description": "Number of GARRO DOMINION CAPTAIN monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GARRO_ENRAGED_CAPTAIN",
+                "property_description": "Number of GARRO ENRAGED CAPTAIN monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GHAJAR",
+                "property_description": "Number of GHAJAR monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GHAJAR_ABDUCTOR",
+                "property_description": "Number of GHAJAR ABDUCTOR monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GOBBLER_ABOMINATION",
+                "property_description": "Number of GOBBLER ABOMINATION monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_GOBBLER_QUEEN",
+                "property_description": "Number of GOBBLER QUEEN monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_HARPY_SKYCLAW",
+                "property_description": "Number of HARPY SKYCLAW monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_JUGGERNAUT_SELF_DESTRUCT",
+                "property_description": "Number of JUGGERNAUT SELF DESTRUCT monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_MEGABLOB",
+                "property_description": "Number of MEGABLOB monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_MOODERLING",
+                "property_description": "Number of MOODERLING monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_NAIDU_ACOLYTE",
+                "property_description": "Number of NAIDU ACOLYTE monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_NAIDU_PUPPETEER",
+                "property_description": "Number of NAIDU PUPPETEER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_PROTECTORATE_KNIGHT",
+                "property_description": "Number of PROTECTORATE KNIGHT monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_PROTECTORATE_TEMPLAR",
+                "property_description": "Number of PROTECTORATE TEMPLAR monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SCAPE_HARPY",
+                "property_description": "Number of SCAPE HARPY monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SHARD_GOBBLER",
+                "property_description": "Number of SHARD GOBBLER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SOULGAZER",
+                "property_description": "Number of SOULGAZER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SOULSTARER",
+                "property_description": "Number of SOULSTARER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SPECTER",
+                "property_description": "Number of SPECTER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SYNDICATE_ASSASSIN",
+                "property_description": "Number of SYNDICATE ASSASSIN monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_SYNDICATE_THIEF",
+                "property_description": "Number of SYNDICATE THIEF monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_TYRAX_ASCENDED_ELITE",
+                "property_description": "Number of TYRAX ASCENDED ELITE monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_TYRAX_ASCENDED_WORLDBREAKER",
+                "property_description": "Number of TYRAX ASCENDED WORLDBREAKER monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_TYRAX_EMPOWERED",
+                "property_description": "Number of TYRAX EMPOWERED monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_WRAITH",
+                "property_description": "Number of WRAITH monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_total",
+                "property_description": "Total number of monsters present at the start of the match."
+            },
+            {
+                "property_name": "monster_start_undefined",
+                "property_description": "Count of monsters with an undefined type at match start."
+            },
+            {
+                "property_name": "monsters",
+                "property_description": "Array of monster objects present in the match."
+            },
+            {
+                "property_name": "monsters.$",
+                "property_description": "An individual monster entry within the monsters array."
+            },
+            {
+                "property_name": "monsters.$.hp",
+                "property_description": "The hit points of this monster."
+            },
+            {
+                "property_name": "monsters.$.id",
+                "property_description": "The unique identifier of this monster instance."
+            },
+            {
+                "property_name": "monsters.$.level",
+                "property_description": "The level of this monster."
+            },
+            {
+                "property_name": "monsters.$.masterId",
+                "property_description": "The master template identifier for this monster type."
+            },
+            {
+                "property_name": "monsters.$.name",
+                "property_description": "The display name of this monster."
+            },
+            {
+                "property_name": "monsters.$.types",
+                "property_description": "Array of type tags or categories for this monster."
+            },
+            {
+                "property_name": "monsters.$.types.$",
+                "property_description": "An individual type tag for this monster."
+            },
+            {
+                "property_name": "monsters.$.xp",
+                "property_description": "The experience points awarded for defeating this monster."
+            },
+            {
+                "property_name": "player",
+                "property_description": "Object containing the player's state data."
+            },
+            {
+                "property_name": "player.avatar_id",
+                "property_description": "The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "player.avatar_name",
+                "property_description": "The display name of the player's avatar."
+            },
+            {
+                "property_name": "player.current_hp",
+                "property_description": "The player's current hit points."
+            },
+            {
+                "property_name": "player.current_xp",
+                "property_description": "The player's current experience points."
+            },
+            {
+                "property_name": "player.fdvId",
+                "property_description": "The player's Freedom ID."
+            },
+            {
+                "property_name": "player.level",
+                "property_description": "The player's current level."
+            },
+            {
+                "property_name": "player.max_hp",
+                "property_description": "The player's maximum hit points."
+            },
+            {
+                "property_name": "player.remaining_xp",
+                "property_description": "Experience points remaining until the next level."
+            },
+            {
+                "property_name": "player.total_xp",
+                "property_description": "The player's total accumulated experience points."
+            },
+            {
+                "property_name": "player.wearable",
+                "property_description": "Object containing the player's currently equipped wearable items."
+            },
+            {
+                "property_name": "player.wearable.Accessory",
+                "property_description": "The accessory item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Boots",
+                "property_description": "The boots item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Chest",
+                "property_description": "The chest armor equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Cloak",
+                "property_description": "The cloak item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Gloves",
+                "property_description": "The gloves item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Head",
+                "property_description": "The headgear item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Pants",
+                "property_description": "The pants item equipped by the player."
+            },
+            {
+                "property_name": "player.wearable.Skin",
+                "property_description": "The skin applied to the player's avatar."
+            },
+            {
+                "property_name": "player.wearable.Weapon",
+                "property_description": "The weapon item equipped by the player."
+            },
+            {
+                "property_name": "player.xp_progress_percentage",
+                "property_description": "Percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "player_avatar_id",
+                "property_description": "The unique identifier of the player's avatar."
+            },
+            {
+                "property_name": "player_current_hp",
+                "property_description": "The player's current hit points at the end of the match."
+            },
+            {
+                "property_name": "player_current_xp",
+                "property_description": "The player's current experience points."
+            },
+            {
+                "property_name": "player_fdv_id",
+                "property_description": "The player's Freedom ID."
+            },
+            {
+                "property_name": "player_level",
+                "property_description": "The player's current level."
+            },
+            {
+                "property_name": "player_max_hp",
+                "property_description": "The player's maximum hit points."
+            },
+            {
+                "property_name": "player_remaining_xp",
+                "property_description": "The experience points remaining until the player's next level."
+            },
+            {
+                "property_name": "player_total_xp",
+                "property_description": "The player's total accumulated experience points."
+            },
+            {
+                "property_name": "player_xp_progress_percentage",
+                "property_description": "The percentage progress toward the next experience level."
+            },
+            {
+                "property_name": "startTime",
+                "property_description": "The timestamp when the game match started."
+            },
+            {
+                "property_name": "userId",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    }
+]

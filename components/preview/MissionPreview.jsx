@@ -1,4 +1,7 @@
-import { ChevronDown } from 'lucide-react'
+'use client'
+
+import { useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 
 function ProgressBar({ milestones, currentLevel = 0 }) {
   if (!milestones?.length) return null
@@ -73,6 +76,7 @@ function SimpleToDoList({ steps }) {
 }
 
 export function MissionPreview({ mission, completionPct = 0 }) {
+  const [tcExpanded, setTcExpanded] = useState(false)
   const isMilestone = mission?.mission_type === 'milestone'
   const isSimple = mission?.mission_type === 'simple'
 
@@ -148,10 +152,24 @@ export function MissionPreview({ mission, completionPct = 0 }) {
 
         {/* Terms */}
         <div className="border-t border-gray-100 pt-3">
-          <div className="flex items-center justify-between">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => mission?.terms_and_conditions && setTcExpanded(v => !v)}
+          >
             <span className="text-xs font-semibold text-gray-700">Terms and Conditions</span>
-            <ChevronDown size={14} className="text-gray-400" />
-          </div>
+            {mission?.terms_and_conditions
+              ? (tcExpanded ? <ChevronUp size={14} className="text-gray-400" /> : <ChevronDown size={14} className="text-gray-400" />)
+              : <ChevronDown size={14} className="text-gray-400" />
+            }
+          </button>
+          {tcExpanded && mission?.terms_and_conditions && (
+            <div className="mt-2 text-xs text-gray-500 leading-relaxed whitespace-pre-wrap">
+              {mission.terms_and_conditions}
+            </div>
+          )}
+          {!mission?.terms_and_conditions && (
+            <div className="mt-1 text-xs text-gray-400 italic">Optional — ask AVA to generate or provide your own</div>
+          )}
         </div>
       </div>
     </div>

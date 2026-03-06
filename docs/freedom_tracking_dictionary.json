@@ -1,0 +1,1372 @@
+[
+    {
+        "event_name": "Avatar Skin Changed",
+        "event_description": "Triggered when a user updates the appearance of their digital avatar within the platform.",
+        "properties": [
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "fdv_id",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "is_default",
+                "property_description": "Boolean indicating if the item is a default starter option."
+            },
+            {
+                "property_name": "skin_collection",
+                "property_description": "The name of the collection or series this skin belongs to."
+            },
+            {
+                "property_name": "skin_id",
+                "property_description": "Unique ID for the avatar's skin."
+            },
+            {
+                "property_name": "skin_name",
+                "property_description": "The display name of the skin."
+            },
+            {
+                "property_name": "skin_rarity",
+                "property_description": "The rarity tier of the skin (e.g., Epic, Common)."
+            },
+            {
+                "property_name": "userImageUrl",
+                "property_description": "The URL of the user's profile or avatar image."
+            },
+            {
+                "property_name": "userName",
+                "property_description": "The display name of the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Avatar Wearable Equipped",
+        "event_description": "Tracks when a user selects and equips a specific item or accessory to their avatar.",
+        "properties": [
+            {
+                "property_name": "collection_name",
+                "property_description": "The name of the collection this wearable belongs to."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "fdv_id",
+                "property_description": "The user's unique Freedom ID (Freedom Wallet ID)."
+            },
+            {
+                "property_name": "gear_type",
+                "property_description": "The slot or gear category the wearable occupies (e.g., head, body, weapon)."
+            },
+            {
+                "property_name": "modifier_type",
+                "property_description": "The attribute or stat that this wearable modifies (e.g., speed, attack, defense)."
+            },
+            {
+                "property_name": "percent_modifier_value",
+                "property_description": "The percentage value by which the wearable modifies the associated attribute."
+            },
+            {
+                "property_name": "total_equipped_wearable",
+                "property_description": "The total number of wearables currently equipped on the avatar."
+            },
+            {
+                "property_name": "wearable_id",
+                "property_description": "Unique identifier for the wearable item."
+            },
+            {
+                "property_name": "wearable_name",
+                "property_description": "The name of the wearable item."
+            },
+            {
+                "property_name": "wearable_rarity",
+                "property_description": "The rarity tier of the wearable item."
+            },
+            {
+                "property_name": "wearable_type",
+                "property_description": "The category of the wearable (e.g., shirt, hat)."
+            }
+        ]
+    },
+    {
+        "event_name": "Card Onboarded",
+        "event_description": "Triggered when a user start application for their Freedom Card.",
+        "properties": [
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Card Signed Up",
+        "event_description": "Recorded when a user successfully applies for a physical or virtual Freedom card.",
+        "properties": [
+            {
+                "property_name": "card_tier",
+                "property_description": "The membership or benefit level of the card (e.g., Standard, Gold, Platinum)."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "staked_amount",
+                "property_description": "The amount of tokens staked by the user to qualify for the card tier."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Card Spent",
+        "event_description": "Tracks payment transactions made using the Freedom Card at various merchants.",
+        "properties": [
+            {
+                "property_name": "amount",
+                "property_description": "The monetary value involved in the transaction."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "is_physical",
+                "property_description": "Boolean indicating if a physical card was used."
+            },
+            {
+                "property_name": "mcc_code",
+                "property_description": "Merchant Category Code, identifying the type of business."
+            },
+            {
+                "property_name": "merchant",
+                "property_description": "The business or shop where the transaction occurred."
+            },
+            {
+                "property_name": "mission_category",
+                "property_description": "The category of a related mission or reward program associated with the spend."
+            },
+            {
+                "property_name": "settlement_date",
+                "property_description": "The date when the bank finalized the transaction."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Card Topped Up",
+        "event_description": "Recorded when a user adds monetary balance to their Freedom Card wallet.",
+        "properties": [
+            {
+                "property_name": "amount",
+                "property_description": "The monetary value involved in the transaction."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "product",
+                "property_description": "The name or label of the top-up product or package selected."
+            },
+            {
+                "property_name": "product_id",
+                "property_description": "The unique product identifier."
+            },
+            {
+                "property_name": "topup_type",
+                "property_description": "The channel or method used to top up (e.g., bank, promptpay)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Community Joined",
+        "event_description": "Triggered when a user becomes a member of a new community or group.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "join_type",
+                "property_description": "The method of joining (e.g., invite, public)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Banner Created",
+        "event_description": "An administrative event recording when a new promotional banner is created in the management console.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "published_at",
+                "property_description": "The timestamp when the banner was published or scheduled to go live."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Campaign Created",
+        "event_description": "Triggered when a reward, mission, or marketing campaign is launched by an admin.",
+        "properties": [
+            {
+                "property_name": "campaign_description",
+                "property_description": "A human-readable description detailing the purpose or rules of the campaign."
+            },
+            {
+                "property_name": "campaign_name",
+                "property_description": "The name of the reward or marketing campaign."
+            },
+            {
+                "property_name": "campaign_type",
+                "property_description": "The category of the campaign (Mission, Reward, etc.)."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "end_date",
+                "property_description": "The date and time when the campaign expires or closes."
+            },
+            {
+                "property_name": "rewards",
+                "property_description": "An array of reward objects distributed to participants upon campaign completion."
+            },
+            {
+                "property_name": "rewards.$",
+                "property_description": "An individual reward entry within the rewards array."
+            },
+            {
+                "property_name": "rewards.$.name",
+                "property_description": "The display name of the individual reward."
+            },
+            {
+                "property_name": "rewards.$.token_id",
+                "property_description": "The unique identifier of the token granted as a reward."
+            },
+            {
+                "property_name": "rewards.$.type",
+                "property_description": "The type or category of the reward (e.g., token, NFT, badge)."
+            },
+            {
+                "property_name": "start_date",
+                "property_description": "The date and time when the campaign becomes active."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Community Created",
+        "event_description": "Tracks the creation of a new community entity via the console.",
+        "properties": [
+            {
+                "property_name": "community_category",
+                "property_description": "The topic or interest category the community belongs to (e.g., Sports, Finance, Gaming)."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "community_type",
+                "property_description": "The access model of the community (e.g., public, private, invite-only)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Token Created",
+        "event_description": "Recorded when a new custom community token is generated for the ecosystem.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "token_id",
+                "property_description": "The unique identifier of the newly created digital token."
+            },
+            {
+                "property_name": "token_name",
+                "property_description": "The name of the digital token."
+            },
+            {
+                "property_name": "token_supply",
+                "property_description": "The total number of tokens minted or available in the token supply."
+            },
+            {
+                "property_name": "token_symbol",
+                "property_description": "The short ticker symbol representing the token (e.g., FDM, XYZ)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Fdp Payment Completed",
+        "event_description": "Triggered when a payment via the FDP service is successfully finalized.",
+        "properties": [
+            {
+                "property_name": "currency",
+                "property_description": "The currency code used (e.g., THB, USD)."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "fee_amount",
+                "property_description": "Any processing fees charged during the transaction."
+            },
+            {
+                "property_name": "ip_country",
+                "property_description": "The country inferred from the user's IP address at the time of payment."
+            },
+            {
+                "property_name": "merchant_name",
+                "property_description": "The name of the merchant receiving the payment."
+            },
+            {
+                "property_name": "order_amount",
+                "property_description": "The total amount of the order before fees."
+            },
+            {
+                "property_name": "order_id",
+                "property_description": "The unique identifier for the order associated with this payment."
+            },
+            {
+                "property_name": "org_id",
+                "property_description": "The unique identifier of the organization or merchant entity."
+            },
+            {
+                "property_name": "org_name",
+                "property_description": "The display name of the organization or merchant entity."
+            },
+            {
+                "property_name": "payment_amount",
+                "property_description": "The actual amount charged to the user, including any applicable fees."
+            },
+            {
+                "property_name": "payment_method",
+                "property_description": "The type of payment used."
+            },
+            {
+                "property_name": "payment_source",
+                "property_description": "The origin of the funds used for payment (e.g., wallet balance, credit card, bank transfer)."
+            },
+            {
+                "property_name": "remark",
+                "property_description": "An optional free-text note or memo attached to the payment transaction."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Fdw Email Verified",
+        "event_description": "Recorded when a user verifies their email address for their Freedom Wallet account.",
+        "properties": [
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Fdw Signed In",
+        "event_description": "Tracks when a user successfully logs into the Freedom Wallet or related apps.",
+        "properties": [
+            {
+                "property_name": "app_key",
+                "property_description": "The unique key for the application being used."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "fdw_email",
+                "property_description": "The user's registered email address."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Fdw Voting Submitted",
+        "event_description": "Triggered when a user participates in a governance or community poll.",
+        "properties": [
+            {
+                "property_name": "choices",
+                "property_description": "An array of answer choices the user selected in the vote."
+            },
+            {
+                "property_name": "choices.$",
+                "property_description": "An individual choice entry within the choices array."
+            },
+            {
+                "property_name": "choices.$.trait_type",
+                "property_description": "The label or category of the voting option (e.g., the question dimension or attribute being voted on)."
+            },
+            {
+                "property_name": "choices.$.value",
+                "property_description": "The specific value or answer the user selected for this trait."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "id",
+                "property_description": "The unique identifier for this voting submission record."
+            },
+            {
+                "property_name": "proposal_id",
+                "property_description": "The unique identifier of the governance proposal being voted on."
+            },
+            {
+                "property_name": "proposal_title_en",
+                "property_description": "The English-language title of the governance proposal."
+            },
+            {
+                "property_name": "proposal_title_th",
+                "property_description": "The Thai-language title of the governance proposal."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            },
+            {
+                "property_name": "voting_power",
+                "property_description": "The weighted influence of the user's vote, based on their token holdings or staking."
+            }
+        ]
+    },
+    {
+        "event_name": "Friend Invited",
+        "event_description": "Records when a user sends a referral or invitation to a friend.",
+        "properties": [
+            {
+                "property_name": "campaign_id",
+                "property_description": "The unique identifier of the referral campaign."
+            },
+            {
+                "property_name": "campaign_name",
+                "property_description": "The name of the reward or marketing campaign."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "enable_convert",
+                "property_description": "Boolean indicating whether the referral reward can be converted to another token type."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "platform",
+                "property_description": "The platform or channel through which the invitation was sent (e.g., LINE, email, link)."
+            },
+            {
+                "property_name": "referee_user_id",
+                "property_description": "The unique identifier of the user who was invited."
+            },
+            {
+                "property_name": "token_amount",
+                "property_description": "The quantity of tokens involved."
+            },
+            {
+                "property_name": "token_name",
+                "property_description": "The name of the digital token."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            },
+            {
+                "property_name": "verification_level",
+                "property_description": "The KYC or identity verification level required to qualify for the referral reward."
+            }
+        ]
+    },
+    {
+        "event_name": "Friend Invited Verified",
+        "event_description": "Triggered when an invitation is successfully accepted and verified.",
+        "properties": [
+            {
+                "property_name": "campaign_id",
+                "property_description": "The unique identifier of the referral campaign."
+            },
+            {
+                "property_name": "campaign_name",
+                "property_description": "The name of the reward or marketing campaign."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "enable_convert",
+                "property_description": "Boolean indicating whether the referral reward can be converted to another token type."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "platform",
+                "property_description": "The platform or channel through which the invitation was sent (e.g., LINE, email, link)."
+            },
+            {
+                "property_name": "referee_user_id",
+                "property_description": "The unique identifier of the user who was invited and verified."
+            },
+            {
+                "property_name": "token_amount",
+                "property_description": "The quantity of tokens involved."
+            },
+            {
+                "property_name": "token_name",
+                "property_description": "The name of the digital token."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            },
+            {
+                "property_name": "verification_level",
+                "property_description": "The KYC or identity verification level attained by the referee to confirm the invitation."
+            }
+        ]
+    },
+    {
+        "event_name": "Item Purchased",
+        "event_description": "Tracks the purchase of goods, services, or digital items within the shop.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "currency",
+                "property_description": "The currency code used (e.g., THB, USD)."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "fee",
+                "property_description": "The transaction or service fee charged on this purchase."
+            },
+            {
+                "property_name": "merchandise",
+                "property_description": "An array of merchandise items included in the order."
+            },
+            {
+                "property_name": "merchandise.$",
+                "property_description": "An individual merchandise item within the order."
+            },
+            {
+                "property_name": "merchandise.$.community_id",
+                "property_description": "The community identifier associated with this merchandise item."
+            },
+            {
+                "property_name": "merchandise.$.merchandise_category",
+                "property_description": "The category or type of the merchandise item (e.g., digital, physical, voucher)."
+            },
+            {
+                "property_name": "merchandise.$.merchandise_id",
+                "property_description": "The unique identifier of the individual merchandise item."
+            },
+            {
+                "property_name": "merchandise.$.name",
+                "property_description": "The display name of the merchandise item."
+            },
+            {
+                "property_name": "merchandise.$.order_item_id",
+                "property_description": "The unique identifier for this line item within the order."
+            },
+            {
+                "property_name": "merchandise.$.original_shop_id",
+                "property_description": "The unique identifier of the shop where this item originates."
+            },
+            {
+                "property_name": "merchandise.$.original_shop_name",
+                "property_description": "The display name of the shop where this item originates."
+            },
+            {
+                "property_name": "merchandise.$.quantity",
+                "property_description": "The number of units of this item included in the order."
+            },
+            {
+                "property_name": "merchandise.$.type",
+                "property_description": "The fulfillment type of the item (e.g., digital download, physical delivery)."
+            },
+            {
+                "property_name": "merchandise.$.unit_price",
+                "property_description": "The price per single unit of this merchandise item."
+            },
+            {
+                "property_name": "merchandise.$.value",
+                "property_description": "The total value of this line item (unit_price × quantity)."
+            },
+            {
+                "property_name": "merchandise_category",
+                "property_description": "The top-level category of the purchased merchandise (e.g., digital, physical, voucher)."
+            },
+            {
+                "property_name": "merchandise_id",
+                "property_description": "The unique identifier of the primary merchandise item purchased."
+            },
+            {
+                "property_name": "merchandise_name",
+                "property_description": "The display name of the primary merchandise item purchased."
+            },
+            {
+                "property_name": "merchandise_type",
+                "property_description": "The fulfillment type of the primary merchandise item (e.g., digital, physical)."
+            },
+            {
+                "property_name": "order_id",
+                "property_description": "The unique identifier for the purchase order."
+            },
+            {
+                "property_name": "original_shop_id",
+                "property_description": "The unique identifier of the shop where the primary item originates."
+            },
+            {
+                "property_name": "original_shop_name",
+                "property_description": "The display name of the shop where the primary item originates."
+            },
+            {
+                "property_name": "payment_method",
+                "property_description": "The type of payment used."
+            },
+            {
+                "property_name": "quantity",
+                "property_description": "The total number of units of the primary item purchased."
+            },
+            {
+                "property_name": "total_payment",
+                "property_description": "The total amount paid by the user for the entire order, including fees."
+            },
+            {
+                "property_name": "total_quantity",
+                "property_description": "The combined quantity of all items across the entire order."
+            },
+            {
+                "property_name": "unit_price",
+                "property_description": "The price per single unit of the primary merchandise item."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            },
+            {
+                "property_name": "value",
+                "property_description": "The total value of the primary merchandise item (unit_price × quantity)."
+            }
+        ]
+    },
+    {
+        "event_name": "NFT Ticket Validated",
+        "event_description": "Triggered when a digital NFT event ticket is scanned and confirmed at a venue.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "contract_address",
+                "property_description": "The blockchain smart contract address for the NFT ticket collection."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "product_id",
+                "property_description": "The unique product identifier."
+            },
+            {
+                "property_name": "product_name",
+                "property_description": "The display name of the event or product associated with the ticket."
+            },
+            {
+                "property_name": "product_quantity",
+                "property_description": "The number of tickets validated in this event."
+            },
+            {
+                "property_name": "ticket_id",
+                "property_description": "Unique identifier for the NFT ticket."
+            },
+            {
+                "property_name": "token_id",
+                "property_description": "The on-chain token ID of the NFT ticket on the blockchain."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            },
+            {
+                "property_name": "validation_code",
+                "property_description": "The code or QR payload used to validate the ticket at the venue."
+            },
+            {
+                "property_name": "validation_id",
+                "property_description": "The unique identifier for this ticket validation event."
+            },
+            {
+                "property_name": "validator_id",
+                "property_description": "The identifier of the staff member or system that performed the validation."
+            }
+        ]
+    },
+    {
+        "event_name": "Physical Card Activated",
+        "event_description": "Recorded when a physical Freedom Card is linked and ready for use.",
+        "properties": [
+            {
+                "property_name": "card_tier",
+                "property_description": "The membership or benefit level of the activated physical card (e.g., Standard, Gold, Platinum)."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Referral Claim Completed",
+        "event_description": "Tracks when a user successfully claims a reward from a referral program.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "mission_id",
+                "property_description": "The unique identifier of the mission associated with this referral claim."
+            },
+            {
+                "property_name": "mission_name",
+                "property_description": "The display name of the mission associated with this referral claim."
+            },
+            {
+                "property_name": "referee_id",
+                "property_description": "The unique identifier of the user who was referred and triggered the claim."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Comment Created",
+        "event_description": "Triggered when a user posts a comment on a social feed or post.",
+        "properties": [
+            {
+                "property_name": "comment_id",
+                "property_description": "Unique ID of the specific comment."
+            },
+            {
+                "property_name": "comment_text",
+                "property_description": "The text content of the comment posted by the user."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "parent_id",
+                "property_description": "The ID of the parent comment, if this is a reply in a thread."
+            },
+            {
+                "property_name": "reference_id",
+                "property_description": "The ID of the content being referenced or replied to."
+            },
+            {
+                "property_name": "reference_type",
+                "property_description": "The type of content being referenced (e.g., post, comment)."
+            },
+            {
+                "property_name": "target_id",
+                "property_description": "The ID of the object being interacted with."
+            },
+            {
+                "property_name": "target_type",
+                "property_description": "The type of the target object (user, community, post)."
+            },
+            {
+                "property_name": "to",
+                "property_description": "The user ID or handle of the person being mentioned or replied to."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Follow Created",
+        "event_description": "Recorded when a user follows another user's profile.",
+        "properties": [
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "followed_user_id",
+                "property_description": "The ID of the user who was followed."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Post Created",
+        "event_description": "Triggered when a user publishes new content to a community social feed.",
+        "properties": [
+            {
+                "property_name": "community_category",
+                "property_description": "The topic or interest category of the community where the post is published."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "files",
+                "property_description": "An array of media files (images, videos) attached to the post."
+            },
+            {
+                "property_name": "files.$",
+                "property_description": "An individual media file object within the files array."
+            },
+            {
+                "property_name": "files.$.bucket",
+                "property_description": "The cloud storage bucket where this file is stored."
+            },
+            {
+                "property_name": "files.$.id",
+                "property_description": "The unique identifier for this attached media file."
+            },
+            {
+                "property_name": "files.$.s3_key",
+                "property_description": "The S3 object key path used to retrieve the file from cloud storage."
+            },
+            {
+                "property_name": "files.$.type",
+                "property_description": "The media type of the file (e.g., image, video)."
+            },
+            {
+                "property_name": "files.$.url",
+                "property_description": "The publicly accessible URL of the attached media file."
+            },
+            {
+                "property_name": "post_created_at",
+                "property_description": "The timestamp when the post was originally created."
+            },
+            {
+                "property_name": "post_id",
+                "property_description": "Unique identifier for the social post."
+            },
+            {
+                "property_name": "target_id",
+                "property_description": "The ID of the object being interacted with."
+            },
+            {
+                "property_name": "target_type",
+                "property_description": "The type of the target object (user, community, post)."
+            },
+            {
+                "property_name": "text",
+                "property_description": "The textual content of a post or comment."
+            },
+            {
+                "property_name": "location_address",
+                "property_description": "The physical street address of the tagged location."
+            },
+            {
+                "property_name": "location_coordinates",
+                "property_description": "The latitude and longitude coordinates of the tagged location."
+            },
+            {
+                "property_name": "location_name",
+                "property_description": "The name of the location tagged."
+            },
+            {
+                "property_name": "location_privacy",
+                "property_description": "The visibility setting of the location tag (e.g., public, friends only, hidden)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Post Deleted",
+        "event_description": "Tracks when a user or moderator removes a post.",
+        "properties": [
+            {
+                "property_name": "community_category",
+                "property_description": "The topic or interest category of the community where the post was published."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "files",
+                "property_description": "An array of media files that were attached to the deleted post."
+            },
+            {
+                "property_name": "files.$",
+                "property_description": "An individual media file object within the files array."
+            },
+            {
+                "property_name": "files.$.id",
+                "property_description": "The unique identifier for this attached media file."
+            },
+            {
+                "property_name": "files.$.type",
+                "property_description": "The media type of the file (e.g., image, video)."
+            },
+            {
+                "property_name": "files.$.url",
+                "property_description": "The publicly accessible URL of the attached media file."
+            },
+            {
+                "property_name": "post_id",
+                "property_description": "Unique identifier for the social post."
+            },
+            {
+                "property_name": "target_id",
+                "property_description": "The ID of the object being interacted with."
+            },
+            {
+                "property_name": "target_type",
+                "property_description": "The type of the target object (user, community, post)."
+            },
+            {
+                "property_name": "text",
+                "property_description": "The textual content of a post or comment."
+            },
+            {
+                "property_name": "location_address",
+                "property_description": "The physical street address of the tagged location."
+            },
+            {
+                "property_name": "location_coordinates",
+                "property_description": "The latitude and longitude coordinates of the tagged location."
+            },
+            {
+                "property_name": "location_name",
+                "property_description": "The name of the location tagged."
+            },
+            {
+                "property_name": "location_privacy",
+                "property_description": "The visibility setting of the location tag (e.g., public, friends only, hidden)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Reaction Created",
+        "event_description": "Recorded when a user reacts (like, heart, etc.) to a post or comment.",
+        "properties": [
+            {
+                "property_name": "community_category",
+                "property_description": "The topic or interest category of the community where the reacted content lives."
+            },
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "react_to",
+                "property_description": "The ID of the post or comment being reacted to."
+            },
+            {
+                "property_name": "react_to_text",
+                "property_description": "The text content of the post or comment being reacted to."
+            },
+            {
+                "property_name": "reaction_type",
+                "property_description": "The type of reaction expressed by the user (e.g., like, love, haha, sad)."
+            },
+            {
+                "property_name": "target_id",
+                "property_description": "The ID of the object being interacted with."
+            },
+            {
+                "property_name": "target_type",
+                "property_description": "The type of the target object (user, community, post)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Token Purchased",
+        "event_description": "Tracks the acquisition of digital tokens or virtual currencies.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "payment_channel",
+                "property_description": "The platform or service channel used to process the token purchase (e.g., in-app, web, third-party)."
+            },
+            {
+                "property_name": "payment_method",
+                "property_description": "The type of payment used."
+            },
+            {
+                "property_name": "product",
+                "property_description": "The name or label of the token package or product purchased."
+            },
+            {
+                "property_name": "token_amount",
+                "property_description": "The quantity of tokens involved."
+            },
+            {
+                "property_name": "token_name",
+                "property_description": "The name of the digital token."
+            },
+            {
+                "property_name": "topup_amount",
+                "property_description": "The fiat or source currency amount used to fund the token purchase."
+            },
+            {
+                "property_name": "topup_type",
+                "property_description": "The channel or method used to top up (e.g., bank, promptpay)."
+            },
+            {
+                "property_name": "user_id",
+                "property_description": "Unique internal identifier for the user."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Location Updated",
+        "event_description": "Triggered when an admin modifies a Point of Interest or community location.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "poi_id",
+                "property_description": "The unique ID for the Point of Interest."
+            },
+            {
+                "property_name": "poi_name",
+                "property_description": "The name of the point of interest."
+            },
+            {
+                "property_name": "poi_status",
+                "property_description": "The current approval or activity status of the location."
+            },
+            {
+                "property_name": "poi_latitude",
+                "property_description": "The geographic latitude of the location."
+            },
+            {
+                "property_name": "poi_longitude",
+                "property_description": "The geographic longitude of the location."
+            },
+            {
+                "property_name": "is_console_event",
+                "property_description": "Boolean indicating if the event was triggered from the management console."
+            },
+            {
+                "property_name": "mission_shared_user_id",
+                "property_description": "Identifier for the user participating in a community mission."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Status Updated",
+        "event_description": "Records updates to the publishing status of a community or project.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "public_status",
+                "property_description": "Indicates if the community is published or unpublished."
+            },
+            {
+                "property_name": "is_console_event",
+                "property_description": "Boolean indicating if the event was triggered from the management console."
+            },
+            {
+                "property_name": "mission_shared_user_id",
+                "property_description": "Identifier for the user participating in a community mission."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            }
+        ]
+    },
+    {
+        "event_name": "Console Profile Edited",
+        "event_description": "Triggered when the profile settings of a community are updated in the console.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "theme_color",
+                "property_description": "The hexadecimal color code used for branding."
+            },
+            {
+                "property_name": "community_categories",
+                "property_description": "The list of topic or interest categories assigned to the community."
+            },
+            {
+                "property_name": "description",
+                "property_description": "The text description for a community or profile."
+            },
+            {
+                "property_name": "is_default_cover",
+                "property_description": "Boolean indicating if the default cover image is in use."
+            },
+            {
+                "property_name": "community_slug",
+                "property_description": "A URL-friendly name for the community."
+            },
+            {
+                "property_name": "is_console_event",
+                "property_description": "Boolean indicating if the event was triggered from the management console."
+            },
+            {
+                "property_name": "mission_shared_user_id",
+                "property_description": "Identifier for the user participating in a community mission."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            }
+        ]
+    },
+    {
+        "event_name": "Social Post Approved",
+        "event_description": "Recorded when a pending social post is reviewed and approved by a moderator.",
+        "properties": [
+            {
+                "property_name": "community_id",
+                "property_description": "Unique identifier of the community."
+            },
+            {
+                "property_name": "community_name",
+                "property_description": "Display name of the community."
+            },
+            {
+                "property_name": "entityId",
+                "property_description": "The unique QuestLabs identifier associated with the entity or project."
+            },
+            {
+                "property_name": "post_created_at",
+                "property_description": "The timestamp when the post was originally created by the author."
+            },
+            {
+                "property_name": "post_id",
+                "property_description": "Unique identifier for the social post."
+            },
+            {
+                "property_name": "target_id",
+                "property_description": "The ID of the object being interacted with."
+            },
+            {
+                "property_name": "target_type",
+                "property_description": "The type of the target object (user, community, post)."
+            },
+            {
+                "property_name": "text",
+                "property_description": "The textual content of a post or comment."
+            },
+            {
+                "property_name": "location_address",
+                "property_description": "The physical street address of the tagged location."
+            },
+            {
+                "property_name": "location_coordinates",
+                "property_description": "The latitude and longitude coordinates of the tagged location."
+            },
+            {
+                "property_name": "location_name",
+                "property_description": "The name of the location tagged."
+            },
+            {
+                "property_name": "location_privacy",
+                "property_description": "The visibility setting of the location tag (e.g., public, friends only, hidden)."
+            }
+        ]
+    }
+]
