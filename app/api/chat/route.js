@@ -213,7 +213,7 @@ export async function POST(request) {
     content: m.content,
   }))
 
-  const { openai, UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI } = await import('@/lib/openai-client')
+  const { openai, UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI, GENERATE_MISSION_CONFIG_TOOL_OPENAI } = await import('@/lib/openai-client')
 
   const stream = new ReadableStream({
     async start(controller) {
@@ -234,7 +234,7 @@ export async function POST(request) {
             { role: 'system', content: fullSystemPrompt },
             ...openaiMessages,
           ],
-          tools: [UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI],
+          tools: [UPDATE_MISSION_PREVIEW_TOOL_OPENAI, GENERATE_COVER_IMAGE_TOOL_OPENAI, GENERATE_MISSION_CONFIG_TOOL_OPENAI],
           tool_choice: 'auto',
         })
 

@@ -5,6 +5,7 @@ import { AvaAvatar } from './AvaAvatar'
 import { TypingIndicator } from './TypingIndicator'
 import { ChatInput } from './ChatInput'
 import { MissionPreview } from '@/components/preview/MissionPreview'
+import { MissionConfigPanel } from '@/components/preview/MissionConfigPanel'
 import { useRouter } from 'next/navigation'
 import { saveDraft, getDraftById } from '@/lib/draft-store'
 
@@ -66,7 +67,7 @@ function ActionButtons({ onSaveDraft, onPublish }) {
   )
 }
 
-const AVA_GREETING = "Hi! I'm AVA, your Mission Creation Assistant. I'll help you design a mission that engages your community.\n\nFirst, choose a mission type:\n\n- **Simple Mission** — One requirement, one reward. _(e.g. Invite 1 friend → get 50 tokens)_\n- **Milestone Mission** — One goal with multiple reward levels. _(e.g. Invite 3 → Level 1 reward, Invite 6 → Level 2 reward)_\n- **Multi-Step Mission** — A series of steps users complete in order. _(e.g. Visit page → Answer quiz → Make a purchase)_\n\nWhich type fits your goal, or describe your mission idea and I'll suggest one!"
+const AVA_GREETING = "Hi! I'm AVA, your Mission Creation Assistant. I'll help you design a mission that engages your community.\n\nWhat kind of action do you want your community members to take? For example:\n\n- **Referral** — Invite friends to join a community\n- **Spending** — Make a purchase, top up, or spend tokens\n- **Game activity** — Battle monsters, build planets, collect items\n- **Social** — Post, vote, follow, or join a community\n- **One-time onboarding** — Verify email, activate card, sign up\n\nDescribe your mission idea and I'll take it from there!"
 
 export function CreateMission({ draftId }) {
   const router = useRouter()
@@ -79,6 +80,8 @@ export function CreateMission({ draftId }) {
   const [isGeneratingImage, setIsGeneratingImage] = useState(false)
   const [showPreview, setShowPreview] = useState(true)
   const [showConfirm, setShowConfirm] = useState(false)
+  const [missionConfig, setMissionConfig] = useState(null)
+  const [previewTab, setPreviewTab] = useState('preview') // 'preview' | 'config'
   const messagesEndRef = useRef(null)
 
   // Load draft if draftId is provided
@@ -157,6 +160,10 @@ export function CreateMission({ draftId }) {
             avaText += event.content
           } else if (event.type === 'tool_call' && event.tool === 'update_mission_preview') {
             toolUpdate = event.input
+            setShowPreview(true)
+          } else if (event.type === 'tool_call' && event.tool === 'generate_mission_config') {
+            setMissionConfig(event.input)
+            setPreviewTab('config')
             setShowPreview(true)
           } else if (event.type === 'tool_call' && event.tool === 'generate_cover_image') {
             toolUpdate = { _generateImage: true, _imagePrompt: event.input?.prompt }
@@ -318,8 +325,29 @@ export function CreateMission({ draftId }) {
 
       {/* Preview panel */}
       {showPreview && (
-        <div className="w-[45%] border-l border-gray-200 bg-white overflow-hidden">
-          <MissionPreview mission={mission} completionPct={completionPct} />
+        <div className="w-[45%] border-l border-gray-200 bg-white overflow-hidden flex flex-col">
+          {/* Tab bar */}
+          <div className="flex border-b border-gray-100 shrink-0">
+            <button
+              onClick={() => setPreviewTab('preview')}
+              className={`flex-1 py-2.5 text-xs font-semibold transition-colors ${previewTab === 'preview' ? 'text-emerald-600 border-b-2 border-emerald-500' : 'text-gray-400 hover:text-gray-600'}`}
+            >
+              Preview
+            </button>
+            <button
+              onClick={() => setPreviewTab('config')}
+              className={`flex-1 py-2.5 text-xs font-semibold transition-colors ${previewTab === 'config' ? 'text-emerald-600 border-b-2 border-emerald-500' : 'text-gray-400 hover:text-gray-600'} ${!missionConfig ? 'opacity-40 cursor-not-allowed' : ''}`}
+              disabled={!missionConfig}
+            >
+              QL Config {missionConfig && <span className="ml-1 bg-emerald-100 text-emerald-700 rounded-full px-1.5 py-0.5 text-[10px]">Ready</span>}
+            </button>
+          </div>
+          <div className="flex-1 overflow-hidden">
+            {previewTab === 'preview'
+              ? <MissionPreview mission={mission} completionPct={completionPct} />
+              : <MissionConfigPanel config={missionConfig} />
+            }
+          </div>
         </div>
       )}
 

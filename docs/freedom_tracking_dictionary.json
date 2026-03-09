@@ -307,7 +307,8 @@
         "properties": [
             {
                 "property_name": "community_category",
-                "property_description": "The topic or interest category the community belongs to (e.g., Sports, Finance, Gaming)."
+                "property_description": "The topic or interest category the community belongs to (e.g., Sports, Finance, 
+                ing)."
             },
             {
                 "property_name": "community_id",
